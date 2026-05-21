@@ -1,0 +1,13 @@
+ INFO  Accepting connections at http://localhost:3000
+ HTTP  5/21/2026 9:07:52 PM ::1 GET /index.html
+ HTTP  5/21/2026 9:07:52 PM ::1 Returned 301 in 364 ms
+ HTTP  5/21/2026 9:07:53 PM ::1 GET /index
+ HTTP  5/21/2026 9:07:53 PM ::1 Returned 301 in 1 ms
+ HTTP  5/21/2026 9:07:53 PM ::1 GET /
+ HTTP  5/21/2026 9:07:53 PM ::1 Returned 200 in 14 ms
+ HTTP  5/21/2026 9:07:53 PM ::1 GET /dist/style.css
+ HTTP  5/21/2026 9:07:53 PM ::1 Returned 200 in 2 ms
+ HTTP  5/21/2026 9:07:53 PM ::1 GET /assets/images/logo/logo-light-mp-2.png
+ HTTP  5/21/2026 9:07:53 PM ::1 GET /js/main.js
+ HTTP  5/21/2026 9:07:53 PM ::1 Returned 200 in 3 ms
+ HTTP  5/21/2026 9:07:53 PM ::1 Returned 200 in 72 ms

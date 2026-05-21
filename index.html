@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobility Pulse - See it. Love it. Charge it.</title>
+  <link rel="stylesheet" href="./dist/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans flex flex-col min-h-screen">
+
+  <!-- Utility Bar -->
+  <div class="bg-mp-navy text-white text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-mp-teal transition-colors">Charge Portal</a>
+        <a href="#" class="hover:text-mp-teal transition-colors">EMS Portal</a>
+      </div>
+      <div class="relative group">
+        <button class="flex items-center space-x-1 hover:text-mp-teal transition-colors">
+          <i class="fa-solid fa-globe"></i>
+          <span>EN</span>
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </button>
+        <div class="absolute right-0 mt-2 w-32 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-t-md">EN - English</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">NL - Nederlands</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-b-md">FR - Français</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="#">
+            <img class="h-10 w-auto" src="./assets/images/logo/logo-light-mp-2.png" alt="Mobility Pulse Logo">
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-8 items-center h-full">
+          <!-- Products and services Mega Menu -->
+          <div class="group h-full flex items-center">
+            <button class="text-gray-700 hover:text-mp-teal font-medium flex items-center h-full">
+              Products & Services
+              <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+            </button>
+            <div class="absolute left-0 top-full w-full bg-white shadow-xl border-t border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-3 gap-8">
+                <div>
+                  <h3 class="text-lg font-semibold text-mp-navy mb-4 border-b pb-2">Electric Mobility</h3>
+                  <ul class="space-y-4">
+                    <li>
+                      <a href="#" class="block group/link">
+                        <span class="block font-medium text-gray-900 group-hover/link:text-mp-teal">Charging points</span>
+                        <span class="block text-sm text-gray-500">Explore our full range of charging solutions.</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="block group/link">
+                        <span class="block font-medium text-gray-900 group-hover/link:text-mp-teal">CPO - Charge management</span>
+                        <span class="block text-sm text-gray-500">Manage, monitor, and monetize your chargers.</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="block group/link">
+                        <span class="block font-medium text-gray-900 group-hover/link:text-mp-teal">MSP - Chargecard & App</span>
+                        <span class="block text-sm text-gray-500">Access to charging with an App and charge card.</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="block group/link">
+                        <span class="block font-medium text-gray-900 group-hover/link:text-mp-teal">Whitelabel</span>
+                        <span class="block text-sm text-gray-500">Launch your own EV charging services.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-mp-navy mb-4 border-b pb-2">Energy Management System</h3>
+                  <ul class="space-y-4">
+                    <li>
+                      <a href="#" class="block group/link">
+                        <span class="block font-medium text-gray-900 group-hover/link:text-mp-teal">EMS</span>
+                        <span class="block text-sm text-gray-500">Optimize energy usage and reduce costs.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-mp-navy mb-4 border-b pb-2">Renewable Energy</h3>
+                  <ul class="space-y-4">
+                    <li>
+                      <a href="#" class="block group/link">
+                        <span class="block font-medium text-gray-900 group-hover/link:text-mp-teal">Solar & Battery</span>
+                        <span class="block text-sm text-gray-500">Integrated solar and battery solutions.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Support Mega Menu -->
+          <div class="group h-full flex items-center">
+            <button class="text-gray-700 hover:text-mp-teal font-medium flex items-center h-full">
+              Support
+              <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+            </button>
+            <div class="absolute left-0 top-full w-full bg-white shadow-xl border-t border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-3 gap-8">
+                <div>
+                  <h3 class="text-lg font-semibold text-mp-navy mb-4 border-b pb-2">Resources</h3>
+                  <ul class="space-y-4">
+                    <li><a href="#" class="block text-gray-600 hover:text-mp-teal font-medium">Cars</a><span class="block text-sm text-gray-500">Browse all european EV cars</span></li>
+                    <li><a href="#" class="block text-gray-600 hover:text-mp-teal font-medium">Certified Chargers</a><span class="block text-sm text-gray-500">Browse all supported and certified chargers</span></li>
+                    <li><a href="#" class="block text-gray-600 hover:text-mp-teal font-medium">Downloads</a><span class="block text-sm text-gray-500">Download manuals, datasheets & brochures</span></li>
+                    <li><a href="#" class="block text-gray-600 hover:text-mp-teal font-medium">FAQ</a><span class="block text-sm text-gray-500">Frequently Asked Questions</span></li>
+                    <li><a href="#" class="block text-gray-600 hover:text-mp-teal font-medium">Knowledge Base</a><span class="block text-sm text-gray-500">Browse the knowledge base</span></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-mp-navy mb-4 border-b pb-2">Tools</h3>
+                  <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-600 hover:text-mp-teal font-medium">Cable Calculator</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-mp-teal font-medium">Charger ROI Calculator</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-mp-teal font-medium">Fleet ROI Calculator</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-mp-teal font-medium">Charger Installation</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-mp-teal font-medium">EV Capacity Calculator</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-mp-teal font-medium">Solar & Battery ROI</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="text-gray-700 hover:text-mp-teal font-medium">Blog</a>
+
+          <!-- About us Menu -->
+          <div class="relative group h-full flex items-center">
+            <button class="text-gray-700 hover:text-mp-teal font-medium flex items-center h-full">
+              About us
+              <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+            </button>
+            <div class="absolute top-16 left-0 w-56 bg-white shadow-xl rounded-b-md border-t border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div class="py-2">
+                <a href="#" class="block px-4 py-3 hover:bg-gray-50 group/link">
+                  <span class="block font-medium text-gray-900 group-hover/link:text-mp-teal">About us</span>
+                  <span class="block text-xs text-gray-500">Learn about our company</span>
+                </a>
+                <a href="#" class="block px-4 py-3 hover:bg-gray-50 group/link border-t border-gray-100">
+                  <span class="block font-medium text-gray-900 group-hover/link:text-mp-teal">Jobs</span>
+                  <span class="block text-xs text-gray-500">See what's new</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="text-gray-700 hover:text-mp-teal font-medium">Contact</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" class="text-gray-700 hover:text-mp-teal focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Panel -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100 absolute w-full shadow-lg z-50">
+      <div class="px-4 py-3 space-y-1">
+        <button class="w-full text-left flex justify-between items-center py-3 text-gray-700 font-medium mobile-submenu-toggle">
+          Products & Services
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </button>
+        <div class="hidden pl-4 pb-2 space-y-2 mobile-submenu">
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">Charging points</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">CPO - Charge management</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">MSP - Chargecard & App</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">EMS</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">Solar & Battery</a>
+        </div>
+
+        <button class="w-full text-left flex justify-between items-center py-3 text-gray-700 font-medium mobile-submenu-toggle">
+          Support
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </button>
+        <div class="hidden pl-4 pb-2 space-y-2 mobile-submenu">
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">Cars</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">Certified Chargers</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">Downloads</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">FAQ</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">Tools</a>
+        </div>
+
+        <a href="#" class="block py-3 text-gray-700 font-medium hover:text-mp-teal">Blog</a>
+
+        <button class="w-full text-left flex justify-between items-center py-3 text-gray-700 font-medium mobile-submenu-toggle">
+          About us
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </button>
+        <div class="hidden pl-4 pb-2 space-y-2 mobile-submenu">
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">About us</a>
+          <a href="#" class="block text-sm text-gray-600 hover:text-mp-teal py-1">Jobs</a>
+        </div>
+
+        <a href="#" class="block py-3 text-gray-700 font-medium hover:text-mp-teal">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+
+    <!-- Hero Section -->
+    <section class="relative bg-mp-navy text-white overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <!-- Placeholder for background image -->
+        <div class="absolute inset-0 bg-mp-navy opacity-90"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-mp-navy to-transparent"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-24 lg:py-32 flex flex-col justify-center min-h-[600px]">
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6">
+          See it. Love it. <span class="text-mp-teal">Charge it.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+          Whether you are a home user, a small business owner or a large company, we help you take the step towards sustainable mobility.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#services" class="btn-primary">Products & Services</a>
+          <a href="#" class="btn-secondary text-white border-white hover:bg-white hover:text-mp-navy">EV Chargers</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Do Section (Features) -->
+    <section id="services" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-mp-navy mb-4">What We Do?</h2>
+          <p class="text-lg text-gray-600">Products & Services designed to meet your needs.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+          <!-- Feature 1 -->
+          <div class="group">
+            <div class="bg-gray-50 p-8 rounded-2xl h-full border border-gray-100 hover:shadow-xl hover:border-mp-teal transition-all duration-300">
+              <div class="w-14 h-14 bg-mp-teal bg-opacity-10 text-mp-teal rounded-lg flex items-center justify-center mb-6">
+                <i class="fa-solid fa-charging-station text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-mp-navy mb-4 group-hover:text-mp-teal transition-colors">Charging points</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">We offer a complete line of Smart electric vehicle charging stations and custom solutions for home, corporate and public use. Remarkably reliable. Distinctly durable. Designed to make your life easier.</p>
+              <a href="#" class="text-mp-teal font-medium hover:text-mp-teal-light flex items-center">Read more <i class="fa-solid fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i></a>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="group">
+            <div class="bg-gray-50 p-8 rounded-2xl h-full border border-gray-100 hover:shadow-xl hover:border-mp-teal transition-all duration-300">
+              <div class="w-14 h-14 bg-mp-teal bg-opacity-10 text-mp-teal rounded-lg flex items-center justify-center mb-6">
+                <i class="fa-solid fa-network-wired text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-mp-navy mb-4 group-hover:text-mp-teal transition-colors">CPO: Charge management</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">Manage & Control your Network of Electric Car Chargers in real time. Billing & Metering Data. Multi-user Authentication, Reporting & Diagnostics. Compatible with all major platforms and protocols.</p>
+              <a href="#" class="text-mp-teal font-medium hover:text-mp-teal-light flex items-center">Read more <i class="fa-solid fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i></a>
+            </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="group">
+            <div class="bg-gray-50 p-8 rounded-2xl h-full border border-gray-100 hover:shadow-xl hover:border-mp-teal transition-all duration-300">
+              <div class="w-14 h-14 bg-mp-teal bg-opacity-10 text-mp-teal rounded-lg flex items-center justify-center mb-6">
+                <i class="fa-solid fa-mobile-screen-button text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-mp-navy mb-4 group-hover:text-mp-teal transition-colors">MSP: Chargecard & App</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">A free Chargecard, dedicated Mobile App and a web portal for managing charging activities. Furthermore, Mobility Pulse plays a key role in facilitating roaming services and offers customer support to assist drivers.</p>
+              <a href="#" class="text-mp-teal font-medium hover:text-mp-teal-light flex items-center">Read more <i class="fa-solid fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i></a>
+            </div>
+          </div>
+          <!-- Feature 4 -->
+          <div class="group">
+            <div class="bg-gray-50 p-8 rounded-2xl h-full border border-gray-100 hover:shadow-xl hover:border-mp-teal transition-all duration-300">
+              <div class="w-14 h-14 bg-mp-teal bg-opacity-10 text-mp-teal rounded-lg flex items-center justify-center mb-6">
+                <i class="fa-solid fa-leaf text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-mp-navy mb-4 group-hover:text-mp-teal transition-colors">EMS: Energy Management</h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">Optimize your energy consumption and reduce costs with smart power distribution. Automatically balance the energy demand between your EV chargers and your building, prevent costly grid upgrades and ensuring maximum efficiency.</p>
+              <a href="#" class="text-mp-teal font-medium hover:text-mp-teal-light flex items-center">Read more <i class="fa-solid fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="flex justify-center py-8 bg-gray-50">
+      <img src="./assets/images/logo/logo-light-mp-2.png" alt="Mini Logo" class="h-8 opacity-50 grayscale">
+    </div>
+
+    <!-- How We Work Section (Workflow) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-mp-navy mb-4">How We Work?</h2>
+          <p class="text-lg text-gray-600">A seamless process from consultation to installation.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Step 1 -->
+          <div class="relative pt-12 px-6 pb-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+            <span class="absolute -top-6 left-6 text-6xl font-bold text-gray-100">01</span>
+            <h3 class="text-xl font-semibold text-mp-navy mb-3 relative z-10">Determine your needs</h3>
+            <p class="text-gray-600 text-sm leading-relaxed relative z-10">The very first thing we do is determine what your specific needs are. Factors such as the type and model of your Electric Vehicle (EV), how often you use the vehicle, the distance you travel daily, play a role here.</p>
+          </div>
+          <!-- Step 2 -->
+          <div class="relative pt-12 px-6 pb-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+            <span class="absolute -top-6 left-6 text-6xl font-bold text-gray-100">02</span>
+            <h3 class="text-xl font-semibold text-mp-navy mb-3 relative z-10">Choose the type of charging point</h3>
+            <p class="text-gray-600 text-sm leading-relaxed relative z-10">There are different types of charging points available, varying in functionality, power and charging speed. It is important to choose a charging point that matches your vehicle and meets your charging needs.</p>
+          </div>
+          <!-- Step 3 -->
+          <div class="relative pt-12 px-6 pb-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+            <span class="absolute -top-6 left-6 text-6xl font-bold text-gray-100">03</span>
+            <h3 class="text-xl font-semibold text-mp-navy mb-3 relative z-10">Choose the location</h3>
+            <p class="text-gray-600 text-sm leading-relaxed relative z-10">The location, accessibility and proximity of the charging point is an important factor. You must take into account factors such as the proximity of the electrical installation and the aesthetic impact.</p>
+          </div>
+          <!-- Step 4 -->
+          <div class="relative pt-12 px-6 pb-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+            <span class="absolute -top-6 left-6 text-6xl font-bold text-mp-teal opacity-20">04</span>
+            <h3 class="text-xl font-semibold text-mp-navy mb-3 relative z-10">Installation</h3>
+            <p class="text-gray-600 text-sm leading-relaxed relative z-10">Once you have chosen a charging point and location, the final step is the installation. We take care of the necessary electrical adjustments and permits, and ensure that the charging point is correctly connected and tested.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="flex justify-center py-8 bg-white">
+      <img src="./assets/images/logo/logo-light-mp-2.png" alt="Mini Logo" class="h-8 opacity-50 grayscale">
+    </div>
+
+    <!-- Tailored for all (Segments) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-mp-navy mb-4">Products & services tailored for all.</h2>
+          <p class="text-lg text-gray-600">Our approach involves understanding diverse customer requirements and providing solutions that are flexible and scalable.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Segment 1 -->
+          <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group">
+            <div class="h-48 bg-gray-200 relative overflow-hidden">
+              <div class="absolute inset-0 bg-mp-navy bg-opacity-20 group-hover:bg-opacity-10 transition-all z-10"></div>
+              <!-- Placeholder for segment image -->
+              <div class="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-200">
+                <i class="fa-solid fa-house text-4xl"></i>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-mp-navy mb-3">eMobility at home</h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">By installing a dedicated wallbox charger in your garage or driveway, you transform your home into a convenient, money-saving personal fueling station. This segment focuses on making sustainable driving a seamless part of daily, domestic life.</p>
+              <a href="#" class="btn-secondary w-full">Home services</a>
+            </div>
+          </div>
+
+          <!-- Segment 2 -->
+          <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group">
+            <div class="h-48 bg-gray-200 relative overflow-hidden">
+              <div class="absolute inset-0 bg-mp-navy bg-opacity-20 group-hover:bg-opacity-10 transition-all z-10"></div>
+              <!-- Placeholder for segment image -->
+              <div class="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-200">
+                <i class="fa-solid fa-building text-4xl"></i>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-mp-navy mb-3">eMobility at the Office</h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">Driven by sustainability targets and cost savings, this sector is focused on optimizing fleet management and deploying charging depots to reduce operational emissions across all business travel and logistics.</p>
+              <a href="#" class="btn-secondary w-full">Business services</a>
+            </div>
+          </div>
+
+          <!-- Segment 3 -->
+          <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group">
+            <div class="h-48 bg-gray-200 relative overflow-hidden">
+              <div class="absolute inset-0 bg-mp-navy bg-opacity-20 group-hover:bg-opacity-10 transition-all z-10"></div>
+              <!-- Placeholder for segment image -->
+              <div class="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-200">
+                <i class="fa-solid fa-city text-4xl"></i>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold text-mp-navy mb-3">eMobility in Public</h3>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6">Public e-mobility provides a vast network of public charging stations in urban and highway locations. The goal is to build an equitable, reliable, and sustainable transportation backbone that reduces urban congestion and air pollution.</p>
+              <a href="#" class="btn-secondary w-full">Public services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="flex justify-center py-8 bg-gray-50">
+      <img src="./assets/images/logo/logo-light-mp-2.png" alt="Mini Logo" class="h-8 opacity-50 grayscale">
+    </div>
+
+    <!-- Trusted By (Clients) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-center text-mp-navy mb-12">Trusted by organizations worldwide</h2>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60">
+          <div class="text-2xl font-bold text-gray-400"><i class="fa-brands fa-aws mr-2"></i>Company Logo</div>
+          <div class="text-2xl font-bold text-gray-400"><i class="fa-brands fa-google mr-2"></i>Company Logo</div>
+          <div class="text-2xl font-bold text-gray-400"><i class="fa-brands fa-microsoft mr-2"></i>Company Logo</div>
+          <div class="text-2xl font-bold text-gray-400"><i class="fa-brands fa-apple mr-2"></i>Company Logo</div>
+          <div class="text-2xl font-bold text-gray-400"><i class="fa-brands fa-meta mr-2"></i>Company Logo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner CTA -->
+    <section class="bg-mp-teal py-20 text-white text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <img src="./assets/images/logo/logo-light-mp-2.png" alt="Mobility Pulse Logo" class="h-12 mx-auto mb-8 brightness-0 invert">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Partner with Mobility Pulse</h2>
+        <p class="text-xl mb-10 text-mp-teal-light text-opacity-80 max-w-2xl mx-auto text-white">Seeking an advanced solution for your mobility needs? Mobility Pulse is your strategic partner in crafting innovative, sustainable systems. Contact us to transform your mobility ecosystem.</p>
+        <a href="#" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-md text-mp-teal bg-white hover:bg-gray-100 transition-colors shadow-lg">
+          Contact Us
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-mp-navy text-white pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+        <!-- Company Info -->
+        <div class="space-y-6">
+          <img src="./assets/images/logo/logo-light-mp-2.png" alt="Mobility Pulse Logo" class="h-10 brightness-0 invert">
+          <p class="text-gray-400 text-sm">C&H EUROPE BV</p>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><i class="fa-solid fa-file-invoice mr-2 text-mp-teal"></i> BE 0729.731.988</li>
+            <li><i class="fa-solid fa-envelope mr-2 text-mp-teal"></i> <a href="mailto:info@mobilitypulse.com" class="hover:text-white transition-colors">info@mobilitypulse.com</a></li>
+            <li><i class="fa-solid fa-phone mr-2 text-mp-teal"></i> <a href="tel:+32468196788" class="hover:text-white transition-colors">+32 468 19.67.88</a></li>
+          </ul>
+        </div>
+
+        <!-- About Us Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-6">About us</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-mp-teal transition-colors">About Us</a></li>
+            <li><a href="#" class="hover:text-mp-teal transition-colors">Career</a></li>
+            <li><a href="#" class="hover:text-mp-teal transition-colors">Sitemap</a></li>
+            <li><a href="#" class="hover:text-mp-teal transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-6">Legal</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-mp-teal transition-colors">Terms of Use</a></li>
+            <li><a href="#" class="hover:text-mp-teal transition-colors">Subscription Terms</a></li>
+            <li><a href="#" class="hover:text-mp-teal transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-mp-teal transition-colors">Cookie Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Trust Badges -->
+        <div>
+          <h4 class="text-lg font-semibold mb-6">Trust & Privacy</h4>
+          <div class="flex space-x-4">
+            <!-- Placeholders for badges -->
+            <div class="bg-gray-800 p-3 rounded flex items-center justify-center border border-gray-700">
+              <i class="fa-solid fa-shield-halved text-2xl text-mp-teal mr-2"></i>
+              <span class="text-xs font-bold">GDPR<br>Compliant</span>
+            </div>
+            <div class="bg-gray-800 p-3 rounded flex items-center justify-center border border-gray-700">
+              <i class="fa-solid fa-server text-2xl text-mp-teal mr-2"></i>
+              <span class="text-xs font-bold">Hosted<br>in EU</span>
+            </div>
+          </div>
+
+          <div class="mt-8 flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <p>&copy; 2026 All rights reserved.</p>
+        <p class="mt-4 md:mt-0">Made by <a href="#" class="text-white hover:text-mp-teal transition-colors">WebDotPulse</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Modal -->
+  <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-white shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50 transform translate-y-full transition-transform duration-500 ease-in-out">
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex-1 text-sm text-gray-600">
+        <p>🍪 We use cookies and similar technologies to help personalize content, tailor and measure ads, and provide a better experience. By clicking Accept All, you agree to this, as outlined in our <a href="#" class="text-mp-teal hover:underline font-medium">Cookie Policy</a>.</p>
+      </div>
+      <div class="flex flex-wrap gap-3 justify-center md:justify-end">
+        <button id="btn-customize-cookies" class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors">Customize</button>
+        <button id="btn-reject-cookies" class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors">Reject All</button>
+        <button id="btn-accept-cookies" class="px-4 py-2 text-sm font-medium text-white bg-mp-teal hover:bg-mp-teal-light rounded-md transition-colors">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Customization Modal -->
+  <div id="cookie-customize-modal" class="fixed inset-0 bg-black bg-opacity-50 z-[60] hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg shadow-xl max-w-lg w-full p-6 relative">
+      <button id="close-customize-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+      <h3 class="text-xl font-semibold text-gray-900 mb-4">Cookie Preferences</h3>
+      <p class="text-sm text-gray-600 mb-6">Select which types of cookies you want to allow. Some cookies are essential for the website to function.</p>
+
+      <div class="space-y-4 mb-6">
+        <div class="flex items-start justify-between">
+          <div>
+            <h4 class="text-sm font-medium text-gray-900">Essential Cookies</h4>
+            <p class="text-xs text-gray-500 mt-1">These are required for basic site functionality and are always active.</p>
+          </div>
+          <div class="ml-4 flex-shrink-0">
+            <span class="text-xs font-semibold text-mp-teal bg-mp-teal bg-opacity-10 px-2 py-1 rounded">Always Active</span>
+          </div>
+        </div>
+
+        <div class="flex items-start justify-between border-t pt-4">
+          <div>
+            <h4 class="text-sm font-medium text-gray-900">Analytics Cookies</h4>
+            <p class="text-xs text-gray-500 mt-1">These help us understand how you use the site to improve your experience.</p>
+          </div>
+          <div class="ml-4 flex-shrink-0">
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer" checked>
+              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-mp-teal"></div>
+            </label>
+          </div>
+        </div>
+
+        <div class="flex items-start justify-between border-t pt-4">
+          <div>
+            <h4 class="text-sm font-medium text-gray-900">Marketing Cookies</h4>
+            <p class="text-xs text-gray-500 mt-1">These are used to show you relevant ads and track their effectiveness.</p>
+          </div>
+          <div class="ml-4 flex-shrink-0">
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer">
+              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-mp-teal"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-end gap-3 pt-4 border-t">
+        <button id="btn-save-preferences" class="px-4 py-2 text-sm font-medium text-white bg-mp-teal hover:bg-mp-teal-light rounded-md transition-colors">Save Preferences</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
