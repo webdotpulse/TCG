@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Charge Grid | Smart EV Charging Stations &amp; Services</title>
+<!-- Custom CSS -->
+<link href="./dist/style.css" rel="stylesheet"/>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased relative overflow-x-hidden">
+<!-- Background Decoration -->
+<div class="bg-glow"></div>
+<!-- BOXED NAVIGATION LAYOUT -->
+<header class="fixed top-4 left-0 right-0 z-50 px-4 md:px-6 flex justify-center w-full transition-all duration-300" id="header-container">
+<!-- The 'Box' -->
+<nav class="glass-nav bg-white/80 w-full max-w-7xl rounded-2xl shadow-sm border border-slate-200 border-slate-200/60 px-5 py-3.5 flex justify-between items-center transition-all duration-300" id="navbar">
+<!-- Logo -->
+<a class="flex items-center gap-2.5 group" href="#">
+<div class="w-9 h-9 bg-gradient-to-br from-brand-blue to-brand-teal rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:scale-105 transition-transform duration-300">
+<i class="fas fa-bolt"></i>
+</div>
+<span class="font-bold text-xl tracking-tight text-slate-900">The Charge Grid</span>
+</a>
+<!-- Desktop Menu -->
+<div class="hidden lg:flex items-center space-x-1">
+<!-- Products Dropdown -->
+<div class="relative group px-3 py-2">
+<button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
+                        Products &amp; Services <i class="fas fa-chevron-down text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+</button>
+<!-- Dropdown Content -->
+<div class="dropdown-menu absolute left-0 top-full pt-4 w-[480px] opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
+<div class="bg-white rounded-2xl shadow-xl border border-slate-200 border-slate-100 overflow-hidden p-3 grid grid-cols-2 gap-2">
+<a class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item" href="#">
+<span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Charging points</span>
+<span class="text-xs text-slate-500">Explore our full range of charging solutions.</span>
+</a>
+<a class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item" href="#">
+<span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">CPO</span>
+<span class="text-xs text-slate-500">Manage, monitor, and monetize chargers.</span>
+</a>
+<a class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item" href="#">
+<span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">MSP App</span>
+<span class="text-xs text-slate-500">Access to charging with App &amp; charge card.</span>
+</a>
+<a class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item" href="#">
+<span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Whitelabel</span>
+<span class="text-xs text-slate-500">Launch your own EV charging services.</span>
+</a>
+<a class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item" href="#">
+<span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">EMS</span>
+<span class="text-xs text-slate-500">Optimize energy usage and reduce costs.</span>
+</a>
+<a class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item" href="#">
+<span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Solar &amp; Battery</span>
+<span class="text-xs text-slate-500">Renewable energy solutions.</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Support Dropdown -->
+<div class="relative group px-3 py-2">
+<button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
+                        Support <i class="fas fa-chevron-down text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+</button>
+<!-- Dropdown Content -->
+<div class="dropdown-menu absolute left-0 top-full pt-4 w-56 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
+<div class="bg-white rounded-2xl shadow-xl border border-slate-200 border-slate-100 overflow-hidden p-2">
+<a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors" href="#">Cars</a>
+<a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors" href="#">Certified Chargers</a>
+<a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors" href="#">Downloads</a>
+<a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors" href="#">FAQ</a>
+<a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors" href="#">Knowledge Base</a>
+<a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors flex justify-between items-center" href="#">Tools <i class="fas fa-calculator text-[10px] opacity-50"></i></a>
+</div>
+</div>
+</div>
+<a class="font-medium text-slate-700 hover:text-brand-blue transition-colors px-3 py-2" href="#">Blog</a>
+<a class="font-medium text-slate-700 hover:text-brand-blue transition-colors px-3 py-2" href="#">About us</a>
+<a class="font-medium text-slate-700 hover:text-brand-blue transition-colors px-3 py-2" href="#">Jobs</a>
+</div>
+<!-- CTA & Actions -->
+<div class="hidden lg:flex items-center space-x-5">
+<!-- Language Selector -->
+<div class="relative group">
+<button class="text-sm font-semibold text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+<i class="fas fa-globe"></i> EN
+                    </button>
+<div class="dropdown-menu absolute right-0 top-full pt-4 w-36 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
+<div class="bg-white rounded-xl shadow-lg border border-slate-200 border-slate-100 overflow-hidden p-2">
+<a class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-sm font-medium text-brand-blue" href="#">EN - English</a>
+<a class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-sm font-medium text-slate-700" href="#">NL - Nederlands</a>
+<a class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-sm font-medium text-slate-700" href="#">FR - Français</a>
+</div>
+</div>
+</div>
+<div class="w-px h-5 bg-slate-200"></div>
+<a class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition-colors flex items-center gap-1.5" href="#">
+                    Portals <i class="fas fa-external-link-alt text-[10px]"></i>
+</a>
+<a class="bg-slate-900 hover:bg-brand-blue text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-brand-blue/30" href="#contact">
+                    Contact
+                </a>
+</div>
+<!-- Mobile Menu Button -->
+<button class="lg:hidden text-slate-800 text-2xl p-2 focus:outline-none" id="mobile-menu-btn">
+<i class="fas fa-bars"></i>
+</button>
+</nav>
+</header>
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-white z-[60] transform translate-x-full transition-transform duration-300 flex flex-col hidden" id="mobile-menu">
+<div class="p-5 flex justify-between items-center border-b border-slate-100">
+<a class="flex items-center gap-2 group" href="#">
+<div class="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center text-white font-bold shadow-md">
+<i class="fas fa-bolt"></i>
+</div>
+<span class="font-bold text-xl tracking-tight text-slate-900">The Charge Grid</span>
+</a>
+<button class="text-slate-500 text-2xl p-2" id="close-menu-btn">
+<i class="fas fa-times"></i>
+</button>
+</div>
+<div class="p-6 flex-1 overflow-y-auto flex flex-col gap-6">
+<div class="flex flex-col gap-6 text-lg font-bold text-slate-900">
+<a href="#">Products &amp; Services</a>
+<a href="#">Support</a>
+<a href="#">Blog</a>
+<a href="#">About us</a>
+<a href="#">Jobs</a>
+<a href="#">Contact</a>
+</div>
+<div class="mt-auto border-t border-slate-100 pt-6 flex flex-col gap-6">
+<a class="flex items-center gap-2 text-slate-600 font-semibold" href="#"><i class="fas fa-external-link-alt"></i> Charge Portal EMS</a>
+<div class="flex gap-6 text-sm font-semibold text-slate-500">
+<span class="text-brand-blue">EN</span>
+<span>NL</span>
+<span>FR</span>
+</div>
+</div>
+</div>
+</div>
+<main class="page-wrapper"><section class="py-xl-9 py-20" style="background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(https://www.mobilitypulse.com/assets/images/cards.svg), linear-gradient(111.42deg, #4BAF47 0%, #1DA868 34%, #009C9F 74%);background-position: center; background-repeat: no-repeat; background-size: cover;">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative mt-4 mb-4 pt-md-3 pb-md-3 zindex-5">
+<div class="flex flex-wrap -mx-4 justify-center pt-3 pb-16">
+<div class="lg:w-9/12 px-4 xl:w-8/12 text-center pt-3 pb-3 mt-1 mb-2">
+<h1 class="pt-3 mt-4 mb-6 text-white-stable">Mobility Service Provider (MSP)</h1>
+<h3 class="mb-0 text-white-stable text-lg text-slate-600">Mobility Pulse Chargecard &amp; App</h3>
+</div>
+</div>
+</div>
+</section>
+<section class="py-xl-9 py-20 bg-slate-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-wrap -mx-4 gx-lg-8 gx-xl-10 items-center">
+<div class="lg:w-6/12 px-4 mt-n17">
+<picture>
+<source onerror="this.style.display='none'" srcset="" type="image/avif"/>
+<source onerror="this.style.display='none'" srcset="" type="image/webp"/>
+<source onerror="this.style.display='none'" srcset="https://www.mobilitypulse.com/assets/images/msp/device.png" type="image/png"/>
+<img alt="NEX EV Chargers and Chargecards" class="max-w-full h-auto" decoding="async" src="https://www.mobilitypulse.com/assets/images/msp/device.png"/>
+</picture>
+</div>
+<div class="lg:w-6/12 px-4">
+<h2 class="mb-8">Wat doet Mobility Pulse precies als mobility service provider?</h2>
+<p class="mb-8">
+        Mobility Pulse is een e-Mobility Service Provider (eMSP) genoemd, een bedrijf dat laaddiensten voor elektrische auto's aanbiedt. Ons primaire doel is het gemakkelijk maken voor EV-rijders om laadpalen te vinden en te gebruiken.
+        </p>
+<div class="mb-6">
+<h4>Hier zijn onze belangrijkste taken als MSP:</h4>
+<ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+<li>
+<span>
+<svg fill="currentColor" height="20" style="vertical-align: middle;" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>
+</span>
+<strong>Netwerktoegang: </strong><span>We bieden toegang tot een breed netwerk van laadpalen, vaak via roaming overeenkomsten met CPO's.</span>
+</li>
+<li>
+<span>
+<svg fill="currentColor" height="20" style="vertical-align: middle;" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>
+</span>
+<strong>Gebruiksvriendelijke app: </strong><span>Aanbieden van een mobiele app waar gebruikers laadpalen kunnen vinden, laadsessies starten/stoppen, en hun laad geschiedenis bekijken.</span>
+</li>
+<li>
+<span>
+<svg fill="currentColor" height="20" style="vertical-align: middle;" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>
+</span>
+<strong>Betalingen: </strong><span>We verwerken betalingen voor laadsessies en zorgen voor correcte facturatie.</span>
+</li>
+<li>
+<span>
+<svg fill="currentColor" height="20" style="vertical-align: middle;" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>
+</span>
+<strong>Klantenservice: </strong><span>We bieden ondersteuning aan EV-rijders bij vragen of problemen.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Block-->
+<div class="absolute w-full px-4">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<div><img alt="" class="mt-n5 p-3" src="https://www.mobilitypulse.com/assets/images/mp-mini-logo.svg"/></div>
+</div>
+</div>
+</div>
+<!--Block-->
+<section class="py-xl-9 py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-wrap -mx-4 gy-10 items-center">
+<div class="lg:w-7/12 px-4 order-lg-2 offset-lg-1">
+<figure><img alt="Mobility Pulse App Interface" class="max-w-full h-auto" src="https://www.mobilitypulse.com/assets/images/msp/f2.png" srcset="https://www.mobilitypulse.com/assets/images/msp/f2@2x.png 2x"/></figure>
+</div>
+<div class="lg:w-4/12 px-4">
+<div class="post-category mb-4 text-green"><span class="underline-3 style-3 green">Gratis Applicatie</span></div>
+<h2 class="mb-4">Mobility Pulse Laad App</h2>
+<p>Je persoonlijke assistent bij het publiek laden van je elektrische wagen.</p>
+<p>De Mobility Pulse APP geeft je toegang tot meer dan 450.000 laadstations in 22 landen. In slechts drie eenvoudige stappen kun je beginnen met laden:</p>
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-bold transition-all btn-expand bg-brand-blue hover:bg-brand-teal text-white rounded-pill scroll" href="#app">
+<svg fill="currentColor" height="24" style="vertical-align: middle; margin-right: 5px;" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m11.293 17.293 1.414 1.414 5-5-5-5-1.414 1.414 3.586 3.586H6v2h8.586z"></path></svg>
+<span>Lees verder</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!--Block-->
+<div class="absolute w-full px-4">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<div><img alt="" class="mt-n5 p-3" src="https://www.mobilitypulse.com/assets/images/mp-mini-logo.svg"/></div>
+</div>
+</div>
+</div>
+<!--Block-->
+<section class="py-xl-9 py-20 bg-slate-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-wrap -mx-4 text-center">
+<div class="md:w-10/12 px-4 lg:w-7/12 mx-auto relative">
+<h2 class="mb-8 px-xl-6">Scan de <span class="text-gradient gradient-6">QR-code</span>, download de app, maak je profiel aan, you're all set!</h2>
+</div>
+</div>
+<div class="flex flex-wrap -mx-4">
+<div class="col-xxl-11 mx-auto">
+<div class="flex flex-wrap -mx-4 gy-10 gy-lg-0 text-center items-center">
+<div class="md:w-6/12 px-4 lg:w-4/12 mx-auto mb-n10 mb-lg-0">
+<figure class="mx-auto"><img alt="Devices displaying app" src="https://www.mobilitypulse.com/assets/images/msp/devices4.png" srcset="https://www.mobilitypulse.com/assets/images/msp/devices4@2x.png 2x"/></figure>
+</div>
+<div class="w-full d-lg-none"></div>
+<div class="md:w-6/12 px-4 lg:w-4/12 order-lg-first">
+<div class="mb-8">
+<div class="icon-xl icon-shape rounded-full bg-brand-blue border border-slate-200 border-gray-200 border-4 text-white-stable font-semibold text-3xl">01</div>
+<h4 class="fs-20">Download de App</h4>
+<p class="mb-0 px-xl-7">
+<strong>Scan de QR-code</strong><br/>
+                of<br/>
+<div class="flex justify-center gap-2 mt-2">
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-bold transition-all btn-soft-dark btn-sm btn-icon btn-icon-start rounded-lg d-inline-flex" href="https://www.evc-net.com/app/ecq/provider/Mobility%20Pulse">
+<svg fill="currentColor" height="20" style="margin-right: 6px;" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M19.665 16.78c-1.127 1.691-2.312 3.376-4.075 3.411-1.636.033-2.164-1.002-4.04-1.002-1.921 0-2.52 1.025-4.108.991-1.638-.035-2.884-1.685-3.953-3.296-2.169-3.267-3.832-9.255.053-13.256 1.93-1.991 5.378-1.661 7.054-.916.945.42 2.219.467 2.964.448 3.32-.239 5.86-2.887 6.138-3.033-.035.125-3.415 1.34-4.321 4.148-.795 2.458 1.979 4.312 2.128 4.435.033.05-1.342 3.523-2.138 4.67zM15.42 2.82c.866-1.096 1.451-2.618 1.285-4.14-1.25.053-2.76.866-3.655 1.964-.803.967-1.507 2.52-1.317 4.004 1.396.111 2.822-.731 3.687-1.828z"></path></svg>
+                        App Store
+                    </a>
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-bold transition-all btn-navy btn-sm btn-icon btn-icon-end rounded-lg d-inline-flex" href="https://www.evc-net.com/app/ecq/provider/Mobility%20Pulse">
+                        Google Play
+                        <svg fill="currentColor" height="20" style="margin-left: 6px;" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 3.753v16.494L18.736 12 4.5 3.753zM15.65 10.22 17.5 12l-1.85 1.776L11.5 12l4.15-1.78zM5.5 18.068l4.89-4.72 2.76 2.65L5.5 18.068zm4.89-10.636L5.5 5.932v12.136l4.89-4.72.766-.736-.766-.736zM13.15 13.78l1.397 1.34L7.143 19.38l6.007-5.6zm0-3.56L7.143 4.62l7.404 4.26-1.397 1.34z"></path></svg>
+</a>
+</div>
+</p>
+</div>
+<div>
+<div class="icon-xl icon-shape rounded-full bg-brand-blue border border-slate-200 border-gray-200 border-4 text-white-stable font-semibold text-3xl">02</div>
+<h4 class="fs-20">Scan QR-code</h4>
+<p class="mb-0 px-xl-7">Voer je laadpasnummer in, scan de QR-code of selecteer een link die naar je is verzonden.</p>
+</div>
+</div>
+<div class="md:w-6/12 px-4 lg:w-4/12">
+<div class="mb-8">
+<div class="icon-xl icon-shape rounded-full bg-brand-blue border border-slate-200 border-gray-200 border-4 text-white-stable font-semibold text-3xl">03</div>
+<h4 class="fs-20">Snelle Registratie</h4>
+<p class="mb-0 px-xl-7">Log in met een bestaand account, registreer als nieuwe gebruiker of sla over voor toegang als gastgebruiker.</p>
+</div>
+<div>
+<div class="icon-xl icon-shape rounded-full bg-brand-blue border border-slate-200 border-gray-200 border-4 text-white-stable font-semibold text-3xl">04</div>
+<h4 class="fs-20">Volledige Controle</h4>
+<p class="mb-0 px-xl-7">Stel de gewenste filters in en begin met het laden van uw voertuig!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Block-->
+<div class="absolute w-full px-4">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<div><img alt="" class="mt-n5 p-3" src="https://www.mobilitypulse.com/assets/images/mp-mini-logo.svg"/></div>
+</div>
+</div>
+</div>
+<!--Block-->
+<section class="py-xl-9 py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-wrap -mx-4">
+<div class="lg:w-4/12 px-4 pb-12 align-self-center">
+<div class="post-category mb-4 text-green"><span class="underline-3 style-3 green">Gratis Laadpas</span> &amp; Geen abonnementskost</div>
+<h2 class="mb-4">Mobility Pulse Laadpas</h2>
+<p>De Mobility Pulse Laadpas geeft je toegang tot meer dan 450.000 laadstations in 22 landen.</p>
+<p>Wenst u meer dan één pas te verkrijgen, dan kan u dit steeds in het opmerkingenveld vermelden.</p>
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-bold transition-all bg-brand-blue hover:bg-brand-teal text-white rounded-pill mt-2" href="https://www.mobilitypulse.com/contact">Contacteer ons</a>
+</div>
+<div class="lg:w-7/12 px-4 offset-lg-1 align-self-end">
+<figure><img alt="Mobility Pulse card usage" class="max-w-full h-auto" src="https://www.mobilitypulse.com/assets/images/msp/f1.png" srcset="https://www.mobilitypulse.com/assets/images/msp/f1@2x.png 2x"/></figure>
+</div>
+</div>
+</div>
+</section></main>
+<!-- FOOTER -->
+<footer class="bg-white border-t border-slate-200/60 pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+<!-- Brand & Address -->
+<div class="lg:col-span-2">
+<a class="flex items-center gap-2.5 mb-6" href="#">
+<div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg">
+<i class="fas fa-bolt"></i>
+</div>
+<span class="font-bold text-2xl tracking-tight text-slate-900">The Charge Grid</span>
+</a>
+<p class="text-slate-500 mb-6 max-w-sm">Leading the transition to sustainable energy with smart, reliable EV charging infrastructure.</p>
+<address class="not-italic text-slate-600 space-y-1 text-sm font-medium">
+<strong>C&amp;H EUROPE BV</strong><br/>
+                        BE 0729.731.988<br/>
+<a class="hover:text-brand-blue transition-colors block mt-2" href="mailto:info@thechargegrid.com">info@thechargegrid.com</a>
+<a class="hover:text-brand-blue transition-colors block" href="tel:+32468196788">+32 468 19.67.88</a>
+</address>
+</div>
+<!-- Links 1 -->
+<div>
+<h4 class="font-bold text-slate-900 mb-6 text-lg">Products &amp; Services</h4>
+<ul class="space-y-3.5 text-sm font-medium text-slate-500">
+<li><a class="hover:text-brand-blue transition-colors" href="#">Charging points</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">CPO - Charge management</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">MSP - Chargecard &amp; App</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">Whitelabel</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">EMS - Energy System</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">Solar &amp; Battery</a></li>
+</ul>
+</div>
+<!-- Links 2 -->
+<div>
+<h4 class="font-bold text-slate-900 mb-6 text-lg">Support</h4>
+<ul class="space-y-3.5 text-sm font-medium text-slate-500">
+<li><a class="hover:text-brand-blue transition-colors" href="#">Browse EV cars</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">Certified Chargers</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">Downloads</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">Knowledge Base</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">Tools &amp; Calculators</a></li>
+</ul>
+</div>
+<!-- Links 3 -->
+<div>
+<h4 class="font-bold text-slate-900 mb-6 text-lg">Company</h4>
+<ul class="space-y-3.5 text-sm font-medium text-slate-500">
+<li><a class="hover:text-brand-blue transition-colors" href="#">About us</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">Jobs</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-brand-blue transition-colors" href="#">Sitemap</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex gap-6 text-sm font-medium text-slate-500">
+<a class="hover:text-slate-900 transition-colors" href="#">Terms of Use</a>
+<a class="hover:text-slate-900 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-slate-900 transition-colors" href="#">Cookie Policy</a>
+</div>
+<div class="text-sm font-medium text-slate-400">
+                    © 2026 The Charge Grid. All rights reserved. Made by WebDotPulse
+                </div>
+</div>
+</div>
+</footer>
+<!-- COOKIE BANNER -->
+<div class="fixed bottom-6 left-4 right-4 md:left-6 md:right-auto md:w-96 bg-white border border-slate-200 p-6 rounded-2xl shadow-2xl z-[100] transform transition-transform duration-500 translate-y-[150%]" id="cookie-banner">
+<div class="flex items-start gap-6 mb-8">
+<div class="text-3xl bg-slate-50 p-2 rounded-xl">🍪</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-1">Cookie Preferences</h4>
+<p class="text-xs text-slate-500 leading-relaxed">We use cookies to help personalize content, tailor and measure ads, and provide a better experience.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="flex-1 bg-slate-900 hover:bg-slate-800 text-white py-2.5 rounded-xl text-sm font-bold transition-colors" id="accept-cookies">Accept All</button>
+<button class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 py-2.5 rounded-xl text-sm font-bold transition-colors" id="reject-cookies">Reject</button>
+</div>
+</div>
+<!-- SCRIPTS -->
+<script src="./js/main.js"></script>
+</body>
+</html>

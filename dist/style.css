@@ -2397,8 +2397,8 @@ body {
     padding-bottom: 8rem;
   }
 
-  .lg\:pb-0 {
-    padding-bottom: 0px;
+  .lg\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .lg\:pt-48 {
