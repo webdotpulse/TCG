@@ -30,6 +30,10 @@ module.exports = {
         slideInRight: {
           '0%': { transform: 'translateX(50px)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        'progress-bar-stripes': {
+          'from': { backgroundPosition: '1rem 0' },
+          'to': { backgroundPosition: '0 0' }
         }
       }
     }

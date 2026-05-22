@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Variant 3 | The Charge Grid</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased relative overflow-x-hidden">
+
+    <!-- Transparent Navbar -->
+    <nav class="absolute w-full z-50 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white font-bold text-xl backdrop-blur-sm border border-white/20">
+                    <i class="fas fa-bolt text-brand-teal"></i>
+                </div>
+                <span class="font-bold text-xl tracking-tight text-white">The Charge Grid</span>
+            </a>
+            <div class="hidden md:flex gap-8 items-center bg-white/5 px-8 py-3 rounded-full backdrop-blur-md border border-white/10">
+                <a href="#" class="text-white text-sm font-semibold hover:text-brand-teal transition-colors">Platform</a>
+                <a href="#" class="text-white text-sm font-semibold hover:text-brand-teal transition-colors">Hardware</a>
+                <a href="#" class="text-white text-sm font-semibold hover:text-brand-teal transition-colors">Network</a>
+            </div>
+            <a href="#" class="px-6 py-2.5 bg-brand-teal text-white font-bold rounded-lg hover:bg-white hover:text-brand-teal transition-all shadow-lg">Start Free Trial</a>
+        </div>
+    </nav>
+
+    <!-- CENTERED HERO WITH FLOATING UI -->
+    <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+        <!-- Abstract Background Image/Gradient -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900/90 to-slate-900 z-10"></div>
+            <!-- Simulating a large background image with gradients -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,156,158,0.3)_0%,transparent_70%)] z-0"></div>
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIvPjxwaGF0aCBkPSJNMCAwaDF2NDBIMHoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48cGF0aCBkPSJNMCAwaDQwdjFIMHoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-20 z-0"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 relative z-20 text-center">
+
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white font-medium text-sm mb-8 backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
+                New: AI-Powered Load Balancing
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white mb-8 tracking-tight leading-tight drop-shadow-2xl">
+                The Operating System for <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-brand-teal">EV Charging.</span>
+            </h1>
+
+            <p class="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Connect hardware, manage tariffs, and monitor your entire fleet from a single, beautiful dashboard.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-20">
+                <a href="#" class="px-8 py-4 bg-brand-teal text-white font-bold rounded-xl shadow-[0_0_30px_rgba(0,156,158,0.4)] hover:shadow-[0_0_40px_rgba(0,156,158,0.6)] hover:-translate-y-1 transition-all text-lg">Create Free Account</a>
+                <a href="#" class="px-8 py-4 bg-white/10 text-white font-bold rounded-xl border border-white/20 hover:bg-white/20 backdrop-blur-md transition-all text-lg">Talk to Sales</a>
+            </div>
+
+            <!-- Floating UI Elements Mockup -->
+            <div class="relative max-w-4xl mx-auto">
+                <!-- Main Dashboard Window -->
+                <div class="relative bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden z-10 transform perspective-1000 rotate-x-12 translate-y-10 group hover:rotate-x-0 hover:translate-y-0 transition-all duration-700 ease-out">
+                    <div class="h-8 bg-slate-800 border-b border-slate-700 flex items-center px-4 gap-2">
+                        <div class="w-3 h-3 rounded-full bg-slate-600"></div>
+                        <div class="w-3 h-3 rounded-full bg-slate-600"></div>
+                        <div class="w-3 h-3 rounded-full bg-slate-600"></div>
+                    </div>
+                    <div class="p-4 grid grid-cols-3 gap-4 bg-slate-900 opacity-80 group-hover:opacity-100 transition-opacity duration-700">
+                        <div class="h-24 bg-slate-800 rounded-lg border border-slate-700"></div>
+                        <div class="h-24 bg-brand-teal/20 rounded-lg border border-brand-teal/30"></div>
+                        <div class="h-24 bg-slate-800 rounded-lg border border-slate-700"></div>
+                        <div class="col-span-3 h-48 bg-slate-800 rounded-lg border border-slate-700"></div>
+                    </div>
+                </div>
+
+                <!-- Floating Element 1 -->
+                <div class="absolute -left-10 top-10 bg-white/10 backdrop-blur-lg border border-white/20 p-4 rounded-xl shadow-2xl z-20 animate-float">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-teal rounded-full flex items-center justify-center text-white"><i class="fas fa-check"></i></div>
+                        <div class="text-left">
+                            <div class="text-sm font-bold text-white">Station Online</div>
+                            <div class="text-xs text-slate-300">Paris, FR</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Element 2 -->
+                <div class="absolute -right-8 bottom-20 bg-slate-800/80 backdrop-blur-lg border border-slate-600 p-4 rounded-xl shadow-2xl z-20 animate-float" style="animation-delay: 2s;">
+                    <div class="flex flex-col gap-2">
+                        <div class="text-xs font-bold text-slate-400 uppercase">Revenue Today</div>
+                        <div class="text-2xl font-black text-brand-teal">€4,250</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
