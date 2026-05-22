@@ -2,37 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-mp-teal hover:bg-mp-teal-light transition-colors duration-300;
+@layer base {
+  body { font-family: 'Inter', sans-serif; }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: #f8fafc; }
+  ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+}
+
+@layer utilities {
+  /* Navigation Utilities */
+  .glass-nav {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
   }
-  .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-mp-teal text-base font-medium rounded-md text-mp-teal bg-transparent hover:bg-mp-teal hover:text-white transition-colors duration-300;
+
+  /* Dropdown transition */
+  .group:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
   }
-}
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  @apply text-gray-800 bg-white font-sans;
-}
-
-/* Custom scrollbar for mega menu or other elements if needed */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #009c9e;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #019d9f;
+  /* Background Glow - Updated to brand-blue */
+  .bg-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(41,159,245,0.15) 0%, rgba(255,255,255,0) 70%);
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      pointer-events: none;
+  }
 }
