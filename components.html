@@ -28,27 +28,130 @@
                 <p class="text-lg text-slate-600 max-w-2xl mx-auto">A collection of reusable, beautifully designed UI elements and snippets built with Tailwind CSS.</p>
             </div>
 
+            <!-- Navbars -->
+            <section>
+                <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Navbars</h2>
+                <div class="space-y-6">
+                    <!-- Light Navbar -->
+                    <nav class="bg-slate-100 rounded-xl px-5 py-3 flex justify-between items-center shadow-sm">
+                        <a href="#" class="font-bold text-xl text-slate-900">Navbar</a>
+                        <div class="hidden md:flex space-x-4">
+                            <a href="#" class="text-slate-900 font-medium">Home</a>
+                            <a href="#" class="text-slate-500 hover:text-slate-900">Features</a>
+                            <a href="#" class="text-slate-500 hover:text-slate-900">Pricing</a>
+                            <a href="#" class="text-slate-500 hover:text-slate-900">About</a>
+                        </div>
+                        <form class="hidden md:flex">
+                            <input class="px-3 py-1.5 rounded-l-lg border border-slate-300 focus:outline-none focus:border-brand-blue text-sm" type="search" placeholder="Search">
+                            <button class="bg-slate-900 text-white px-3 py-1.5 rounded-r-lg text-sm hover:bg-slate-800" type="submit">Search</button>
+                        </form>
+                    </nav>
+
+                    <!-- Dark Navbar -->
+                    <nav class="bg-slate-900 rounded-xl px-5 py-3 flex justify-between items-center shadow-sm">
+                        <a href="#" class="font-bold text-xl text-white">Navbar</a>
+                        <div class="hidden md:flex space-x-4">
+                            <a href="#" class="text-white font-medium">Home</a>
+                            <a href="#" class="text-slate-300 hover:text-white">Features</a>
+                            <a href="#" class="text-slate-300 hover:text-white">Pricing</a>
+                            <a href="#" class="text-slate-300 hover:text-white">About</a>
+                        </div>
+                        <form class="hidden md:flex">
+                            <input class="px-3 py-1.5 rounded-l-lg border border-slate-700 bg-slate-800 text-white focus:outline-none focus:border-brand-blue text-sm placeholder-slate-400" type="search" placeholder="Search">
+                            <button class="bg-brand-blue text-white px-3 py-1.5 rounded-r-lg text-sm hover:bg-brand-teal" type="submit">Search</button>
+                        </form>
+                    </nav>
+
+                    <!-- Primary Navbar -->
+                    <nav class="bg-brand-blue rounded-xl px-5 py-3 flex justify-between items-center shadow-sm">
+                        <a href="#" class="font-bold text-xl text-white">Navbar</a>
+                        <div class="hidden md:flex space-x-4">
+                            <a href="#" class="text-white font-medium">Home</a>
+                            <a href="#" class="text-white/80 hover:text-white">Features</a>
+                            <a href="#" class="text-white/80 hover:text-white">Pricing</a>
+                            <a href="#" class="text-white/80 hover:text-white">About</a>
+                        </div>
+                        <form class="hidden md:flex">
+                            <input class="px-3 py-1.5 rounded-l-lg border border-brand-teal bg-brand-teal/20 text-white focus:outline-none focus:border-white text-sm placeholder-white/70" type="search" placeholder="Search">
+                            <button class="bg-white text-brand-blue px-3 py-1.5 rounded-r-lg text-sm hover:bg-slate-100 font-medium" type="submit">Search</button>
+                        </form>
+                    </nav>
+                </div>
+            </section>
+
             <!-- Buttons -->
             <section>
                 <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Buttons</h2>
-                <div class="flex flex-wrap gap-4">
+                <div class="flex flex-wrap gap-4 mb-6">
                     <button class="bg-brand-blue hover:bg-brand-teal text-white font-medium py-2.5 px-6 rounded-xl transition-colors shadow-lg shadow-brand-blue/20">Primary</button>
-                    <button class="bg-slate-900 hover:bg-slate-800 text-white font-medium py-2.5 px-6 rounded-xl transition-colors">Secondary</button>
-                    <button class="bg-white border border-slate-200 hover:border-brand-blue text-slate-700 hover:text-brand-blue font-medium py-2.5 px-6 rounded-xl transition-colors">Outline</button>
-                    <button class="text-brand-blue hover:text-brand-teal font-medium py-2.5 px-4 transition-colors">Ghost Button</button>
-                    <button class="bg-brand-blue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-brand-teal transition-colors shadow-lg shadow-brand-blue/20"><i class="fas fa-plus"></i></button>
+                    <button class="bg-slate-500 hover:bg-slate-600 text-white font-medium py-2.5 px-6 rounded-xl transition-colors">Secondary</button>
+                    <button class="bg-green-500 hover:bg-green-600 text-white font-medium py-2.5 px-6 rounded-xl transition-colors shadow-lg shadow-green-500/20">Success</button>
+                    <button class="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-2.5 px-6 rounded-xl transition-colors shadow-lg shadow-cyan-500/20">Info</button>
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2.5 px-6 rounded-xl transition-colors shadow-lg shadow-yellow-500/20">Warning</button>
+                    <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2.5 px-6 rounded-xl transition-colors shadow-lg shadow-red-500/20">Danger</button>
+                    <button class="bg-slate-100 hover:bg-slate-200 text-slate-900 font-medium py-2.5 px-6 rounded-xl transition-colors">Light</button>
+                    <button class="bg-slate-900 hover:bg-slate-800 text-white font-medium py-2.5 px-6 rounded-xl transition-colors">Dark</button>
+                    <button class="text-brand-blue hover:underline font-medium py-2.5 px-6 transition-colors">Link</button>
+                </div>
+
+                <h3 class="text-lg font-bold text-slate-900 mb-4 mt-6">Outline Buttons</h3>
+                <div class="flex flex-wrap gap-4 mb-6">
+                    <button class="bg-transparent border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-medium py-2 px-5 rounded-xl transition-colors">Primary</button>
+                    <button class="bg-transparent border-2 border-slate-500 text-slate-500 hover:bg-slate-500 hover:text-white font-medium py-2 px-5 rounded-xl transition-colors">Secondary</button>
+                    <button class="bg-transparent border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white font-medium py-2 px-5 rounded-xl transition-colors">Success</button>
+                    <button class="bg-transparent border-2 border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-white font-medium py-2 px-5 rounded-xl transition-colors">Info</button>
+                    <button class="bg-transparent border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white font-medium py-2 px-5 rounded-xl transition-colors">Warning</button>
+                    <button class="bg-transparent border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-medium py-2 px-5 rounded-xl transition-colors">Danger</button>
+                    <button class="bg-transparent border-2 border-slate-300 text-slate-700 hover:bg-slate-300 font-medium py-2 px-5 rounded-xl transition-colors">Light</button>
+                    <button class="bg-transparent border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white font-medium py-2 px-5 rounded-xl transition-colors">Dark</button>
+                </div>
+
+                <h3 class="text-lg font-bold text-slate-900 mb-4 mt-6">Sizes & Groups</h3>
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="flex items-center gap-4">
+                        <button class="bg-brand-blue hover:bg-brand-teal text-white font-medium py-3 px-8 text-lg rounded-xl transition-colors">Large button</button>
+                        <button class="bg-brand-blue hover:bg-brand-teal text-white font-medium py-2.5 px-6 rounded-xl transition-colors">Default button</button>
+                        <button class="bg-brand-blue hover:bg-brand-teal text-white font-medium py-1.5 px-4 text-sm rounded-lg transition-colors">Small button</button>
+                    </div>
+
+                    <div class="inline-flex rounded-xl shadow-sm" role="group">
+                      <button type="button" class="px-5 py-2.5 text-sm font-medium text-slate-900 bg-white border border-slate-200 rounded-l-xl hover:bg-slate-100 hover:text-brand-blue focus:z-10 focus:ring-2 focus:ring-brand-blue">
+                        Left
+                      </button>
+                      <button type="button" class="px-5 py-2.5 text-sm font-medium text-slate-900 bg-white border-t border-b border-slate-200 hover:bg-slate-100 hover:text-brand-blue focus:z-10 focus:ring-2 focus:ring-brand-blue">
+                        Middle
+                      </button>
+                      <button type="button" class="px-5 py-2.5 text-sm font-medium text-slate-900 bg-white border border-slate-200 rounded-r-xl hover:bg-slate-100 hover:text-brand-blue focus:z-10 focus:ring-2 focus:ring-brand-blue">
+                        Right
+                      </button>
+                    </div>
                 </div>
             </section>
 
             <!-- Badges -->
             <section>
                 <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Badges</h2>
-                <div class="flex flex-wrap gap-3">
-                    <span class="bg-brand-blue/10 text-brand-blue text-xs font-bold px-2.5 py-1 rounded-md">Default</span>
-                    <span class="bg-green-100 text-green-700 text-xs font-bold px-2.5 py-1 rounded-md">Success</span>
-                    <span class="bg-yellow-100 text-yellow-700 text-xs font-bold px-2.5 py-1 rounded-md">Warning</span>
-                    <span class="bg-red-100 text-red-700 text-xs font-bold px-2.5 py-1 rounded-md">Danger</span>
-                    <span class="bg-slate-100 text-slate-700 text-xs font-bold px-2.5 py-1 rounded-full border border-slate-200">Pill Outline</span>
+                <div class="space-y-4">
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-brand-blue text-white text-xs font-bold px-2.5 py-1 rounded-md">Primary</span>
+                        <span class="bg-slate-500 text-white text-xs font-bold px-2.5 py-1 rounded-md">Secondary</span>
+                        <span class="bg-green-500 text-white text-xs font-bold px-2.5 py-1 rounded-md">Success</span>
+                        <span class="bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-md">Danger</span>
+                        <span class="bg-yellow-500 text-white text-xs font-bold px-2.5 py-1 rounded-md">Warning</span>
+                        <span class="bg-cyan-500 text-white text-xs font-bold px-2.5 py-1 rounded-md">Info</span>
+                        <span class="bg-slate-100 text-slate-900 text-xs font-bold px-2.5 py-1 rounded-md">Light</span>
+                        <span class="bg-slate-900 text-white text-xs font-bold px-2.5 py-1 rounded-md">Dark</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-brand-blue text-white text-xs font-bold px-3 py-1 rounded-full">Primary</span>
+                        <span class="bg-slate-500 text-white text-xs font-bold px-3 py-1 rounded-full">Secondary</span>
+                        <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">Success</span>
+                        <span class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">Danger</span>
+                        <span class="bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full">Warning</span>
+                        <span class="bg-cyan-500 text-white text-xs font-bold px-3 py-1 rounded-full">Info</span>
+                        <span class="bg-slate-100 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">Light</span>
+                        <span class="bg-slate-900 text-white text-xs font-bold px-3 py-1 rounded-full">Dark</span>
+                    </div>
                 </div>
             </section>
 
@@ -56,24 +159,116 @@
             <section>
                 <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Alerts</h2>
                 <div class="space-y-4 max-w-2xl">
-                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-xl">
-                        <div class="flex">
-                            <div class="flex-shrink-0"><i class="fas fa-info-circle text-blue-500"></i></div>
-                            <div class="ml-3"><p class="text-sm text-blue-700">This is an informational alert message.</p></div>
+                    <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-xl flex items-center justify-between">
+                        <div>
+                            <h4 class="text-red-800 font-bold mb-1">Warning!</h4>
+                            <p class="text-sm text-red-700">Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="font-bold underline">vel scelerisque nisl</a> consectetur et.</p>
                         </div>
                     </div>
-                    <div class="bg-green-50 border border-green-200 p-4 rounded-xl">
-                        <div class="flex">
-                            <div class="flex-shrink-0"><i class="fas fa-check-circle text-green-500"></i></div>
-                            <div class="ml-3"><p class="text-sm font-medium text-green-800">Success! Your action was completed.</p></div>
+                    <div class="bg-red-50 text-red-800 p-4 rounded-xl flex items-center justify-between">
+                        <p class="text-sm"><span class="font-bold">Oh snap!</span> <a href="#" class="underline">Change a few things up</a> and try submitting again.</p>
+                        <button class="text-red-500 hover:text-red-700"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="bg-green-50 text-green-800 p-4 rounded-xl flex items-center justify-between">
+                        <p class="text-sm"><span class="font-bold">Well done!</span> You successfully read <a href="#" class="underline">this important alert message</a>.</p>
+                        <button class="text-green-500 hover:text-green-700"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="bg-cyan-50 text-cyan-800 p-4 rounded-xl flex items-center justify-between">
+                        <p class="text-sm"><span class="font-bold">Heads up!</span> This <a href="#" class="underline">alert needs your attention</a>, but it's not super important.</p>
+                        <button class="text-cyan-500 hover:text-cyan-700"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Bars -->
+            <section>
+                <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Progress Bars</h2>
+                <div class="space-y-6 max-w-2xl">
+                    <h3 class="text-lg font-bold text-slate-800 mb-2">Basic</h3>
+                    <div class="w-full bg-slate-200 rounded-full h-4 overflow-hidden">
+                      <div class="bg-brand-blue h-4" style="width: 25%"></div>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-800 mb-2 mt-6">Contextual alternatives</h3>
+                    <div class="space-y-4">
+                        <div class="w-full bg-slate-200 rounded-full h-4 overflow-hidden">
+                          <div class="bg-green-500 h-4" style="width: 25%"></div>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-4 overflow-hidden">
+                          <div class="bg-cyan-500 h-4" style="width: 50%"></div>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-4 overflow-hidden">
+                          <div class="bg-yellow-500 h-4" style="width: 75%"></div>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-4 overflow-hidden">
+                          <div class="bg-red-500 h-4" style="width: 100%"></div>
                         </div>
                     </div>
-                    <div class="bg-red-50 p-4 rounded-xl flex items-start gap-3">
-                         <i class="fas fa-exclamation-triangle text-red-500 mt-0.5"></i>
-                         <div>
-                             <h3 class="text-sm font-medium text-red-800">Error encountered</h3>
-                             <p class="text-sm text-red-700 mt-1">Please check your inputs and try again.</p>
-                         </div>
+
+                    <h3 class="text-lg font-bold text-slate-800 mb-2 mt-6">Multiple bars</h3>
+                    <div class="w-full bg-slate-200 rounded-full h-4 flex overflow-hidden">
+                      <div class="bg-brand-blue h-4" style="width: 15%"></div>
+                      <div class="bg-green-500 h-4" style="width: 30%"></div>
+                      <div class="bg-cyan-500 h-4" style="width: 20%"></div>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-800 mb-2 mt-6">Striped / Animated</h3>
+                    <div class="w-full bg-slate-200 rounded-full h-4 overflow-hidden">
+                      <div class="bg-brand-blue h-4 relative overflow-hidden" style="width: 75%">
+                          <div class="absolute inset-0 bg-[linear-gradient(45deg,rgba(255,255,255,.15)_25%,transparent_25%,transparent_50%,rgba(255,255,255,.15)_50%,rgba(255,255,255,.15)_75%,transparent_75%,transparent)] bg-[length:1rem_1rem] animate-[progress-bar-stripes_1s_linear_infinite]"></div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- List groups -->
+            <section>
+                <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">List groups</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <ul class="bg-white border border-slate-200 rounded-xl overflow-hidden text-sm text-slate-900">
+                        <li class="px-4 py-3 border-b border-slate-200 flex justify-between items-center">
+                            Cras justo odio
+                            <span class="bg-brand-blue text-white text-xs font-bold px-2 py-0.5 rounded-full">14</span>
+                        </li>
+                        <li class="px-4 py-3 border-b border-slate-200 flex justify-between items-center">
+                            Dapibus ac facilisis in
+                            <span class="bg-brand-blue text-white text-xs font-bold px-2 py-0.5 rounded-full">2</span>
+                        </li>
+                        <li class="px-4 py-3 flex justify-between items-center">
+                            Morbi leo risus
+                            <span class="bg-brand-blue text-white text-xs font-bold px-2 py-0.5 rounded-full">1</span>
+                        </li>
+                    </ul>
+
+                    <div class="bg-white border border-slate-200 rounded-xl overflow-hidden text-sm">
+                        <a href="#" class="block px-4 py-3 border-b border-slate-200 bg-brand-blue text-white font-medium hover:bg-brand-blue/90 transition-colors">
+                            Cras justo odio
+                        </a>
+                        <a href="#" class="block px-4 py-3 border-b border-slate-200 text-slate-900 hover:bg-slate-50 transition-colors">
+                            Dapibus ac facilisis in
+                        </a>
+                        <a href="#" class="block px-4 py-3 text-slate-900 hover:bg-slate-50 transition-colors">
+                            Morbi leo risus
+                        </a>
+                    </div>
+
+                    <div class="bg-white border border-slate-200 rounded-xl overflow-hidden text-sm">
+                        <div class="px-4 py-3 border-b border-slate-200 hover:bg-slate-50 transition-colors cursor-pointer bg-brand-blue text-white">
+                            <div class="flex w-full justify-between mb-1">
+                                <h5 class="font-bold text-base">List group item heading</h5>
+                                <small>3 days ago</small>
+                            </div>
+                            <p class="text-white/80">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small class="text-white/80">Donec id elit non mi porta.</small>
+                        </div>
+                        <div class="px-4 py-3 border-b border-slate-200 hover:bg-slate-50 transition-colors cursor-pointer">
+                            <div class="flex w-full justify-between mb-1">
+                                <h5 class="font-bold text-slate-900 text-base">List group item heading</h5>
+                                <small class="text-slate-500">3 days ago</small>
+                            </div>
+                            <p class="text-slate-600 mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small class="text-slate-500">Donec id elit non mi porta.</small>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -113,21 +308,233 @@
             <!-- Form Elements -->
             <section>
                 <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Form Elements</h2>
-                <div class="max-w-md bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
-                    <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
-                        <input type="email" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors" placeholder="you@example.com">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-1">Select Option</label>
-                        <select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px_12px] bg-no-repeat bg-[position:right_1rem_center]">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
-                    </div>
-                    <div class="flex items-center gap-2 pt-2">
-                        <input type="checkbox" id="terms" class="w-4 h-4 text-brand-blue rounded border-slate-300 focus:ring-brand-blue">
-                        <label for="terms" class="text-sm text-slate-600">I agree to the terms</label>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-6">
+                    <fieldset>
+                        <legend class="text-lg font-semibold text-slate-900 mb-4">Legend</legend>
+
+                        <div class="space-y-4">
+                            <!-- Email Input -->
+                            <div class="flex flex-col gap-1 md:flex-row md:items-center">
+                                <label class="w-full md:w-1/4 text-sm font-medium text-slate-700">Email</label>
+                                <div class="w-full md:w-3/4">
+                                    <input type="email" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors" placeholder="email@example.com" readonly value="email@example.com">
+                                </div>
+                            </div>
+
+                            <!-- Email Input with Help Text -->
+                            <div class="flex flex-col gap-1 md:flex-row md:items-start pt-2">
+                                <label class="w-full md:w-1/4 text-sm font-medium text-slate-700 mt-2">Email address</label>
+                                <div class="w-full md:w-3/4">
+                                    <input type="email" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors" placeholder="Enter email">
+                                    <p class="text-xs text-slate-500 mt-1">We'll never share your email with anyone else.</p>
+                                </div>
+                            </div>
+
+                            <!-- Password Input -->
+                            <div class="flex flex-col gap-1 md:flex-row md:items-center pt-2">
+                                <label class="w-full md:w-1/4 text-sm font-medium text-slate-700">Password</label>
+                                <div class="w-full md:w-3/4">
+                                    <input type="password" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors" placeholder="Password">
+                                </div>
+                            </div>
+
+                            <!-- Select Options -->
+                            <div class="flex flex-col gap-1 md:flex-row md:items-center pt-2">
+                                <label class="w-full md:w-1/4 text-sm font-medium text-slate-700">Example select</label>
+                                <div class="w-full md:w-3/4">
+                                    <select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px_12px] bg-no-repeat bg-[position:right_1rem_center]">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Disabled Select -->
+                            <div class="flex flex-col gap-1 md:flex-row md:items-center pt-2">
+                                <label class="w-full md:w-1/4 text-sm font-medium text-slate-400">Example disabled select</label>
+                                <div class="w-full md:w-3/4">
+                                    <select disabled class="w-full bg-slate-100 border border-slate-200 text-slate-400 rounded-xl px-4 py-2.5 cursor-not-allowed appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px_12px] bg-no-repeat bg-[position:right_1rem_center]">
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Multiple Select -->
+                            <div class="flex flex-col gap-1 md:flex-row md:items-start pt-2">
+                                <label class="w-full md:w-1/4 text-sm font-medium text-slate-700 mt-2">Example multiple select</label>
+                                <div class="w-full md:w-3/4">
+                                    <select multiple class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors">
+                                        <option class="py-1">1</option>
+                                        <option class="py-1">2</option>
+                                        <option class="py-1">3</option>
+                                        <option class="py-1">4</option>
+                                        <option class="py-1">5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Textarea -->
+                            <div class="flex flex-col gap-1 md:flex-row md:items-start pt-2">
+                                <label class="w-full md:w-1/4 text-sm font-medium text-slate-700 mt-2">Example textarea</label>
+                                <div class="w-full md:w-3/4">
+                                    <textarea rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors resize-y"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- File Input -->
+                            <div class="flex flex-col gap-1 md:flex-row md:items-center pt-2">
+                                <label class="w-full md:w-1/4 text-sm font-medium text-slate-700">Default file input example</label>
+                                <div class="w-full md:w-3/4">
+                                    <input type="file" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-brand-blue/10 file:text-brand-blue hover:file:bg-brand-blue/20 transition-colors">
+                                </div>
+                            </div>
+
+                            <!-- Radio Buttons -->
+                            <fieldset class="flex flex-col gap-2 md:flex-row md:items-start pt-6 border-t border-slate-100 mt-6">
+                                <legend class="w-full md:w-1/4 text-sm font-medium text-slate-700 float-left">Radio buttons</legend>
+                                <div class="w-full md:w-3/4 space-y-3">
+                                    <div class="flex items-start">
+                                        <div class="flex items-center h-5">
+                                            <input id="radio1" name="radios" type="radio" checked class="w-4 h-4 text-brand-blue bg-slate-100 border-slate-300 focus:ring-brand-blue focus:ring-2">
+                                        </div>
+                                        <div class="ml-2 text-sm">
+                                            <label for="radio1" class="font-medium text-slate-900">Option one is this and that&mdash;be sure to include why it's great</label>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex items-center h-5">
+                                            <input id="radio2" name="radios" type="radio" class="w-4 h-4 text-brand-blue bg-slate-100 border-slate-300 focus:ring-brand-blue focus:ring-2">
+                                        </div>
+                                        <div class="ml-2 text-sm">
+                                            <label for="radio2" class="font-medium text-slate-900">Option two can be something else and selecting it will deselect option one</label>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex items-center h-5">
+                                            <input id="radio3" name="radios" type="radio" disabled class="w-4 h-4 text-brand-blue bg-slate-100 border-slate-300 focus:ring-brand-blue focus:ring-2">
+                                        </div>
+                                        <div class="ml-2 text-sm">
+                                            <label for="radio3" class="font-medium text-slate-400">Option three is disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <!-- Checkboxes -->
+                            <fieldset class="flex flex-col gap-2 md:flex-row md:items-start pt-6 border-t border-slate-100">
+                                <legend class="w-full md:w-1/4 text-sm font-medium text-slate-700 float-left">Checkboxes</legend>
+                                <div class="w-full md:w-3/4 space-y-3">
+                                    <div class="flex items-start">
+                                        <div class="flex items-center h-5">
+                                            <input id="check1" type="checkbox" class="w-4 h-4 text-brand-blue bg-slate-100 border-slate-300 rounded focus:ring-brand-blue focus:ring-2">
+                                        </div>
+                                        <div class="ml-2 text-sm">
+                                            <label for="check1" class="font-medium text-slate-900">Default checkbox</label>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex items-center h-5">
+                                            <input id="check2" type="checkbox" checked class="w-4 h-4 text-brand-blue bg-slate-100 border-slate-300 rounded focus:ring-brand-blue focus:ring-2">
+                                        </div>
+                                        <div class="ml-2 text-sm">
+                                            <label for="check2" class="font-medium text-slate-900">Checked checkbox</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <!-- Switches -->
+                            <fieldset class="flex flex-col gap-2 md:flex-row md:items-start pt-6 border-t border-slate-100">
+                                <legend class="w-full md:w-1/4 text-sm font-medium text-slate-700 float-left">Switches</legend>
+                                <div class="w-full md:w-3/4 space-y-3">
+                                    <label class="relative inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-blue/30 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-brand-blue"></div>
+                                        <span class="ml-3 text-sm font-medium text-slate-900">Default switch checkbox input</span>
+                                    </label>
+                                    <br>
+                                    <label class="relative inline-flex items-center cursor-pointer mt-2">
+                                        <input type="checkbox" value="" class="sr-only peer" checked>
+                                        <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-brand-blue/30 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-brand-blue"></div>
+                                        <span class="ml-3 text-sm font-medium text-slate-900">Checked switch checkbox input</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <!-- Ranges -->
+                            <div class="flex flex-col gap-1 md:flex-row md:items-start pt-6 border-t border-slate-100">
+                                <label class="w-full md:w-1/4 text-sm font-medium text-slate-700 mt-2">Ranges</label>
+                                <div class="w-full md:w-3/4 space-y-4 mt-2">
+                                    <div>
+                                        <label for="range1" class="block mb-2 text-sm font-medium text-slate-900">Example range</label>
+                                        <input id="range1" type="range" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-blue">
+                                    </div>
+                                    <div>
+                                        <label for="range2" class="block mb-2 text-sm font-medium text-slate-400">Disabled range</label>
+                                        <input id="range2" type="range" disabled class="w-full h-2 bg-slate-100 rounded-lg appearance-none cursor-not-allowed accent-slate-400">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-6 border-t border-slate-100 mt-6">
+                                <button type="submit" class="bg-brand-blue hover:bg-brand-teal text-white font-medium py-2 px-6 rounded-xl transition-colors shadow-lg shadow-brand-blue/20">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <h3 class="text-lg font-semibold text-slate-900 border-t border-slate-200 pt-6 mt-8 mb-4">Input Variants</h3>
+
+                    <div class="space-y-4">
+                        <!-- Validation States -->
+                        <div>
+                            <input type="text" class="w-full bg-green-50 border border-green-300 text-green-900 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-green-500/50 focus:border-green-500 transition-colors" value="correct value">
+                            <p class="mt-1 text-sm text-green-600">Success! You've done it.</p>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full bg-red-50 border border-red-300 text-red-900 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500 transition-colors" value="wrong value">
+                            <p class="mt-1 text-sm text-red-600">Sorry, that username's taken. Try another?</p>
+                        </div>
+
+                        <!-- Sizes -->
+                        <div>
+                            <input type="text" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-lg focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors" placeholder="Large input">
+                        </div>
+                        <div>
+                            <input type="text" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors" placeholder="Default input">
+                        </div>
+                        <div>
+                            <input type="text" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue transition-colors" placeholder="Small input">
+                        </div>
+
+                        <!-- Addons -->
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Input addons</label>
+                            <div class="flex">
+                              <span class="inline-flex items-center px-4 text-sm text-slate-900 bg-slate-200 border border-r-0 border-slate-300 rounded-l-xl">
+                                $
+                              </span>
+                              <input type="text" class="rounded-none rounded-r-xl bg-slate-50 border border-slate-300 text-slate-900 focus:ring-brand-blue focus:border-brand-blue block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="Amount">
+                              <span class="inline-flex items-center px-4 text-sm text-slate-900 bg-slate-200 border border-l-0 border-slate-300 rounded-r-xl">
+                                .00
+                              </span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Labels -->
+                        <div class="pt-4">
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Floating labels</label>
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-slate-900 bg-transparent border-0 border-b-2 border-slate-300 appearance-none focus:outline-none focus:ring-0 focus:border-brand-blue peer" placeholder=" " required />
+                                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-slate-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-brand-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                            </div>
+                            <div class="relative z-0 w-full group">
+                                <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-slate-900 bg-transparent border-0 border-b-2 border-slate-300 appearance-none focus:outline-none focus:ring-0 focus:border-brand-blue peer" placeholder=" " required />
+                                <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-slate-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-brand-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -174,6 +581,248 @@
                 <div class="flex gap-6">
                     <svg class="animate-spin h-5 w-5 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
                     <svg class="animate-spin h-8 w-8 text-brand-teal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                </div>
+            </section>
+
+            <!-- Typography -->
+            <section>
+                <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Typography</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h1 class="text-5xl font-extrabold text-slate-900">Heading 1</h1>
+                        <h2 class="text-4xl font-bold text-slate-900 mt-2">Heading 2</h2>
+                        <h3 class="text-3xl font-semibold text-slate-900 mt-2">Heading 3</h3>
+                        <h4 class="text-2xl font-medium text-slate-900 mt-2">Heading 4</h4>
+                        <h5 class="text-xl font-medium text-slate-900 mt-2">Heading 5</h5>
+                        <h6 class="text-lg font-medium text-slate-900 mt-2">Heading 6</h6>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-medium text-slate-900">Heading with <span class="text-slate-500">faded secondary text</span></h3>
+                    </div>
+                    <div>
+                        <p class="text-lg text-slate-700 leading-relaxed">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                    </div>
+                    <div>
+                        <p class="text-base text-slate-600 mb-2">Nullam quis risus eget <a href="#" class="text-brand-blue hover:underline">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                        <p class="text-sm text-slate-500 mb-2">This line of text is meant to be treated as fine print.</p>
+                        <p class="font-bold text-slate-900 mb-2">The following is rendered as bold text.</p>
+                        <p class="italic text-slate-700 mb-2">The following is rendered as italicized text.</p>
+                        <p class="text-slate-700">An abbreviation of the word attribute is <abbr title="attribute" class="underline decoration-dotted cursor-help">attr</abbr>.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Emphasis classes</h3>
+                        <div class="space-y-2">
+                            <p class="text-brand-blue">.text-brand-blue</p>
+                            <p class="text-brand-teal">.text-brand-teal</p>
+                            <p class="text-slate-500">.text-slate-500</p>
+                            <p class="text-green-600">.text-green-600</p>
+                            <p class="text-red-600">.text-red-600</p>
+                            <p class="text-yellow-600">.text-yellow-600</p>
+                            <p class="text-cyan-600">.text-cyan-600</p>
+                            <div class="bg-slate-900 p-2 inline-block"><p class="text-white">.text-white</p></div>
+                            <p class="text-slate-900 font-bold">.text-slate-900</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Blockquotes</h3>
+                        <blockquote class="border-l-4 border-slate-300 pl-4 py-2 italic text-slate-700 mb-4">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+                            <footer class="text-sm text-slate-500 mt-2 not-italic">— Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        </blockquote>
+                        <blockquote class="border-l-4 border-brand-blue pl-4 py-2 italic text-brand-blue bg-brand-blue/5 rounded-r-lg">
+                            "Innovation distinguishes between a leader and a follower."
+                            <footer class="text-sm text-brand-blue/70 mt-2 not-italic">— Steve Jobs</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tables -->
+            <section>
+                <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Tables</h2>
+                <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-slate-200">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200">
+                                <th class="p-4 font-semibold text-slate-700">Type</th>
+                                <th class="p-4 font-semibold text-slate-700">Column heading</th>
+                                <th class="p-4 font-semibold text-slate-700">Column heading</th>
+                                <th class="p-4 font-semibold text-slate-700">Column heading</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-200 hover:bg-slate-50">
+                                <td class="p-4 text-slate-600">Default</td>
+                                <td class="p-4 text-slate-600">Column content</td>
+                                <td class="p-4 text-slate-600">Column content</td>
+                                <td class="p-4 text-slate-600">Column content</td>
+                            </tr>
+                            <tr class="bg-brand-blue/10 border-b border-slate-200">
+                                <td class="p-4 text-brand-blue font-medium">Primary</td>
+                                <td class="p-4 text-brand-blue">Column content</td>
+                                <td class="p-4 text-brand-blue">Column content</td>
+                                <td class="p-4 text-brand-blue">Column content</td>
+                            </tr>
+                            <tr class="bg-slate-100 border-b border-slate-200">
+                                <td class="p-4 text-slate-700 font-medium">Secondary</td>
+                                <td class="p-4 text-slate-700">Column content</td>
+                                <td class="p-4 text-slate-700">Column content</td>
+                                <td class="p-4 text-slate-700">Column content</td>
+                            </tr>
+                            <tr class="bg-green-50 border-b border-slate-200">
+                                <td class="p-4 text-green-700 font-medium">Success</td>
+                                <td class="p-4 text-green-700">Column content</td>
+                                <td class="p-4 text-green-700">Column content</td>
+                                <td class="p-4 text-green-700">Column content</td>
+                            </tr>
+                            <tr class="bg-red-50 border-b border-slate-200">
+                                <td class="p-4 text-red-700 font-medium">Danger</td>
+                                <td class="p-4 text-red-700">Column content</td>
+                                <td class="p-4 text-red-700">Column content</td>
+                                <td class="p-4 text-red-700">Column content</td>
+                            </tr>
+                            <tr class="bg-yellow-50 border-b border-slate-200">
+                                <td class="p-4 text-yellow-700 font-medium">Warning</td>
+                                <td class="p-4 text-yellow-700">Column content</td>
+                                <td class="p-4 text-yellow-700">Column content</td>
+                                <td class="p-4 text-yellow-700">Column content</td>
+                            </tr>
+                            <tr class="bg-cyan-50">
+                                <td class="p-4 text-cyan-700 font-medium">Info</td>
+                                <td class="p-4 text-cyan-700">Column content</td>
+                                <td class="p-4 text-cyan-700">Column content</td>
+                                <td class="p-4 text-cyan-700">Column content</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Navs (Tabs, Pills, Breadcrumbs, Pagination) -->
+            <section>
+                <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Navs</h2>
+
+                <h3 class="text-xl font-bold text-slate-800 mb-4 mt-8">Tabs</h3>
+                <div class="border-b border-slate-200">
+                    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-slate-500">
+                        <li class="mr-2">
+                            <a href="#" class="inline-flex items-center justify-center p-4 text-brand-blue border-b-2 border-brand-blue rounded-t-lg active group" aria-current="page">Home</a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-slate-600 hover:border-slate-300 group">Profile</a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-slate-600 hover:border-slate-300 group">Messages</a>
+                        </li>
+                        <li>
+                            <a class="inline-block p-4 text-slate-400 cursor-not-allowed">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-white border border-t-0 border-slate-200 rounded-b-lg">
+                    <p class="text-sm text-slate-500">This is some placeholder content for the Home tab. It's a great place to put some information.</p>
+                </div>
+
+                <h3 class="text-xl font-bold text-slate-800 mb-4 mt-8">Pills</h3>
+                <ul class="flex flex-wrap text-sm font-medium text-center text-slate-500 gap-2">
+                    <li>
+                        <a href="#" class="inline-block px-4 py-2 text-white bg-brand-blue rounded-lg active" aria-current="page">Active</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block px-4 py-2 rounded-lg hover:bg-slate-100 hover:text-slate-900">Link</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block px-4 py-2 rounded-lg hover:bg-slate-100 hover:text-slate-900">Link</a>
+                    </li>
+                    <li>
+                        <a class="inline-block px-4 py-2 text-slate-400 cursor-not-allowed">Disabled</a>
+                    </li>
+                </ul>
+
+                <h3 class="text-xl font-bold text-slate-800 mb-4 mt-8">Breadcrumbs</h3>
+                <nav class="flex px-5 py-3 text-slate-700 border border-slate-200 rounded-lg bg-slate-50" aria-label="Breadcrumb">
+                  <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                      <a href="#" class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-brand-blue">
+                        <i class="fas fa-home mr-2.5"></i> Home
+                      </a>
+                    </li>
+                    <li>
+                      <div class="flex items-center">
+                        <i class="fas fa-chevron-right text-slate-400 text-xs mx-1"></i>
+                        <a href="#" class="ml-1 text-sm font-medium text-slate-700 hover:text-brand-blue md:ml-2">Library</a>
+                      </div>
+                    </li>
+                    <li aria-current="page">
+                      <div class="flex items-center">
+                        <i class="fas fa-chevron-right text-slate-400 text-xs mx-1"></i>
+                        <span class="ml-1 text-sm font-medium text-slate-500 md:ml-2">Data</span>
+                      </div>
+                    </li>
+                  </ol>
+                </nav>
+
+                <h3 class="text-xl font-bold text-slate-800 mb-4 mt-8">Pagination</h3>
+                <nav aria-label="Page navigation example">
+                  <ul class="inline-flex items-center -space-x-px">
+                    <li>
+                      <a href="#" class="block px-3 py-2 ml-0 leading-tight text-slate-500 bg-white border border-slate-300 rounded-l-lg hover:bg-slate-100 hover:text-slate-700">
+                        <span class="sr-only">Previous</span>
+                        <i class="fas fa-chevron-left text-xs"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">2</a>
+                    </li>
+                    <li>
+                      <a href="#" aria-current="page" class="z-10 px-3 py-2 leading-tight text-brand-blue border border-brand-blue bg-brand-blue/10 hover:bg-brand-blue/20">3</a>
+                    </li>
+                    <li>
+                      <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">4</a>
+                    </li>
+                    <li>
+                      <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">5</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 rounded-r-lg hover:bg-slate-100 hover:text-slate-700">
+                        <span class="sr-only">Next</span>
+                        <i class="fas fa-chevron-right text-xs"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+            </section>
+
+            <!-- Modals & Dialogs -->
+            <section>
+                <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Dialogs & Modals (Concept)</h2>
+                <div class="bg-slate-800 p-8 rounded-2xl relative overflow-hidden flex items-center justify-center min-h-[400px]">
+                    <!-- Backdrop -->
+                    <div class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm z-0"></div>
+
+                    <!-- Modal Dialog -->
+                    <div class="relative z-10 bg-white rounded-2xl shadow-2xl max-w-lg w-full transform scale-100 transition-all">
+                        <!-- Header -->
+                        <div class="flex items-center justify-between p-5 border-b border-slate-100">
+                            <h3 class="text-lg font-bold text-slate-900">Modal Title</h3>
+                            <button class="text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg p-1.5 transition-colors">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <!-- Body -->
+                        <div class="p-6">
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Modal body text goes here. You can put any HTML content inside the modal body, including forms, images, or even another grid layout.</p>
+                            <p class="text-slate-600 text-sm leading-relaxed">It's highly customizable and ready for your content.</p>
+                        </div>
+                        <!-- Footer -->
+                        <div class="flex items-center justify-end gap-3 p-5 border-t border-slate-100 bg-slate-50 rounded-b-2xl">
+                            <button class="px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors">Close</button>
+                            <button class="px-4 py-2 text-sm font-medium text-white bg-brand-blue rounded-lg hover:bg-brand-teal transition-colors shadow-sm">Save changes</button>
+                        </div>
+                    </div>
                 </div>
             </section>
 

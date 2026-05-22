@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Feature 1 | The Charge Grid</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased relative overflow-x-hidden">
+
+    <!-- BOXED NAVIGATION LAYOUT -->
+    <header class="fixed top-4 left-0 right-0 z-50 px-4 md:px-6 flex justify-center w-full transition-all duration-300" id="header-container">
+        <!-- The 'Box' -->
+        <nav id="navbar" class="glass-nav bg-white/80 w-full max-w-7xl rounded-2xl shadow-sm border border-slate-200/60 px-5 py-3.5 flex justify-between items-center transition-all duration-300">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2.5 group">
+                <div class="w-9 h-9 bg-gradient-to-br from-brand-blue to-brand-teal rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <span class="font-bold text-xl tracking-tight text-slate-900">The Charge Grid</span>
+            </a>
+            <!-- CTA & Actions -->
+            <div class="flex items-center space-x-5">
+                <a href="#contact" class="bg-slate-900 hover:bg-brand-blue text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-brand-blue/30">
+                    Contact Sales
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-blue/20 to-brand-teal/20 opacity-50 mix-blend-overlay"></div>
+            <div class="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 rounded-full bg-brand-blue/30 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 -ml-32 -mb-32 w-96 h-96 rounded-full bg-brand-teal/30 blur-3xl"></div>
+            <!-- Grid pattern -->
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIvPjxwaGF0aCBkPSJNMCAwaDF2NDBIMHoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48cGF0aCBkPSJNMCAwaDQwdjFIMHoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-30"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-brand-teal font-bold text-sm mb-6 backdrop-blur-sm tracking-widest uppercase">Premium Feature Set</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight drop-shadow-lg leading-tight">Advanced Analytics & <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-teal">Fleet Intelligence</span></h1>
+            <p class="text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Unlock unparalleled insights into your charging network. Optimize performance, reduce operational costs, and scale with confidence using our enterprise-grade analytics engine.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="px-8 py-4 bg-white text-slate-900 font-bold rounded-xl shadow-xl hover:bg-slate-100 transition-colors text-lg">Request Demo</a>
+                <a href="#" class="px-8 py-4 bg-white/10 text-white font-bold rounded-xl border border-white/20 hover:bg-white/20 transition-colors backdrop-blur-sm text-lg">View Documentation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENTO BOX GRID -->
+    <section class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">Everything you need to <span class="text-brand-blue">manage at scale</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+
+                <!-- Large Card (Span 2 cols, 2 rows) -->
+                <div class="md:col-span-2 md:row-span-2 bg-white rounded-3xl p-8 border border-slate-200 shadow-sm relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-brand-blue/5 rounded-full blur-3xl -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-700"></div>
+                    <div class="relative z-10 flex flex-col h-full justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-slate-900 text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow-md"><i class="fas fa-chart-line"></i></div>
+                            <h3 class="text-3xl font-bold text-slate-900 mb-4">Real-time Telemetry</h3>
+                            <p class="text-slate-600 text-lg leading-relaxed max-w-md">Monitor voltage, current, and temperature across your entire network with sub-second latency. Identify anomalies before they impact your users.</p>
+                        </div>
+                        <div class="mt-8 bg-slate-50 rounded-2xl border border-slate-100 p-6 flex-1 flex flex-col justify-end">
+                             <!-- Placeholder for Chart -->
+                             <div class="flex items-end gap-2 h-32 w-full">
+                                 <div class="bg-brand-blue/20 w-full rounded-t-sm h-[40%] hover:bg-brand-blue transition-colors"></div>
+                                 <div class="bg-brand-blue/40 w-full rounded-t-sm h-[60%] hover:bg-brand-blue transition-colors"></div>
+                                 <div class="bg-brand-blue/60 w-full rounded-t-sm h-[50%] hover:bg-brand-blue transition-colors"></div>
+                                 <div class="bg-brand-blue/80 w-full rounded-t-sm h-[80%] hover:bg-brand-blue transition-colors"></div>
+                                 <div class="bg-brand-blue w-full rounded-t-sm h-[100%]"></div>
+                                 <div class="bg-brand-teal/80 w-full rounded-t-sm h-[70%] hover:bg-brand-teal transition-colors"></div>
+                                 <div class="bg-brand-teal/60 w-full rounded-t-sm h-[90%] hover:bg-brand-teal transition-colors"></div>
+                             </div>
+                             <div class="flex justify-between text-xs text-slate-400 mt-2 font-medium">
+                                 <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Small Card 1 -->
+                <div class="bg-slate-900 text-white rounded-3xl p-8 shadow-lg relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-teal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-white/10 text-brand-teal rounded-xl flex items-center justify-center text-xl mb-6 backdrop-blur-sm"><i class="fas fa-bolt"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Dynamic Load Balancing</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Automatically distribute available power to avoid expensive grid upgrades.</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-white transition-colors flex items-center gap-2">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Small Card 2 -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm relative overflow-hidden group">
+                     <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-amber-50 text-amber-500 rounded-xl flex items-center justify-center text-xl mb-6"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Automated Billing</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Set custom tariffs, generate invoices automatically, and process payments securely.</p>
+                         <a href="#" class="text-slate-900 font-bold hover:text-amber-500 transition-colors flex items-center gap-2">Configure <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING TABLES -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4">Transparent Pricing</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Choose the tier that fits your fleet size and feature requirements. No hidden fees.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+                <!-- Basic -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Starter</h3>
+                    <p class="text-slate-500 text-sm mb-6">Perfect for small businesses starting their EV journey.</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-extrabold text-slate-900">€49</span><span class="text-slate-500 font-medium">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i class="fas fa-check text-green-500"></i> Up to 10 Chargers</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i class="fas fa-check text-green-500"></i> Basic Reporting</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i class="fas fa-check text-green-500"></i> Email Support</li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-4 bg-white border border-slate-300 text-slate-900 font-bold text-center rounded-xl hover:bg-slate-100 transition-colors">Start Free Trial</a>
+                </div>
+
+                <!-- Pro (Highlighted) -->
+                <div class="bg-slate-900 rounded-3xl p-8 shadow-2xl relative flex flex-col transform md:-translate-y-4">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -mt-4 bg-gradient-to-r from-brand-blue to-brand-teal text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">Most Popular</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Professional</h3>
+                    <p class="text-slate-400 text-sm mb-6">Advanced features for growing networks and operators.</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-extrabold text-white">€199</span><span class="text-slate-400 font-medium">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i class="fas fa-check text-brand-teal"></i> Up to 50 Chargers</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i class="fas fa-check text-brand-teal"></i> Real-time Telemetry</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i class="fas fa-check text-brand-teal"></i> Automated Billing</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i class="fas fa-check text-brand-teal"></i> Dynamic Load Balancing</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i class="fas fa-check text-brand-teal"></i> 24/7 Priority Support</li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-4 bg-brand-blue text-white font-bold text-center rounded-xl hover:bg-brand-teal transition-colors shadow-lg shadow-brand-blue/20">Upgrade to Pro</a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Enterprise</h3>
+                    <p class="text-slate-500 text-sm mb-6">Custom solutions for large-scale operations and CPOs.</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-extrabold text-slate-900">Custom</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i class="fas fa-check text-green-500"></i> Unlimited Chargers</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i class="fas fa-check text-green-500"></i> Custom API Access</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i class="fas fa-check text-green-500"></i> Whitelabel App</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i class="fas fa-check text-green-500"></i> Dedicated Account Manager</li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-4 bg-slate-900 text-white font-bold text-center rounded-xl hover:bg-slate-800 transition-colors">Contact Sales</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-50 border-t border-slate-200/60 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-2xl mx-auto mb-6">
+                <i class="fas fa-bolt"></i>
+            </div>
+            <p class="text-slate-500 text-sm mb-4">&copy; 2026 The Charge Grid. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

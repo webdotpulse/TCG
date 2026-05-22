@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Feature 2 | The Charge Grid</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased relative overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="/" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-[0_0_15px_rgba(41,159,245,0.5)]">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-white">The Charge Grid</span>
+                </a>
+                <div class="flex gap-4">
+                    <a href="#" class="px-6 py-2.5 text-slate-300 font-medium hover:text-white transition-colors">Log in</a>
+                    <a href="#" class="px-6 py-2.5 bg-brand-blue text-white font-bold rounded-xl hover:bg-brand-teal transition-all shadow-[0_0_20px_rgba(41,159,245,0.3)]">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Dark Mode) -->
+    <section class="relative pt-40 pb-32 overflow-hidden min-h-screen flex items-center">
+        <!-- Abstract neon background -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-blue/20 rounded-full blur-[100px] animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-indigo-600/20 rounded-full blur-[120px] animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-blue/30 to-transparent"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1px] h-full bg-gradient-to-b from-transparent via-brand-blue/30 to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <div class="text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-blue/10 border border-brand-blue/20 text-brand-blue font-semibold text-sm mb-6">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-blue"></span>
+                        </span>
+                        v2.0 Command Center
+                    </div>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight">
+                        Total control over your <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-indigo-400">energy grid.</span>
+                    </h1>
+                    <p class="text-xl text-slate-400 mb-10 leading-relaxed max-w-lg">
+                        The ultimate dashboard for CPOs. Monitor hundreds of chargers, resolve issues remotely, and maximize your network's uptime.
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="bg-brand-blue hover:bg-brand-teal text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-[0_0_20px_rgba(41,159,245,0.4)] hover:shadow-[0_0_30px_rgba(0,156,158,0.6)]">Start Command Center</button>
+                    </div>
+
+                    <div class="mt-12 flex items-center gap-8">
+                        <div>
+                            <div class="text-3xl font-black text-white mb-1">99.9%</div>
+                            <div class="text-sm text-slate-500 font-medium">Guaranteed Uptime</div>
+                        </div>
+                        <div class="w-px h-12 bg-slate-800"></div>
+                        <div>
+                            <div class="text-3xl font-black text-white mb-1">500k+</div>
+                            <div class="text-sm text-slate-500 font-medium">Sessions Managed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Mockup -->
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-blue to-indigo-600 rounded-[2rem] blur opacity-30 animate-pulse"></div>
+                    <div class="relative bg-slate-900 border border-slate-700/50 rounded-[2rem] p-4 shadow-2xl">
+                        <!-- Mac window dots -->
+                        <div class="flex gap-2 mb-4 px-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                        </div>
+
+                        <!-- Dashboard UI -->
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="col-span-2 bg-slate-800/50 rounded-xl p-4 border border-slate-700/50">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h4 class="text-sm font-bold text-slate-300">Network Status</h4>
+                                    <span class="text-xs text-green-400 bg-green-400/10 px-2 py-1 rounded-full font-medium border border-green-400/20">All Systems Operational</span>
+                                </div>
+                                <div class="h-32 bg-slate-900/50 rounded-lg flex items-end gap-1 p-2">
+                                    <div class="w-full bg-brand-blue/60 rounded-t-sm h-[40%]"></div>
+                                    <div class="w-full bg-brand-blue/80 rounded-t-sm h-[70%]"></div>
+                                    <div class="w-full bg-brand-blue rounded-t-sm h-[90%] shadow-[0_0_10px_rgba(41,159,245,0.5)]"></div>
+                                    <div class="w-full bg-brand-blue/70 rounded-t-sm h-[60%]"></div>
+                                    <div class="w-full bg-brand-blue/50 rounded-t-sm h-[30%]"></div>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-800/50 rounded-xl p-4 border border-slate-700/50 flex flex-col justify-center items-center text-center">
+                                <div class="w-16 h-16 rounded-full border-4 border-brand-teal/30 border-t-brand-teal flex items-center justify-center mb-2 animate-[spin_3s_linear_infinite]">
+                                    <i class="fas fa-bolt text-brand-teal animate-none"></i>
+                                </div>
+                                <div class="text-2xl font-black text-white">4.2<span class="text-sm text-slate-500 font-medium">MW</span></div>
+                                <div class="text-xs text-slate-400">Current Output</div>
+                            </div>
+
+                            <div class="col-span-3 bg-slate-800/50 rounded-xl p-4 border border-slate-700/50">
+                                <h4 class="text-sm font-bold text-slate-300 mb-3">Active Sessions</h4>
+                                <div class="space-y-2">
+                                    <div class="bg-slate-900/50 rounded-lg p-2 flex justify-between items-center border border-slate-800">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-8 h-8 rounded-lg bg-green-500/20 text-green-400 flex items-center justify-center text-xs border border-green-500/20"><i class="fas fa-charging-station"></i></div>
+                                            <div>
+                                                <div class="text-xs font-bold text-slate-200">Station A-12</div>
+                                                <div class="text-[10px] text-slate-500">Charging 22kW</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs text-brand-blue font-bold">€12.45</div>
+                                    </div>
+                                    <div class="bg-slate-900/50 rounded-lg p-2 flex justify-between items-center border border-slate-800">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-8 h-8 rounded-lg bg-green-500/20 text-green-400 flex items-center justify-center text-xs border border-green-500/20"><i class="fas fa-charging-station"></i></div>
+                                            <div>
+                                                <div class="text-xs font-bold text-slate-200">Station C-04</div>
+                                                <div class="text-[10px] text-slate-500">Charging 50kW</div>
+                                            </div>
+                                        </div>
+                                        <div class="text-xs text-brand-blue font-bold">€45.20</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURE LIST WITH NEON HOVERS -->
+    <section class="py-24 border-t border-slate-800 relative z-10 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Powerful capabilities.</h2>
+                <p class="text-slate-400">Everything you need to maintain a reliable charging network.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1 -->
+                <div class="group bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 hover:border-brand-blue/50 transition-colors">
+                    <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-brand-blue text-xl mb-4 group-hover:shadow-[0_0_15px_rgba(41,159,245,0.4)] transition-all">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Remote Diagnostics</h3>
+                    <p class="text-sm text-slate-400">Reboot stations, unlock cables, and diagnose hardware faults from anywhere.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="group bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 hover:border-indigo-500/50 transition-colors">
+                    <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-indigo-400 text-xl mb-4 group-hover:shadow-[0_0_15px_rgba(99,102,241,0.4)] transition-all">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Fraud Prevention</h3>
+                    <p class="text-sm text-slate-400">AI-driven anomaly detection stops unauthorized sessions before they start.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="group bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 hover:border-brand-teal/50 transition-colors">
+                    <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-brand-teal text-xl mb-4 group-hover:shadow-[0_0_15px_rgba(0,156,158,0.4)] transition-all">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">OCPP 2.0.1 Ready</h3>
+                    <p class="text-sm text-slate-400">Fully compliant with the latest open standards for maximum hardware compatibility.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="group bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 hover:border-purple-500/50 transition-colors">
+                    <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-purple-400 text-xl mb-4 group-hover:shadow-[0_0_15px_rgba(168,85,247,0.4)] transition-all">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">API First</h3>
+                    <p class="text-sm text-slate-400">Integrate deeply with your existing ERP, CRM, or fleet management software.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
