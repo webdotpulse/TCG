@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  body { font-family: 'Inter', sans-serif; }
+  body { font-family: 'Dosis', sans-serif; }
 
   /* Custom Scrollbar */
   ::-webkit-scrollbar { width: 8px; }
