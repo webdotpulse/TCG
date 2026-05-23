@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./dist/style.css">
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
                     <p class="text-lg text-slate-300 mb-10">Find guides, tutorials, and answers to your questions.</p>
 
                     <div class="relative max-w-2xl mx-auto">
-                        <i class="fas fa-search absolute left-6 top-1/2 transform -translate-y-1/2 text-slate-400 text-lg"></i>
+                        <i data-lucide="search" class="absolute left-6 top-1/2 transform -translate-y-1/2 text-slate-400 text-lg"></i>
                         <input type="text" placeholder="Search for articles..." class="w-full pl-14 pr-6 py-4 rounded-2xl bg-white border-0 shadow-lg text-slate-900 font-medium focus:ring-4 focus:ring-brand-blue/30 outline-none transition-all text-lg">
                     </div>
                 </div>
@@ -42,42 +42,42 @@
                 <!-- Category 1 -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200/60 hover:shadow-lg transition-all duration-300 group cursor-pointer">
                     <div class="w-14 h-14 bg-brand-blue/10 rounded-2xl flex items-center justify-center text-brand-blue mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-plug text-2xl"></i>
+                        <i data-lucide="plug" class="text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Getting Started</h3>
                     <p class="text-slate-600 mb-6">Basic guides on how to install and set up your first charging station.</p>
                     <ul class="space-y-3 text-sm font-medium text-slate-600">
-                        <li class="flex items-center gap-2 hover:text-brand-blue"><i class="far fa-file-alt text-slate-400"></i> Installation Guide</li>
-                        <li class="flex items-center gap-2 hover:text-brand-blue"><i class="far fa-file-alt text-slate-400"></i> Account Creation</li>
-                        <li class="flex items-center gap-2 hover:text-brand-blue"><i class="far fa-file-alt text-slate-400"></i> First Charge Walkthrough</li>
+                        <li class="flex items-center gap-2 hover:text-brand-blue"><i data-lucide="file-text" class="text-slate-400"></i> Installation Guide</li>
+                        <li class="flex items-center gap-2 hover:text-brand-blue"><i data-lucide="file-text" class="text-slate-400"></i> Account Creation</li>
+                        <li class="flex items-center gap-2 hover:text-brand-blue"><i data-lucide="file-text" class="text-slate-400"></i> First Charge Walkthrough</li>
                     </ul>
                 </div>
 
                 <!-- Category 2 -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200/60 hover:shadow-lg transition-all duration-300 group cursor-pointer">
                     <div class="w-14 h-14 bg-brand-teal/10 rounded-2xl flex items-center justify-center text-brand-teal mb-6 group-hover:bg-brand-teal group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-mobile-alt text-2xl"></i>
+                        <i data-lucide="smartphone" class="text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">App & Software</h3>
                     <p class="text-slate-600 mb-6">Learn how to use our mobile application and web dashboard effectively.</p>
                     <ul class="space-y-3 text-sm font-medium text-slate-600">
-                        <li class="flex items-center gap-2 hover:text-brand-blue"><i class="far fa-file-alt text-slate-400"></i> Linking your RFID card</li>
-                        <li class="flex items-center gap-2 hover:text-brand-blue"><i class="far fa-file-alt text-slate-400"></i> Viewing charging history</li>
-                        <li class="flex items-center gap-2 hover:text-brand-blue"><i class="far fa-file-alt text-slate-400"></i> Managing payment methods</li>
+                        <li class="flex items-center gap-2 hover:text-brand-blue"><i data-lucide="file-text" class="text-slate-400"></i> Linking your RFID card</li>
+                        <li class="flex items-center gap-2 hover:text-brand-blue"><i data-lucide="file-text" class="text-slate-400"></i> Viewing charging history</li>
+                        <li class="flex items-center gap-2 hover:text-brand-blue"><i data-lucide="file-text" class="text-slate-400"></i> Managing payment methods</li>
                     </ul>
                 </div>
 
                 <!-- Category 3 -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200/60 hover:shadow-lg transition-all duration-300 group cursor-pointer">
                     <div class="w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center text-indigo-500 mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-tools text-2xl"></i>
+                        <i data-lucide="pen-tool" class="text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Troubleshooting</h3>
                     <p class="text-slate-600 mb-6">Solutions to common issues and error codes you might encounter.</p>
                     <ul class="space-y-3 text-sm font-medium text-slate-600">
-                        <li class="flex items-center gap-2 hover:text-brand-blue"><i class="far fa-file-alt text-slate-400"></i> Station is offline</li>
-                        <li class="flex items-center gap-2 hover:text-brand-blue"><i class="far fa-file-alt text-slate-400"></i> Cable won't unlock</li>
-                        <li class="flex items-center gap-2 hover:text-brand-blue"><i class="far fa-file-alt text-slate-400"></i> Red light blinking</li>
+                        <li class="flex items-center gap-2 hover:text-brand-blue"><i data-lucide="file-text" class="text-slate-400"></i> Station is offline</li>
+                        <li class="flex items-center gap-2 hover:text-brand-blue"><i data-lucide="file-text" class="text-slate-400"></i> Cable won't unlock</li>
+                        <li class="flex items-center gap-2 hover:text-brand-blue"><i data-lucide="file-text" class="text-slate-400"></i> Red light blinking</li>
                     </ul>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                 <div class="lg:col-span-2">
                     <a href="#" class="flex items-center gap-2.5 mb-6">
                         <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg">
-                            <i class="fas fa-bolt"></i>
+                            <i data-lucide="zap" ></i>
                         </div>
                         <span class="font-bold text-2xl tracking-tight text-slate-900">The Charge Grid</span>
                     </a>
@@ -161,10 +161,10 @@
                 <!-- Compliance Badges -->
                 <div class="mt-8 pt-8 border-t border-slate-200/60 flex flex-wrap gap-4 justify-center md:justify-start">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-shield-alt text-brand-blue"></i> Fully GDPR compliant
+                        <i data-lucide="shield" class="text-brand-blue"></i> Fully GDPR compliant
                     </div>
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-globe-europe text-brand-teal"></i> Hosted in the EU
+                        <i data-lucide="globe" class="text-brand-teal"></i> Hosted in the EU
                     </div>
                 </div>
 
@@ -187,5 +187,11 @@
 
     <!-- SCRIPTS -->
     <script src="./js/main.js"></script>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
 </body>
 </html>

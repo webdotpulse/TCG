@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./dist/style.css">
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +37,7 @@
                 <!-- Products Dropdown -->
                 <div class="relative group px-3 py-2">
                     <button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
-                        Products & Services <i class="fas fa-chevron-down text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+                        Products & Services <i data-lucide="chevron-down" class="text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
                     </button>
                     <!-- Dropdown Content -->
                     <div class="dropdown-menu absolute left-0 top-full pt-4 w-[480px] opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
@@ -73,7 +73,7 @@
                 <!-- Support Dropdown -->
                 <div class="relative group px-3 py-2">
                     <button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
-                        Support <i class="fas fa-chevron-down text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+                        Support <i data-lucide="chevron-down" class="text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
                     </button>
                     <!-- Dropdown Content -->
                     <div class="dropdown-menu absolute left-0 top-full pt-4 w-56 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
@@ -83,7 +83,7 @@
                             <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">Downloads</a>
                             <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">FAQ</a>
                             <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">Knowledge Base</a>
-                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors flex justify-between items-center">Tools <i class="fas fa-calculator text-[10px] opacity-50"></i></a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors flex justify-between items-center">Tools <i data-lucide="calculator" class="text-[10px] opacity-50"></i></a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                 <!-- Language Selector -->
                 <div class="relative group">
                     <button class="text-sm font-semibold text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                        <i class="fas fa-globe"></i> EN
+                        <i data-lucide="globe" ></i> EN
                     </button>
                     <div class="dropdown-menu absolute right-0 top-full pt-4 w-36 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
                         <div class="bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden p-2">
@@ -113,7 +113,7 @@
                 <div class="w-px h-5 bg-slate-200"></div>
 
                 <a href="#" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition-colors flex items-center gap-1.5">
-                    Portals <i class="fas fa-external-link-alt text-[10px]"></i>
+                    Portals <i data-lucide="external-link" class="text-[10px]"></i>
                 </a>
 
                 <a href="contact.html" class="bg-slate-900 hover:bg-brand-blue text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-brand-blue/30">
@@ -123,7 +123,7 @@
 
             <!-- Mobile Menu Button -->
             <button class="lg:hidden text-slate-800 text-2xl p-2 focus:outline-none" id="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
+                <i data-lucide="menu" ></i>
             </button>
         </nav>
     </header>
@@ -133,12 +133,12 @@
         <div class="p-5 flex justify-between items-center border-b border-slate-100">
             <a href="#" class="flex items-center gap-2 group">
                 <div class="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center text-white font-bold shadow-md">
-                    <i class="fas fa-bolt"></i>
+                    <i data-lucide="zap" ></i>
                 </div>
                 <span class="font-bold text-xl tracking-tight text-slate-900">The Charge Grid</span>
             </a>
             <button id="close-menu-btn" class="text-slate-500 text-2xl p-2">
-                <i class="fas fa-times"></i>
+                <i data-lucide="x" ></i>
             </button>
         </div>
         <div class="p-6 flex-1 overflow-y-auto flex flex-col gap-6">
@@ -151,7 +151,7 @@
                 <a href="contact.html">Contact</a>
             </div>
             <div class="mt-auto border-t border-slate-100 pt-6 flex flex-col gap-4">
-                <a href="#" class="flex items-center gap-2 text-slate-600 font-semibold"><i class="fas fa-external-link-alt"></i> Charge Portal EMS</a>
+                <a href="#" class="flex items-center gap-2 text-slate-600 font-semibold"><i data-lucide="external-link" ></i> Charge Portal EMS</a>
                 <div class="flex gap-4 text-sm font-semibold text-slate-500">
                     <span class="text-brand-blue">EN</span>
                     <span>NL</span>
@@ -212,41 +212,41 @@
             <!-- Card 1 -->
             <div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:shadow-[0_8px_30px_rgba(41,159,245,0.1)] transition-all duration-300 hover:-translate-y-2 group">
                 <div class="w-14 h-14 bg-slate-50 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300 shadow-sm">
-                    <i class="fas fa-charging-station"></i>
+                    <i data-lucide="battery-charging" ></i>
                 </div>
                 <h4 class="text-xl font-bold text-slate-900 mb-3">Charging points</h4>
                 <p class="text-slate-500 mb-8 leading-relaxed text-sm">We offer a complete line of Smart electric vehicle charging stations and custom solutions for home, corporate and public use. Remarkably reliable. Distinctly durable.</p>
-                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-blue flex items-center gap-2 transition-colors">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-blue flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
             </div>
 
             <!-- Card 2 -->
             <div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:shadow-[0_8px_30px_rgba(41,159,245,0.1)] transition-all duration-300 hover:-translate-y-2 group">
                 <div class="w-14 h-14 bg-slate-50 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-teal group-hover:text-white transition-colors duration-300 shadow-sm">
-                    <i class="fas fa-server"></i>
+                    <i data-lucide="server" ></i>
                 </div>
                 <h4 class="text-xl font-bold text-slate-900 mb-3">CPO: Charge mgmt</h4>
                 <p class="text-slate-500 mb-8 leading-relaxed text-sm">Manage & Control your Network of Electric Car Chargers in real time. Billing & Metering Data. Multi-user Authentication, Reporting & Diagnostics.</p>
-                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-teal flex items-center gap-2 transition-colors">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-teal flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
             </div>
 
             <!-- Card 3 -->
             <div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:shadow-[0_8px_30px_rgba(41,159,245,0.1)] transition-all duration-300 hover:-translate-y-2 group">
                 <div class="w-14 h-14 bg-slate-50 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300 shadow-sm">
-                    <i class="fas fa-mobile-alt"></i>
+                    <i data-lucide="smartphone" ></i>
                 </div>
                 <h4 class="text-xl font-bold text-slate-900 mb-3">MSP: Chargecard</h4>
                 <p class="text-slate-500 mb-8 leading-relaxed text-sm">A free Chargecard, dedicated Mobile App and a web portal for managing charging activities. We facilitate roaming services and customer support.</p>
-                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-blue flex items-center gap-2 transition-colors">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-blue flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
             </div>
 
             <!-- Card 4 -->
             <div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:shadow-[0_8px_30px_rgba(41,159,245,0.1)] transition-all duration-300 hover:-translate-y-2 group">
                 <div class="w-14 h-14 bg-slate-50 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-teal group-hover:text-white transition-colors duration-300 shadow-sm">
-                    <i class="fas fa-bolt"></i>
+                    <i data-lucide="zap" ></i>
                 </div>
                 <h4 class="text-xl font-bold text-slate-900 mb-3">EMS: Energy Mgmt</h4>
                 <p class="text-slate-500 mb-8 leading-relaxed text-sm">Optimize your energy consumption and reduce costs with smart power distribution. Prevent costly grid upgrades and ensure maximum efficiency.</p>
-                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-teal flex items-center gap-2 transition-colors">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-teal flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
             </div>
         </div>
     </section>
@@ -313,13 +313,13 @@
                 <div class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/60 to-transparent z-10"></div>
                 <!-- Abstract Art Background -->
                 <div class="absolute inset-0 bg-linear-to-br from-brand-blue to-blue-600 transition-transform duration-700 group-hover:scale-110 flex items-center justify-center">
-                     <i class="fas fa-home text-white/20 text-[10rem]"></i>
+                     <i data-lucide="home" class="text-white/20 text-[10rem]"></i>
                 </div>
                 <div class="absolute bottom-0 left-0 right-0 p-8 md:p-10 z-20">
                     <span class="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-md text-white rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-white/10">Home</span>
                     <h3 class="text-2xl font-bold text-white mb-3">eMobility at Home</h3>
                     <p class="text-slate-300 text-sm mb-6 line-clamp-2 group-hover:line-clamp-none transition-all duration-300">Transform your home into a convenient, money-saving personal fueling station. Sustainable driving as a seamless part of daily life.</p>
-                    <a href="#" class="inline-flex items-center gap-2 text-white font-bold hover:text-brand-blue transition-colors">Home services <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="inline-flex items-center gap-2 text-white font-bold hover:text-brand-blue transition-colors">Home services <i data-lucide="arrow-right" ></i></a>
                 </div>
             </div>
 
@@ -328,13 +328,13 @@
                 <div class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/60 to-transparent z-10"></div>
                 <!-- Abstract Art Background -->
                 <div class="absolute inset-0 bg-linear-to-br from-brand-teal to-teal-700 transition-transform duration-700 group-hover:scale-110 flex items-center justify-center">
-                    <i class="fas fa-building text-white/20 text-[10rem]"></i>
+                    <i data-lucide="building" class="text-white/20 text-[10rem]"></i>
                 </div>
                 <div class="absolute bottom-0 left-0 right-0 p-8 md:p-10 z-20">
                     <span class="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-md text-white rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-white/10">Business</span>
                     <h3 class="text-2xl font-bold text-white mb-3">eMobility at the Office</h3>
                     <p class="text-slate-300 text-sm mb-6 line-clamp-2 group-hover:line-clamp-none transition-all duration-300">Optimize fleet management and deploy charging depots to reduce operational emissions across all business travel and logistics.</p>
-                    <a href="#" class="inline-flex items-center gap-2 text-white font-bold hover:text-brand-teal transition-colors">Business services <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="inline-flex items-center gap-2 text-white font-bold hover:text-brand-teal transition-colors">Business services <i data-lucide="arrow-right" ></i></a>
                 </div>
             </div>
 
@@ -343,13 +343,13 @@
                 <div class="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/60 to-transparent z-10"></div>
                 <!-- Abstract Art Background -->
                 <div class="absolute inset-0 bg-linear-to-br from-teal-300 to-emerald-600 transition-transform duration-700 group-hover:scale-110 flex items-center justify-center">
-                    <i class="fas fa-city text-white/20 text-[10rem]"></i>
+                    <i data-lucide="building-2" class="text-white/20 text-[10rem]"></i>
                 </div>
                 <div class="absolute bottom-0 left-0 right-0 p-8 md:p-10 z-20">
                     <span class="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-md text-white rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-white/10">Public</span>
                     <h3 class="text-2xl font-bold text-white mb-3">eMobility in Public</h3>
                     <p class="text-slate-300 text-sm mb-6 line-clamp-2 group-hover:line-clamp-none transition-all duration-300">Build an equitable, reliable, and sustainable transportation backbone that reduces urban congestion and air pollution.</p>
-                    <a href="#" class="inline-flex items-center gap-2 text-white font-bold hover:text-emerald-300 transition-colors">Public services <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="inline-flex items-center gap-2 text-white font-bold hover:text-emerald-300 transition-colors">Public services <i data-lucide="arrow-right" ></i></a>
                 </div>
             </div>
         </div>
@@ -360,11 +360,11 @@
         <div class="max-w-7xl mx-auto px-4 text-center">
             <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-10">Trusted by organizations worldwide</p>
             <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-                <i class="fab fa-aws text-5xl hover:text-[#FF9900] transition-colors cursor-pointer"></i>
-                <i class="fab fa-microsoft text-5xl hover:text-[#00A4EF] transition-colors cursor-pointer"></i>
-                <i class="fab fa-google text-4xl hover:text-[#4285F4] transition-colors cursor-pointer"></i>
-                <i class="fab fa-salesforce text-5xl hover:text-[#00A1E0] transition-colors cursor-pointer"></i>
-                <i class="fab fa-stripe text-5xl hover:text-[#008CDD] transition-colors cursor-pointer"></i>
+                <i data-lucide="cloud" class="text-5xl hover:text-[#FF9900] transition-colors cursor-pointer"></i>
+                <i data-lucide="layout-grid" class="text-5xl hover:text-[#00A4EF] transition-colors cursor-pointer"></i>
+                <i data-lucide="search" class="text-4xl hover:text-[#4285F4] transition-colors cursor-pointer"></i>
+                <i data-lucide="cloud" class="text-5xl hover:text-[#00A1E0] transition-colors cursor-pointer"></i>
+                <i data-lucide="credit-card" class="text-5xl hover:text-[#008CDD] transition-colors cursor-pointer"></i>
             </div>
         </div>
     </section>
@@ -377,7 +377,7 @@
                     <div class="absolute inset-0 bg-brand-blue/10 rounded-[3rem] transform -rotate-3 scale-105 transition-transform duration-500 group-hover:rotate-0"></div>
                     <div class="relative bg-white rounded-[3rem] p-12 shadow-xl border border-slate-100 flex items-center justify-center aspect-square overflow-hidden">
                         <div class="absolute inset-0 bg-linear-to-tr from-brand-blue/5 to-transparent"></div>
-                        <i class="fas fa-charging-station text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-brand-blue transition-colors duration-500 drop-shadow-sm"></i>
+                        <i data-lucide="battery-charging" class="text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-brand-blue transition-colors duration-500 drop-shadow-sm"></i>
                     </div>
                 </div>
                 <div>
@@ -385,12 +385,12 @@
                     <h3 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">Smart EV Chargers</h3>
                     <p class="text-lg text-slate-600 mb-8 leading-relaxed">Discover our complete line of intelligent electric vehicle charging stations. Designed for maximum reliability and distinct durability, perfectly suited for home, corporate, and public environments.</p>
                     <ul class="space-y-4 mb-10">
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-teal text-xl"></i> AC & DC Fast Charging Options</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-teal text-xl"></i> Weatherproof & Vandal-resistant</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-teal text-xl"></i> Plug & Charge ready functionality</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-teal text-xl"></i> AC & DC Fast Charging Options</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-teal text-xl"></i> Weatherproof & Vandal-resistant</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-teal text-xl"></i> Plug & Charge ready functionality</li>
                     </ul>
                     <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-brand-blue text-white rounded-xl font-bold transition-all shadow-md hover:-translate-y-1">
-                        Explore Hardware <i class="fas fa-arrow-right"></i>
+                        Explore Hardware <i data-lucide="arrow-right" ></i>
                     </a>
                 </div>
             </div>
@@ -405,7 +405,7 @@
                     <div class="absolute inset-0 bg-brand-teal/10 rounded-[3rem] transform rotate-3 scale-105 transition-transform duration-500 group-hover:rotate-0"></div>
                     <div class="relative bg-slate-50 rounded-[3rem] p-12 shadow-xl border border-slate-100 flex items-center justify-center aspect-square overflow-hidden">
                         <div class="absolute inset-0 bg-linear-to-bl from-brand-teal/5 to-transparent"></div>
-                        <i class="fas fa-server text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-brand-teal transition-colors duration-500 drop-shadow-sm"></i>
+                        <i data-lucide="server" class="text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-brand-teal transition-colors duration-500 drop-shadow-sm"></i>
                     </div>
                 </div>
                 <div class="lg:order-1">
@@ -413,12 +413,12 @@
                     <h3 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">CPO: Charge Management</h3>
                     <p class="text-lg text-slate-600 mb-8 leading-relaxed">Manage and control your entire network of electric car chargers in real-time. Gain deep insights into your infrastructure with comprehensive billing, metering data, and advanced diagnostics.</p>
                     <ul class="space-y-4 mb-10">
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Real-time Monitoring & Diagnostics</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Automated Billing & Invoicing</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Multi-level User Authentication</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-blue text-xl"></i> Real-time Monitoring & Diagnostics</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-blue text-xl"></i> Automated Billing & Invoicing</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-blue text-xl"></i> Multi-level User Authentication</li>
                     </ul>
                     <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-brand-teal text-white rounded-xl font-bold transition-all shadow-md hover:-translate-y-1">
-                        View Platform <i class="fas fa-arrow-right"></i>
+                        View Platform <i data-lucide="arrow-right" ></i>
                     </a>
                 </div>
             </div>
@@ -433,7 +433,7 @@
                     <div class="absolute inset-0 bg-indigo-500/10 rounded-[3rem] transform -rotate-3 scale-105 transition-transform duration-500 group-hover:rotate-0"></div>
                     <div class="relative bg-white rounded-[3rem] p-12 shadow-xl border border-slate-100 flex items-center justify-center aspect-square overflow-hidden">
                         <div class="absolute inset-0 bg-linear-to-tr from-indigo-500/5 to-transparent"></div>
-                        <i class="fas fa-mobile-alt text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-indigo-500 transition-colors duration-500 drop-shadow-sm"></i>
+                        <i data-lucide="smartphone" class="text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-indigo-500 transition-colors duration-500 drop-shadow-sm"></i>
                     </div>
                 </div>
                 <div>
@@ -441,12 +441,12 @@
                     <h3 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">MSP: Chargecard & App</h3>
                     <p class="text-lg text-slate-600 mb-8 leading-relaxed">Provide your drivers with a seamless charging experience. Our dedicated mobile app and cross-border chargecards ensure drivers can find, access, and pay for charging effortlessly across Europe.</p>
                     <ul class="space-y-4 mb-10">
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-teal text-xl"></i> Access to 500,000+ public chargers</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-teal text-xl"></i> Live charger availability & pricing</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-teal text-xl"></i> Secure payment integration</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-teal text-xl"></i> Access to 500,000+ public chargers</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-teal text-xl"></i> Live charger availability & pricing</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-teal text-xl"></i> Secure payment integration</li>
                     </ul>
                     <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-indigo-500 text-white rounded-xl font-bold transition-all shadow-md hover:-translate-y-1">
-                        Get the App <i class="fas fa-arrow-right"></i>
+                        Get the App <i data-lucide="arrow-right" ></i>
                     </a>
                 </div>
             </div>
@@ -461,7 +461,7 @@
                     <div class="absolute inset-0 bg-purple-500/10 rounded-[3rem] transform rotate-3 scale-105 transition-transform duration-500 group-hover:rotate-0"></div>
                     <div class="relative bg-slate-50 rounded-[3rem] p-12 shadow-xl border border-slate-100 flex items-center justify-center aspect-square overflow-hidden">
                         <div class="absolute inset-0 bg-linear-to-bl from-purple-500/5 to-transparent"></div>
-                        <i class="fas fa-palette text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-purple-500 transition-colors duration-500 drop-shadow-sm"></i>
+                        <i data-lucide="palette" class="text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-purple-500 transition-colors duration-500 drop-shadow-sm"></i>
                     </div>
                 </div>
                 <div class="lg:order-1">
@@ -469,12 +469,12 @@
                     <h3 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">Whitelabel Options</h3>
                     <p class="text-lg text-slate-600 mb-8 leading-relaxed">Launch your very own EV charging services under your brand identity. We provide the robust backend infrastructure, hardware, and apps, fully customized with your logo, colors, and domain.</p>
                     <ul class="space-y-4 mb-10">
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Fully branded mobile app & portal</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Custom branded RFID chargecards</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Rapid time-to-market deployment</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-blue text-xl"></i> Fully branded mobile app & portal</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-blue text-xl"></i> Custom branded RFID chargecards</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-blue text-xl"></i> Rapid time-to-market deployment</li>
                     </ul>
                     <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-purple-600 text-white rounded-xl font-bold transition-all shadow-md hover:-translate-y-1">
-                        Start Your Brand <i class="fas fa-arrow-right"></i>
+                        Start Your Brand <i data-lucide="arrow-right" ></i>
                     </a>
                 </div>
             </div>
@@ -489,7 +489,7 @@
                     <div class="absolute inset-0 bg-emerald-500/10 rounded-[3rem] transform -rotate-3 scale-105 transition-transform duration-500 group-hover:rotate-0"></div>
                     <div class="relative bg-white rounded-[3rem] p-12 shadow-xl border border-slate-100 flex items-center justify-center aspect-square overflow-hidden">
                         <div class="absolute inset-0 bg-linear-to-tr from-emerald-500/5 to-transparent"></div>
-                        <i class="fas fa-bolt text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-emerald-500 transition-colors duration-500 drop-shadow-sm"></i>
+                        <i data-lucide="zap" class="text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-emerald-500 transition-colors duration-500 drop-shadow-sm"></i>
                     </div>
                 </div>
                 <div>
@@ -497,12 +497,12 @@
                     <h3 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">Energy Management</h3>
                     <p class="text-lg text-slate-600 mb-8 leading-relaxed">Optimize your energy consumption and drastically reduce costs with smart power distribution. Automatically balance energy demand between your EV chargers and your building to prevent grid upgrades.</p>
                     <ul class="space-y-4 mb-10">
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-teal text-xl"></i> Dynamic Load Balancing</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-teal text-xl"></i> Peak Shaving technology</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-teal text-xl"></i> Seamless building integration</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-teal text-xl"></i> Dynamic Load Balancing</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-teal text-xl"></i> Peak Shaving technology</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-teal text-xl"></i> Seamless building integration</li>
                     </ul>
                     <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-emerald-500 text-white rounded-xl font-bold transition-all shadow-md hover:-translate-y-1">
-                        Optimize Energy <i class="fas fa-arrow-right"></i>
+                        Optimize Energy <i data-lucide="arrow-right" ></i>
                     </a>
                 </div>
             </div>
@@ -517,7 +517,7 @@
                     <div class="absolute inset-0 bg-amber-500/10 rounded-[3rem] transform rotate-3 scale-105 transition-transform duration-500 group-hover:rotate-0"></div>
                     <div class="relative bg-slate-50 rounded-[3rem] p-12 shadow-xl border border-slate-100 flex items-center justify-center aspect-square overflow-hidden">
                         <div class="absolute inset-0 bg-linear-to-bl from-amber-500/5 to-transparent"></div>
-                        <i class="fas fa-solar-panel text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-amber-500 transition-colors duration-500 drop-shadow-sm"></i>
+                        <i data-lucide="sun" class="text-[10rem] md:text-[14rem] text-slate-200 group-hover:text-amber-500 transition-colors duration-500 drop-shadow-sm"></i>
                     </div>
                 </div>
                 <div class="lg:order-1">
@@ -525,12 +525,12 @@
                     <h3 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">Solar & Battery</h3>
                     <p class="text-lg text-slate-600 mb-8 leading-relaxed">Harness the power of the sun. Connect your EV charging infrastructure directly to your solar panels and local battery storage to ensure your fleet runs on 100% clean, renewable energy.</p>
                     <ul class="space-y-4 mb-10">
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Maximize self-consumption</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Vehicle-to-Grid (V2G) readiness</li>
-                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Carbon footprint reduction</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-blue text-xl"></i> Maximize self-consumption</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-blue text-xl"></i> Vehicle-to-Grid (V2G) readiness</li>
+                        <li class="flex items-center gap-4 text-slate-700 font-medium"><i data-lucide="check-circle" class="text-brand-blue text-xl"></i> Carbon footprint reduction</li>
                     </ul>
                     <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-amber-500 text-white rounded-xl font-bold transition-all shadow-md hover:-translate-y-1">
-                        Go Green <i class="fas fa-arrow-right"></i>
+                        Go Green <i data-lucide="arrow-right" ></i>
                     </a>
                 </div>
             </div>
@@ -556,7 +556,7 @@
                     <div class="h-56 bg-slate-200 relative overflow-hidden">
                         <div class="absolute inset-0 bg-linear-to-br from-brand-blue to-blue-600 opacity-80 group-hover:scale-110 transition-transform duration-500"></div>
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-newspaper text-white/50 text-6xl"></i>
+                            <i data-lucide="newspaper" class="text-white/50 text-6xl"></i>
                         </div>
                     </div>
                     <div class="p-8">
@@ -567,7 +567,7 @@
                         </div>
                         <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">The Future of V2G Technology in Urban Grids</h4>
                         <p class="text-slate-500 text-sm mb-6 line-clamp-2">Discover how vehicle-to-grid tech is changing the way cities manage power distribution during peak hours.</p>
-                        <span class="text-slate-900 font-bold text-sm inline-flex items-center gap-2 group-hover:text-brand-blue transition-colors">Read Article <i class="fas fa-arrow-right"></i></span>
+                        <span class="text-slate-900 font-bold text-sm inline-flex items-center gap-2 group-hover:text-brand-blue transition-colors">Read Article <i data-lucide="arrow-right" ></i></span>
                     </div>
                 </a>
 
@@ -576,7 +576,7 @@
                     <div class="h-56 bg-slate-200 relative overflow-hidden">
                         <div class="absolute inset-0 bg-linear-to-br from-brand-teal to-teal-700 opacity-80 group-hover:scale-110 transition-transform duration-500"></div>
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-chart-line text-white/50 text-6xl"></i>
+                            <i data-lucide="line-chart" class="text-white/50 text-6xl"></i>
                         </div>
                     </div>
                     <div class="p-8">
@@ -587,7 +587,7 @@
                         </div>
                         <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-teal transition-colors">Maximizing ROI on Corporate EV Fleets</h4>
                         <p class="text-slate-500 text-sm mb-6 line-clamp-2">A comprehensive guide to analyzing total cost of ownership and transitioning your enterprise fleet.</p>
-                        <span class="text-slate-900 font-bold text-sm inline-flex items-center gap-2 group-hover:text-brand-teal transition-colors">Read Article <i class="fas fa-arrow-right"></i></span>
+                        <span class="text-slate-900 font-bold text-sm inline-flex items-center gap-2 group-hover:text-brand-teal transition-colors">Read Article <i data-lucide="arrow-right" ></i></span>
                     </div>
                 </a>
 
@@ -596,7 +596,7 @@
                     <div class="h-56 bg-slate-200 relative overflow-hidden">
                         <div class="absolute inset-0 bg-linear-to-br from-indigo-500 to-purple-600 opacity-80 group-hover:scale-110 transition-transform duration-500"></div>
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-globe-europe text-white/50 text-6xl"></i>
+                            <i data-lucide="globe" class="text-white/50 text-6xl"></i>
                         </div>
                     </div>
                     <div class="p-8">
@@ -607,7 +607,7 @@
                         </div>
                         <h4 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-indigo-500 transition-colors">Expanding Our Cross-Border Roaming Network</h4>
                         <p class="text-slate-500 text-sm mb-6 line-clamp-2">Our chargecard now supports over half a million active charging points across 28 European countries.</p>
-                        <span class="text-slate-900 font-bold text-sm inline-flex items-center gap-2 group-hover:text-indigo-500 transition-colors">Read Article <i class="fas fa-arrow-right"></i></span>
+                        <span class="text-slate-900 font-bold text-sm inline-flex items-center gap-2 group-hover:text-indigo-500 transition-colors">Read Article <i data-lucide="arrow-right" ></i></span>
                     </div>
                 </a>
             </div>
@@ -632,7 +632,7 @@
                         <div class="space-y-8 mt-auto">
                             <div class="flex items-start gap-4">
                                 <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-brand-blue shrink-0">
-                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                    <i data-lucide="map-pin" class="text-xl"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-lg mb-1">Headquarters</h4>
@@ -642,7 +642,7 @@
 
                             <div class="flex items-start gap-4">
                                 <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-brand-teal shrink-0">
-                                    <i class="fas fa-envelope text-xl"></i>
+                                    <i data-lucide="mail" class="text-xl"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-lg mb-1">Email Us</h4>
@@ -652,7 +652,7 @@
 
                             <div class="flex items-start gap-4">
                                 <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-brand-blue shrink-0">
-                                    <i class="fas fa-phone-alt text-xl"></i>
+                                    <i data-lucide="phone" class="text-xl"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-lg mb-1">Call Us</h4>
@@ -717,7 +717,7 @@
                 <div class="lg:col-span-2">
                     <a href="#" class="flex items-center gap-2.5 mb-6">
                         <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg">
-                            <i class="fas fa-bolt"></i>
+                            <i data-lucide="zap" ></i>
                         </div>
                         <span class="font-bold text-2xl tracking-tight text-slate-900">The Charge Grid</span>
                     </a>
@@ -784,10 +784,10 @@
                 <!-- Compliance Badges -->
                 <div class="mt-8 pt-8 border-t border-slate-200/60 flex flex-wrap gap-4 justify-center md:justify-start">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-shield-alt text-brand-blue"></i> Fully GDPR compliant
+                        <i data-lucide="shield" class="text-brand-blue"></i> Fully GDPR compliant
                     </div>
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-globe-europe text-brand-teal"></i> Hosted in the EU
+                        <i data-lucide="globe" class="text-brand-teal"></i> Hosted in the EU
                     </div>
                 </div>
 
@@ -810,5 +810,11 @@
 
     <!-- SCRIPTS -->
     <script src="./js/main.js"></script>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
 </body>
 </html>
