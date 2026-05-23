@@ -33,13 +33,13 @@
                 <div class="p-5 border-b border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
                     <div class="relative w-full sm:w-64">
                         <i data-lucide="search" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
-                        <input type="text" placeholder="Search stations..." class="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent">
+                        <input type="text" placeholder="Search stations..." class="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent">
                     </div>
                     <div class="flex gap-2">
-                        <button class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors flex items-center gap-2">
+                        <button class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 transition-colors flex items-center gap-2">
                             <i data-lucide="filter" class="text-slate-400"></i> Filter
                         </button>
-                        <button class="px-4 py-2 bg-brand-blue text-white rounded-lg text-sm font-medium hover:bg-brand-teal transition-colors flex items-center gap-2">
+                        <button class="px-4 py-2 bg-brand-blue text-white rounded-lg text-base font-medium hover:bg-brand-teal transition-colors flex items-center gap-2">
                             <i data-lucide="plus" ></i> Add Station
                         </button>
                     </div>
@@ -49,7 +49,7 @@
                 <div class="overflow-x-auto">
                     <table class="w-full text-left border-collapse">
                         <thead>
-                            <tr class="bg-slate-50 text-xs uppercase tracking-wider text-slate-500 font-semibold border-b border-slate-200">
+                            <tr class="bg-slate-50 text-sm uppercase tracking-wider text-slate-500 font-semibold border-b border-slate-200">
                                 <th class="px-6 py-4">Station ID <i data-lucide="arrow-up-down" class="ml-1 cursor-pointer hover:text-slate-700"></i></th>
                                 <th class="px-6 py-4">Location</th>
                                 <th class="px-6 py-4">Status</th>
@@ -58,23 +58,23 @@
                                 <th class="px-6 py-4 text-right">Actions</th>
                             </tr>
                         </thead>
-                        <tbody class="text-sm text-slate-700 divide-y divide-slate-100">
+                        <tbody class="text-base text-slate-700 divide-y divide-slate-100">
                             <!-- Row 1 -->
                             <tr class="hover:bg-slate-50/50 transition-colors">
                                 <td class="px-6 py-4 font-medium text-slate-900">#CS-0842</td>
                                 <td class="px-6 py-4">
                                     <div class="flex items-center gap-3">
                                         <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500">
-                                            <i data-lucide="map-pin" class="text-xs"></i>
+                                            <i data-lucide="map-pin" class="text-sm"></i>
                                         </div>
                                         <div>
                                             <div class="font-medium text-slate-900">Downtown Parking A</div>
-                                            <div class="text-xs text-slate-500">123 Main St, Cityville</div>
+                                            <div class="text-sm text-slate-500">123 Main St, Cityville</div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="px-6 py-4">
-                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">
                                         <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Online
                                     </span>
                                 </td>
@@ -91,16 +91,16 @@
                                 <td class="px-6 py-4">
                                     <div class="flex items-center gap-3">
                                         <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500">
-                                            <i data-lucide="map-pin" class="text-xs"></i>
+                                            <i data-lucide="map-pin" class="text-sm"></i>
                                         </div>
                                         <div>
                                             <div class="font-medium text-slate-900">Mall of Europe</div>
-                                            <div class="text-xs text-slate-500">Level -1, Sec B</div>
+                                            <div class="text-sm text-slate-500">Level -1, Sec B</div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="px-6 py-4">
-                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-700">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-700">
                                         <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 animate-pulse"></span> Charging
                                     </span>
                                 </td>
@@ -117,16 +117,16 @@
                                 <td class="px-6 py-4">
                                     <div class="flex items-center gap-3">
                                         <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500">
-                                            <i data-lucide="map-pin" class="text-xs"></i>
+                                            <i data-lucide="map-pin" class="text-sm"></i>
                                         </div>
                                         <div>
                                             <div class="font-medium text-slate-900">Tech Park North</div>
-                                            <div class="text-xs text-slate-500">Bldg 4, Innovation Blvd</div>
+                                            <div class="text-sm text-slate-500">Bldg 4, Innovation Blvd</div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="px-6 py-4">
-                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-sm font-medium bg-red-100 text-red-700">
                                         <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> Offline
                                     </span>
                                 </td>
@@ -142,14 +142,14 @@
                 </div>
 
                 <!-- Pagination -->
-                <div class="p-4 border-t border-slate-200 flex items-center justify-between text-sm">
+                <div class="p-4 border-t border-slate-200 flex items-center justify-between text-base">
                     <span class="text-slate-500">Showing <span class="font-medium text-slate-900">1</span> to <span class="font-medium text-slate-900">3</span> of <span class="font-medium text-slate-900">12</span> results</span>
                     <div class="flex gap-1">
-                        <button class="w-8 h-8 flex items-center justify-center rounded border border-slate-200 text-slate-400 hover:bg-slate-50 disabled:opacity-50" disabled><i data-lucide="chevron-left" class="text-xs"></i></button>
+                        <button class="w-8 h-8 flex items-center justify-center rounded border border-slate-200 text-slate-400 hover:bg-slate-50 disabled:opacity-50" disabled><i data-lucide="chevron-left" class="text-sm"></i></button>
                         <button class="w-8 h-8 flex items-center justify-center rounded bg-brand-blue text-white font-medium">1</button>
                         <button class="w-8 h-8 flex items-center justify-center rounded border border-slate-200 text-slate-700 hover:bg-slate-50 font-medium">2</button>
                         <button class="w-8 h-8 flex items-center justify-center rounded border border-slate-200 text-slate-700 hover:bg-slate-50 font-medium">3</button>
-                        <button class="w-8 h-8 flex items-center justify-center rounded border border-slate-200 text-slate-600 hover:bg-slate-50"><i data-lucide="chevron-right" class="text-xs"></i></button>
+                        <button class="w-8 h-8 flex items-center justify-center rounded border border-slate-200 text-slate-600 hover:bg-slate-50"><i data-lucide="chevron-right" class="text-sm"></i></button>
                     </div>
                 </div>
             </div>
@@ -172,34 +172,34 @@
                 <!-- Products Dropdown -->
                 <div class="relative group px-3 py-2">
                     <button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
-                        Products & Services <i data-lucide="chevron-down" class="text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+                        Products & Services <i data-lucide="chevron-down" class="text-sm opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
                     </button>
                     <!-- Dropdown Content -->
                     <div class="dropdown-menu absolute left-0 top-full pt-4 w-[480px] opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
                         <div class="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden p-3 grid grid-cols-2 gap-2">
                             <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
-                                <span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Charging points</span>
-                                <span class="text-xs text-slate-500">Explore our full range of charging solutions.</span>
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Charging points</span>
+                                <span class="text-sm text-slate-500">Explore our full range of charging solutions.</span>
                             </a>
                             <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
-                                <span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">CPO</span>
-                                <span class="text-xs text-slate-500">Manage, monitor, and monetize chargers.</span>
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">CPO</span>
+                                <span class="text-sm text-slate-500">Manage, monitor, and monetize chargers.</span>
                             </a>
                             <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
-                                <span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">MSP App</span>
-                                <span class="text-xs text-slate-500">Access to charging with App & charge card.</span>
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">MSP App</span>
+                                <span class="text-sm text-slate-500">Access to charging with App & charge card.</span>
                             </a>
                             <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
-                                <span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Whitelabel</span>
-                                <span class="text-xs text-slate-500">Launch your own EV charging services.</span>
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Whitelabel</span>
+                                <span class="text-sm text-slate-500">Launch your own EV charging services.</span>
                             </a>
                             <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
-                                <span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">EMS</span>
-                                <span class="text-xs text-slate-500">Optimize energy usage and reduce costs.</span>
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">EMS</span>
+                                <span class="text-sm text-slate-500">Optimize energy usage and reduce costs.</span>
                             </a>
                             <a href="renewable.html" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
-                                <span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Solar & Battery</span>
-                                <span class="text-xs text-slate-500">Renewable energy solutions.</span>
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Solar & Battery</span>
+                                <span class="text-sm text-slate-500">Renewable energy solutions.</span>
                             </a>
                         </div>
                     </div>
@@ -208,17 +208,17 @@
                 <!-- Support Dropdown -->
                 <div class="relative group px-3 py-2">
                     <button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
-                        Support <i data-lucide="chevron-down" class="text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+                        Support <i data-lucide="chevron-down" class="text-sm opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
                     </button>
                     <!-- Dropdown Content -->
                     <div class="dropdown-menu absolute left-0 top-full pt-4 w-56 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
                         <div class="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden p-2">
-                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">Cars</a>
-                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">Certified Chargers</a>
-                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">Downloads</a>
-                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">FAQ</a>
-                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">Knowledge Base</a>
-                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors flex justify-between items-center">Tools <i data-lucide="calculator" class="text-[10px] opacity-50"></i></a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors">Cars</a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors">Certified Chargers</a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors">Downloads</a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors">FAQ</a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors">Knowledge Base</a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors flex justify-between items-center">Tools <i data-lucide="calculator" class="text-sm opacity-50"></i></a>
                         </div>
                     </div>
                 </div>
@@ -233,25 +233,25 @@
 
                 <!-- Language Selector -->
                 <div class="relative group">
-                    <button class="text-sm font-semibold text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                    <button class="text-base font-semibold text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-1.5">
                         <i data-lucide="globe" ></i> EN
                     </button>
                     <div class="dropdown-menu absolute right-0 top-full pt-4 w-36 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
                         <div class="bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden p-2">
-                            <a href="#" class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-sm font-medium text-brand-blue">EN - English</a>
-                            <a href="#" class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-sm font-medium text-slate-700">NL - Nederlands</a>
-                            <a href="#" class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-sm font-medium text-slate-700">FR - Français</a>
+                            <a href="#" class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-base font-medium text-brand-blue">EN - English</a>
+                            <a href="#" class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-base font-medium text-slate-700">NL - Nederlands</a>
+                            <a href="#" class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-base font-medium text-slate-700">FR - Français</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="w-px h-5 bg-slate-200"></div>
 
-                <a href="#" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition-colors flex items-center gap-1.5">
-                    Portals <i data-lucide="external-link" class="text-[10px]"></i>
+                <a href="#" class="text-base font-semibold text-slate-600 hover:text-brand-blue transition-colors flex items-center gap-1.5">
+                    Portals <i data-lucide="external-link" class="text-sm"></i>
                 </a>
 
-                <a href="contact.html" class="bg-slate-900 hover:bg-brand-blue text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-brand-blue/30">
+                <a href="contact.html" class="bg-slate-900 hover:bg-brand-blue text-white px-5 py-2.5 rounded-xl text-base font-bold transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-brand-blue/30">
                     Contact
                 </a>
             </div>
@@ -287,7 +287,7 @@
             </div>
             <div class="mt-auto border-t border-slate-100 pt-6 flex flex-col gap-4">
                 <a href="#" class="flex items-center gap-2 text-slate-600 font-semibold"><i data-lucide="external-link" ></i> Charge Portal EMS</a>
-                <div class="flex gap-4 text-sm font-semibold text-slate-500">
+                <div class="flex gap-4 text-base font-semibold text-slate-500">
                     <span class="text-brand-blue">EN</span>
                     <span>NL</span>
                     <span>FR</span>
@@ -310,7 +310,7 @@
                         <span class="font-bold text-2xl tracking-tight text-slate-900">The Charge Grid</span>
                     </a>
                     <p class="text-slate-500 mb-6 max-w-sm">Leading the transition to sustainable energy with smart, reliable EV charging infrastructure.</p>
-                    <address class="not-italic text-slate-600 space-y-1 text-sm font-medium">
+                    <address class="not-italic text-slate-600 space-y-1 text-base font-medium">
                         <strong>C&H EUROPE BV</strong><br>
                         BE 0729.731.988<br>
                         <a href="mailto:info@thechargegrid.com" class="hover:text-brand-blue transition-colors block mt-2">info@thechargegrid.com</a>
@@ -321,7 +321,7 @@
                 <!-- Links 1 -->
                 <div>
                     <h4 class="font-bold text-slate-900 mb-6 text-lg">Products & Services</h4>
-                    <ul class="space-y-3.5 text-sm font-medium text-slate-500">
+                    <ul class="space-y-3.5 text-base font-medium text-slate-500">
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Charging points</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">CPO - Charge management</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">MSP - Chargecard & App</a></li>
@@ -334,7 +334,7 @@
                 <!-- Links 2 -->
                 <div>
                     <h4 class="font-bold text-slate-900 mb-6 text-lg">Support</h4>
-                    <ul class="space-y-3.5 text-sm font-medium text-slate-500">
+                    <ul class="space-y-3.5 text-base font-medium text-slate-500">
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Browse EV cars</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Certified Chargers</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Downloads</a></li>
@@ -347,7 +347,7 @@
                 <!-- Links 3 -->
                 <div>
                     <h4 class="font-bold text-slate-900 mb-6 text-lg">Company</h4>
-                    <ul class="space-y-3.5 text-sm font-medium text-slate-500">
+                    <ul class="space-y-3.5 text-base font-medium text-slate-500">
                         <li><a href="#" class="hover:text-brand-blue transition-colors">About us</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Jobs</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Blog</a></li>
@@ -358,12 +358,12 @@
             </div>
 
             <div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="flex gap-6 text-sm font-medium text-slate-500">
+                <div class="flex gap-6 text-base font-medium text-slate-500">
                     <a href="#" class="hover:text-slate-900 transition-colors">Terms of Use</a>
                     <a href="#" class="hover:text-slate-900 transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-slate-900 transition-colors">Cookie Policy</a>
                 </div>
-                <div class="text-sm font-medium text-slate-400">
+                <div class="text-base font-medium text-slate-400">
                     &copy; 2026 The Charge Grid. All rights reserved. Made by WebDotPulse
                 </div>
             </div>
@@ -371,10 +371,10 @@
 
                 <!-- Compliance Badges -->
                 <div class="mt-8 pt-8 border-t border-slate-200/60 flex flex-wrap gap-4 justify-center md:justify-start">
-                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-sm font-bold">
                         <i data-lucide="shield" class="text-brand-blue"></i> Fully GDPR compliant
                     </div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-sm font-bold">
                         <i data-lucide="globe" class="text-brand-teal"></i> Hosted in the EU
                     </div>
                 </div>
@@ -387,12 +387,12 @@
             <div class="text-3xl bg-slate-50 p-2 rounded-xl">🍪</div>
             <div>
                 <h4 class="font-bold text-slate-900 mb-1">Cookie Preferences</h4>
-                <p class="text-xs text-slate-500 leading-relaxed">We use cookies to help personalize content, tailor and measure ads, and provide a better experience.</p>
+                <p class="text-sm text-slate-500 leading-relaxed">We use cookies to help personalize content, tailor and measure ads, and provide a better experience.</p>
             </div>
         </div>
         <div class="flex gap-3">
-            <button id="accept-cookies" class="flex-1 bg-slate-900 hover:bg-slate-800 text-white py-2.5 rounded-xl text-sm font-bold transition-colors">Accept All</button>
-            <button id="reject-cookies" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 py-2.5 rounded-xl text-sm font-bold transition-colors">Reject</button>
+            <button id="accept-cookies" class="flex-1 bg-slate-900 hover:bg-slate-800 text-white py-2.5 rounded-xl text-base font-bold transition-colors">Accept All</button>
+            <button id="reject-cookies" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 py-2.5 rounded-xl text-base font-bold transition-colors">Reject</button>
         </div>
     </div>
 
