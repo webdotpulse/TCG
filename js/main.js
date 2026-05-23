@@ -103,4 +103,86 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typerElement) {
         setTimeout(typeEffect, 500);
     }
+
+    // 5. Modal Logic
+    const openModalBtn = document.getElementById('open-demo-modal');
+    const demoModal = document.getElementById('demo-modal');
+    const demoModalDialog = document.getElementById('demo-modal-dialog');
+    const closeBtns = document.querySelectorAll('.close-modal');
+
+    if (openModalBtn && demoModal && demoModalDialog) {
+        openModalBtn.addEventListener('click', () => {
+            demoModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+
+            // Trigger animation after a tiny delay
+            setTimeout(() => {
+                demoModalDialog.classList.remove('scale-95', 'opacity-0');
+                demoModalDialog.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        });
+
+        const closeModal = () => {
+            demoModalDialog.classList.remove('scale-100', 'opacity-100');
+            demoModalDialog.classList.add('scale-95', 'opacity-0');
+
+            // Wait for transition to finish before hiding
+            setTimeout(() => {
+                demoModal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        };
+
+        closeBtns.forEach(btn => {
+            btn.addEventListener('click', closeModal);
+        });
+
+        // Close on backdrop click
+        demoModal.addEventListener('click', (e) => {
+            if (e.target === demoModal.firstElementChild || e.target.classList.contains('fixed')) {
+                closeModal();
+            }
+        });
+    }
+
+    // 6. Toast Logic
+    const showToastBtn = document.getElementById('show-demo-toast');
+    const demoToast = document.getElementById('demo-toast');
+    let toastTimeout;
+
+    if (showToastBtn && demoToast) {
+        const closeToastBtn = demoToast.querySelector('.close-toast');
+
+        const hideToast = () => {
+            demoToast.classList.add('translate-x-full', 'opacity-0');
+            setTimeout(() => {
+                demoToast.classList.add('hidden');
+            }, 300);
+        };
+
+        const showToast = () => {
+            // Reset state
+            clearTimeout(toastTimeout);
+            demoToast.classList.remove('hidden');
+
+            // Small delay to allow display:block to apply before animating
+            setTimeout(() => {
+                demoToast.classList.remove('translate-x-full', 'opacity-0');
+            }, 10);
+
+            // Auto hide after 3 seconds
+            toastTimeout = setTimeout(() => {
+                hideToast();
+            }, 3000);
+        };
+
+        showToastBtn.addEventListener('click', showToast);
+
+        if (closeToastBtn) {
+            closeToastBtn.addEventListener('click', () => {
+                clearTimeout(toastTimeout);
+                hideToast();
+            });
+        }
+    }
 });
