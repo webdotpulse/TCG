@@ -113,7 +113,7 @@
 </nav>
 </header>
 <!-- Mobile Menu Overlay -->
-<div class="fixed inset-0 bg-white z-[60] transform translate-x-full transition-transform duration-300 flex flex-col hidden" id="mobile-menu">
+<div class="fixed inset-0 bg-white z-60 transform translate-x-full transition-transform duration-300 flex flex-col hidden" id="mobile-menu">
 <div class="p-5 flex justify-between items-center border-b border-slate-100">
 <a class="flex items-center gap-2 group" href="#">
 <div class="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center text-white font-bold shadow-md">
@@ -197,7 +197,7 @@
 <div class="offset-xl-1 xl:w-6/12 px-4 lg:w-6/12" data-cue="zoomIn" data-show="true" style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
 <div class="relative ms-lg-8 ms-xl-0 me-xl-7">
 <img alt="" class="w-full rounded-xl" src="https://www.mobilitypulse.com/assets/images/cpo/about16.jpg" width="480"/>
-<div class="absolute text-center bottom-0 start-0 ms-lg-n8">
+<div class="absolute text-center bottom-0 inset-s-0 ms-lg-n8">
 <div class="bg-white p-3 rounded-xl shadow-lg" style="width: 160px">
 <div>
 <svg fill="none" height="64" viewbox="0 0 119 64" width="100" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@
 <div class="text-base">Charging session per month</div>
 </div>
 </div>
-<div class="absolute text-center top-0 end-0 me-lg-n8 mt-8">
+<div class="absolute text-center top-0 inset-e-0 me-lg-n8 mt-8">
 <div class="bg-white p-3 rounded-xl shadow-lg" style="width: 160px">
 <div>
 <svg fill="none" height="71" viewbox="0 0 126 71" width="100" xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +278,7 @@
 <div class="lg:w-full px-4 w-full">
 <div class="flex flex-wrap -mx-4 items-center g-md-0 gy-4">
 <div class="md:w-4/12 px-4 w-full">
-<div class="bg-white p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 bg-primary-subtle pricing rounded-end-md-0">
+<div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 bg-primary-subtle pricing rounded-end-md-0">
 <div class="p-0 flex flex-col gap-6">
 <div>
 <h3>Backoffice BASIC</h3>
@@ -367,7 +367,7 @@
 </div>
 </div>
 <div class="md:w-4/12 px-4 w-full">
-<div class="bg-white p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 bg-success-subtle pricing border-primary">
+<div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 bg-success-subtle pricing border-primary">
 <div class="p-0 flex flex-col gap-6">
 <div>
 <h3>Backoffice OPTIMAL</h3>
@@ -456,7 +456,7 @@
 </div>
 </div>
 <div class="md:w-4/12 px-4 w-full">
-<div class="bg-white p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 bg-slate-50 pricing rounded-start-md-0">
+<div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 bg-slate-50 pricing rounded-start-md-0">
 <div class="p-0 flex flex-col gap-6">
 <div>
 <h3>Backoffice PLATINUM</h3>
@@ -844,7 +844,7 @@
 <figure class="rounded-lg"><img alt="Green energy" src="./assets/img/photos/g6.jpg" srcset="https://www.mobilitypulse.com/assets/img/photos/g6@2x.jpg 2x"/></figure>
 </div>
 <div class="md:w-10/12 px-4">
-<div class="bg-white p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 bg-pale-primary text-center">
+<div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 bg-pale-primary text-center">
 <div class="md:w-full px-4 order-md-2">
 <figure class="rounded-lg"><img alt="Happy customer" src="./assets/img/photos/g4.jpg" srcset="https://www.mobilitypulse.com/assets/img/photos/g4@2x.jpg 2x"/>
 </figure>
@@ -947,7 +947,7 @@
 
     </footer>
 <!-- COOKIE BANNER -->
-<div class="fixed bottom-6 left-4 right-4 md:left-6 md:right-auto md:w-96 bg-white border border-slate-200 p-6 rounded-2xl shadow-2xl z-[100] transform transition-transform duration-500 translate-y-[150%]" id="cookie-banner">
+<div class="fixed bottom-6 left-4 right-4 md:left-6 md:right-auto md:w-96 bg-white border border-slate-200 p-6 rounded-2xl shadow-2xl z-100 transform transition-transform duration-500 translate-y-[150%]" id="cookie-banner">
 <div class="flex items-start gap-6 mb-8">
 <div class="text-3xl bg-slate-50 p-2 rounded-xl">🍪</div>
 <div>

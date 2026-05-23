@@ -57,7 +57,7 @@ if header_match and len(parts) == 2:
                         </ul>
                     </div>
                     <div class="bg-slate-100 rounded-3xl h-full min-h-[300px] relative overflow-hidden flex items-center justify-center">
-                         <div class="absolute inset-0 bg-gradient-to-br from-brand-blue/20 to-brand-teal/20"></div>
+                         <div class="absolute inset-0 bg-linear-to-br from-brand-blue/20 to-brand-teal/20"></div>
                          <i class="fas fa-users text-8xl text-slate-300 opacity-50 relative z-10"></i>
                     </div>
                 </div>
