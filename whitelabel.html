@@ -8,7 +8,7 @@
 <!-- Custom CSS -->
 <link href="./dist/style.css" rel="stylesheet"/>
 <!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://unpkg.com/lucide@latest"></script>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -30,7 +30,7 @@
 <!-- Products Dropdown -->
 <div class="relative group px-3 py-2">
 <button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
-                        Products &amp; Services <i class="fas fa-chevron-down text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+                        Products &amp; Services <i data-lucide="chevron-down" class="text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
 </button>
 <!-- Dropdown Content -->
 <div class="dropdown-menu absolute left-0 top-full pt-4 w-[480px] opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
@@ -65,7 +65,7 @@
 <!-- Support Dropdown -->
 <div class="relative group px-3 py-2">
 <button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
-                        Support <i class="fas fa-chevron-down text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+                        Support <i data-lucide="chevron-down" class="text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
 </button>
 <!-- Dropdown Content -->
 <div class="dropdown-menu absolute left-0 top-full pt-4 w-56 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
@@ -75,7 +75,7 @@
 <a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors" href="#">Downloads</a>
 <a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors" href="#">FAQ</a>
 <a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors" href="#">Knowledge Base</a>
-<a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors flex justify-between items-center" href="#">Tools <i class="fas fa-calculator text-[10px] opacity-50"></i></a>
+<a class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors flex justify-between items-center" href="#">Tools <i data-lucide="calculator" class="text-[10px] opacity-50"></i></a>
 </div>
 </div>
 </div>
@@ -88,7 +88,7 @@
 <!-- Language Selector -->
 <div class="relative group">
 <button class="text-sm font-semibold text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-<i class="fas fa-globe"></i> EN
+<i data-lucide="globe" ></i> EN
                     </button>
 <div class="dropdown-menu absolute right-0 top-full pt-4 w-36 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
 <div class="bg-white rounded-xl shadow-lg border border-slate-200 border-slate-100 overflow-hidden p-2">
@@ -100,7 +100,7 @@
 </div>
 <div class="w-px h-5 bg-slate-200"></div>
 <a class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition-colors flex items-center gap-1.5" href="#">
-                    Portals <i class="fas fa-external-link-alt text-[10px]"></i>
+                    Portals <i data-lucide="external-link" class="text-[10px]"></i>
 </a>
 <a class="bg-slate-900 hover:bg-brand-blue text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-brand-blue/30" href="contact.html">
                     Contact
@@ -108,7 +108,7 @@
 </div>
 <!-- Mobile Menu Button -->
 <button class="lg:hidden text-slate-800 text-2xl p-2 focus:outline-none" id="mobile-menu-btn">
-<i class="fas fa-bars"></i>
+<i data-lucide="menu" ></i>
 </button>
 </nav>
 </header>
@@ -117,12 +117,12 @@
 <div class="p-5 flex justify-between items-center border-b border-slate-100">
 <a class="flex items-center gap-2 group" href="#">
 <div class="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center text-white font-bold shadow-md">
-<i class="fas fa-bolt"></i>
+<i data-lucide="zap" ></i>
 </div>
 <span class="font-bold text-xl tracking-tight text-slate-900">The Charge Grid</span>
 </a>
 <button class="text-slate-500 text-2xl p-2" id="close-menu-btn">
-<i class="fas fa-times"></i>
+<i data-lucide="x" ></i>
 </button>
 </div>
 <div class="p-6 flex-1 overflow-y-auto flex flex-col gap-6">
@@ -135,7 +135,7 @@
 <a href="contact.html">Contact</a>
 </div>
 <div class="mt-auto border-t border-slate-100 pt-6 flex flex-col gap-6">
-<a class="flex items-center gap-2 text-slate-600 font-semibold" href="#"><i class="fas fa-external-link-alt"></i> Charge Portal EMS</a>
+<a class="flex items-center gap-2 text-slate-600 font-semibold" href="#"><i data-lucide="external-link" ></i> Charge Portal EMS</a>
 <div class="flex gap-6 text-sm font-semibold text-slate-500">
 <span class="text-brand-blue">EN</span>
 <span>NL</span>
@@ -341,7 +341,7 @@
 <div class="lg:col-span-2">
 <a class="flex items-center gap-2.5 mb-6" href="#">
 <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg">
-<i class="fas fa-bolt"></i>
+<i data-lucide="zap" ></i>
 </div>
 <span class="font-bold text-2xl tracking-tight text-slate-900">The Charge Grid</span>
 </a>
@@ -404,10 +404,10 @@
                 <!-- Compliance Badges -->
                 <div class="mt-8 pt-8 border-t border-slate-200/60 flex flex-wrap gap-4 justify-center md:justify-start">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-shield-alt text-brand-blue"></i> Fully GDPR compliant
+                        <i data-lucide="shield" class="text-brand-blue"></i> Fully GDPR compliant
                     </div>
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-globe-europe text-brand-teal"></i> Hosted in the EU
+                        <i data-lucide="globe" class="text-brand-teal"></i> Hosted in the EU
                     </div>
                 </div>
 
@@ -428,5 +428,11 @@
 </div>
 <!-- SCRIPTS -->
 <script src="./js/main.js"></script>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
 </body>
 </html>

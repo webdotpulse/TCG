@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./dist/style.css">
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -167,15 +167,15 @@
                     </div>
                     <div class="bg-red-50 text-red-800 p-4 rounded-xl flex items-center justify-between">
                         <p class="text-sm"><span class="font-bold">Oh snap!</span> <a href="#" class="underline">Change a few things up</a> and try submitting again.</p>
-                        <button class="text-red-500 hover:text-red-700"><i class="fas fa-times"></i></button>
+                        <button class="text-red-500 hover:text-red-700"><i data-lucide="x" ></i></button>
                     </div>
                     <div class="bg-green-50 text-green-800 p-4 rounded-xl flex items-center justify-between">
                         <p class="text-sm"><span class="font-bold">Well done!</span> You successfully read <a href="#" class="underline">this important alert message</a>.</p>
-                        <button class="text-green-500 hover:text-green-700"><i class="fas fa-times"></i></button>
+                        <button class="text-green-500 hover:text-green-700"><i data-lucide="x" ></i></button>
                     </div>
                     <div class="bg-cyan-50 text-cyan-800 p-4 rounded-xl flex items-center justify-between">
                         <p class="text-sm"><span class="font-bold">Heads up!</span> This <a href="#" class="underline">alert needs your attention</a>, but it's not super important.</p>
-                        <button class="text-cyan-500 hover:text-cyan-700"><i class="fas fa-times"></i></button>
+                        <button class="text-cyan-500 hover:text-cyan-700"><i data-lucide="x" ></i></button>
                     </div>
                 </div>
             </section>
@@ -286,7 +286,7 @@
                     <!-- Stat Card -->
                     <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex items-center gap-4">
                         <div class="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center text-brand-blue text-xl">
-                            <i class="fas fa-chart-line"></i>
+                            <i data-lucide="line-chart" ></i>
                         </div>
                         <div>
                             <p class="text-sm text-slate-500 font-medium">Total Sessions</p>
@@ -296,7 +296,7 @@
                     <!-- Interactive Card -->
                     <div class="bg-linear-to-br from-slate-900 to-slate-800 rounded-2xl shadow-lg p-6 text-white hover:-translate-y-1 transition-transform duration-300 cursor-pointer">
                         <div class="flex justify-between items-start mb-4">
-                            <i class="fas fa-bolt text-brand-blue text-2xl"></i>
+                            <i data-lucide="zap" class="text-brand-blue text-2xl"></i>
                             <span class="bg-white/10 text-white text-xs px-2 py-1 rounded">Pro</span>
                         </div>
                         <h3 class="text-lg font-bold mb-1">Upgrade Plan</h3>
@@ -631,10 +631,10 @@
                 <!-- Compliance Badges -->
                 <div class="mt-8 pt-8 border-t border-slate-200/60 flex flex-wrap gap-4 justify-center md:justify-start">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-shield-alt text-brand-blue"></i> Fully GDPR compliant
+                        <i data-lucide="shield" class="text-brand-blue"></i> Fully GDPR compliant
                     </div>
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-globe-europe text-brand-teal"></i> Hosted in the EU
+                        <i data-lucide="globe" class="text-brand-teal"></i> Hosted in the EU
                     </div>
                 </div>
 
@@ -646,10 +646,10 @@
                 <!-- Compliance Badges -->
                 <div class="mt-8 pt-8 border-t border-slate-200/60 flex flex-wrap gap-4 justify-center md:justify-start">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-shield-alt text-brand-blue"></i> Fully GDPR compliant
+                        <i data-lucide="shield" class="text-brand-blue"></i> Fully GDPR compliant
                     </div>
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-globe-europe text-brand-teal"></i> Hosted in the EU
+                        <i data-lucide="globe" class="text-brand-teal"></i> Hosted in the EU
                     </div>
                 </div>
 
@@ -766,18 +766,18 @@
                   <ol class="inline-flex items-center space-x-1 md:space-x-3">
                     <li class="inline-flex items-center">
                       <a href="#" class="inline-flex items-center text-sm font-medium text-slate-700 hover:text-brand-blue">
-                        <i class="fas fa-home mr-2.5"></i> Home
+                        <i data-lucide="home" class="mr-2.5"></i> Home
                       </a>
                     </li>
                     <li>
                       <div class="flex items-center">
-                        <i class="fas fa-chevron-right text-slate-400 text-xs mx-1"></i>
+                        <i data-lucide="chevron-right" class="text-slate-400 text-xs mx-1"></i>
                         <a href="#" class="ml-1 text-sm font-medium text-slate-700 hover:text-brand-blue md:ml-2">Library</a>
                       </div>
                     </li>
                     <li aria-current="page">
                       <div class="flex items-center">
-                        <i class="fas fa-chevron-right text-slate-400 text-xs mx-1"></i>
+                        <i data-lucide="chevron-right" class="text-slate-400 text-xs mx-1"></i>
                         <span class="ml-1 text-sm font-medium text-slate-500 md:ml-2">Data</span>
                       </div>
                     </li>
@@ -794,7 +794,7 @@
                             <li>
                               <a href="#" class="block px-3 py-2 ml-0 leading-tight text-slate-500 bg-white border border-slate-300 rounded-l-lg hover:bg-slate-100 hover:text-slate-700">
                                 <span class="sr-only">Previous</span>
-                                <i class="fas fa-chevron-left text-xs"></i>
+                                <i data-lucide="chevron-left" class="text-xs"></i>
                               </a>
                             </li>
                             <li>
@@ -815,7 +815,7 @@
                             <li>
                               <a href="#" class="block px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 rounded-r-lg hover:bg-slate-100 hover:text-slate-700">
                                 <span class="sr-only">Next</span>
-                                <i class="fas fa-chevron-right text-xs"></i>
+                                <i data-lucide="chevron-right" class="text-xs"></i>
                               </a>
                             </li>
                           </ul>
@@ -830,7 +830,7 @@
                             <li>
                               <a href="#" class="flex items-center justify-center w-8 h-8 leading-tight text-slate-500 bg-white rounded-full hover:bg-slate-100 hover:text-slate-700 transition-colors">
                                 <span class="sr-only">Previous</span>
-                                <i class="fas fa-chevron-left text-xs"></i>
+                                <i data-lucide="chevron-left" class="text-xs"></i>
                               </a>
                             </li>
                             <li>
@@ -851,7 +851,7 @@
                             <li>
                               <a href="#" class="flex items-center justify-center w-8 h-8 leading-tight text-slate-500 bg-white rounded-full hover:bg-slate-100 hover:text-slate-700 transition-colors">
                                 <span class="sr-only">Next</span>
-                                <i class="fas fa-chevron-right text-xs"></i>
+                                <i data-lucide="chevron-right" class="text-xs"></i>
                               </a>
                             </li>
                           </ul>
@@ -865,7 +865,7 @@
                           <ul class="inline-flex items-center gap-2">
                             <li>
                               <a href="#" class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-500 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 hover:text-slate-700 transition-colors shadow-sm">
-                                <i class="fas fa-arrow-left text-xs"></i> Prev
+                                <i data-lucide="arrow-left" class="text-xs"></i> Prev
                               </a>
                             </li>
                             <li>
@@ -885,7 +885,7 @@
                             </li>
                             <li>
                               <a href="#" class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-500 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 hover:text-slate-700 transition-colors shadow-sm">
-                                Next <i class="fas fa-arrow-right text-xs"></i>
+                                Next <i data-lucide="arrow-right" class="text-xs"></i>
                               </a>
                             </li>
                           </ul>
@@ -921,7 +921,7 @@
                 &lt;div class="flex items-center justify-between p-5 border-b border-slate-100"&gt;
                     &lt;h3 class="text-lg font-bold text-slate-900"&gt;Interactive Modal&lt;/h3&gt;
                     &lt;button class="close-modal text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg p-1.5 transition-colors"&gt;
-                        &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+                        &lt;i data-lucide="x"&gt;&lt;/i&gt;
                     &lt;/button&gt;
                 &lt;/div&gt;
                 &lt;!-- Body --&gt;
@@ -951,7 +951,7 @@
                             <div class="flex items-center justify-between p-5 border-b border-slate-100">
                                 <h3 class="text-lg font-bold text-slate-900">Modal Title</h3>
                                 <button class="text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg p-1.5 transition-colors">
-                                    <i class="fas fa-times"></i>
+                                    <i data-lucide="x" ></i>
                                 </button>
                             </div>
                             <!-- Body -->
@@ -988,14 +988,14 @@
     &lt;!-- A Toast element (hidden initially or generated via JS) --&gt;
     &lt;div id="demo-toast" class="bg-white border border-slate-200 shadow-xl rounded-xl p-4 w-80 transform transition-all translate-x-full opacity-0 flex items-start gap-3"&gt;
         &lt;div class="text-green-500 mt-0.5"&gt;
-            &lt;i class="fas fa-check-circle"&gt;&lt;/i&gt;
+            &lt;i data-lucide="check-circle"&gt;&lt;/i&gt;
         &lt;/div&gt;
         &lt;div class="flex-1"&gt;
             &lt;h4 class="text-sm font-bold text-slate-900"&gt;Action Successful&lt;/h4&gt;
             &lt;p class="text-xs text-slate-500 mt-1"&gt;Your changes have been saved successfully.&lt;/p&gt;
         &lt;/div&gt;
         &lt;button class="close-toast text-slate-400 hover:text-slate-700 transition-colors"&gt;
-            &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+            &lt;i data-lucide="x"&gt;&lt;/i&gt;
         &lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1721,7 +1721,7 @@
                 <!-- Products Dropdown -->
                 <div class="relative group px-3 py-2">
                     <button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
-                        Products & Services <i class="fas fa-chevron-down text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+                        Products & Services <i data-lucide="chevron-down" class="text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
                     </button>
                     <!-- Dropdown Content -->
                     <div class="dropdown-menu absolute left-0 top-full pt-4 w-[480px] opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
@@ -1757,7 +1757,7 @@
                 <!-- Support Dropdown -->
                 <div class="relative group px-3 py-2">
                     <button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
-                        Support <i class="fas fa-chevron-down text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+                        Support <i data-lucide="chevron-down" class="text-[10px] opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
                     </button>
                     <!-- Dropdown Content -->
                     <div class="dropdown-menu absolute left-0 top-full pt-4 w-56 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
@@ -1767,7 +1767,7 @@
                             <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">Downloads</a>
                             <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">FAQ</a>
                             <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors">Knowledge Base</a>
-                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors flex justify-between items-center">Tools <i class="fas fa-calculator text-[10px] opacity-50"></i></a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-blue transition-colors flex justify-between items-center">Tools <i data-lucide="calculator" class="text-[10px] opacity-50"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1783,7 +1783,7 @@
                 <!-- Language Selector -->
                 <div class="relative group">
                     <button class="text-sm font-semibold text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                        <i class="fas fa-globe"></i> EN
+                        <i data-lucide="globe" ></i> EN
                     </button>
                     <div class="dropdown-menu absolute right-0 top-full pt-4 w-36 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
                         <div class="bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden p-2">
@@ -1797,7 +1797,7 @@
                 <div class="w-px h-5 bg-slate-200"></div>
 
                 <a href="#" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition-colors flex items-center gap-1.5">
-                    Portals <i class="fas fa-external-link-alt text-[10px]"></i>
+                    Portals <i data-lucide="external-link" class="text-[10px]"></i>
                 </a>
 
                 <a href="contact.html" class="bg-slate-900 hover:bg-brand-blue text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-brand-blue/30">
@@ -1807,7 +1807,7 @@
 
             <!-- Mobile Menu Button -->
             <button class="lg:hidden text-slate-800 text-2xl p-2 focus:outline-none" id="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
+                <i data-lucide="menu" ></i>
             </button>
         </nav>
     </header>
@@ -1817,12 +1817,12 @@
         <div class="p-5 flex justify-between items-center border-b border-slate-100">
             <a href="#" class="flex items-center gap-2 group">
                 <div class="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center text-white font-bold shadow-md">
-                    <i class="fas fa-bolt"></i>
+                    <i data-lucide="zap" ></i>
                 </div>
                 <span class="font-bold text-xl tracking-tight text-slate-900">The Charge Grid</span>
             </a>
             <button id="close-menu-btn" class="text-slate-500 text-2xl p-2">
-                <i class="fas fa-times"></i>
+                <i data-lucide="x" ></i>
             </button>
         </div>
         <div class="p-6 flex-1 overflow-y-auto flex flex-col gap-6">
@@ -1835,7 +1835,7 @@
                 <a href="contact.html">Contact</a>
             </div>
             <div class="mt-auto border-t border-slate-100 pt-6 flex flex-col gap-4">
-                <a href="#" class="flex items-center gap-2 text-slate-600 font-semibold"><i class="fas fa-external-link-alt"></i> Charge Portal EMS</a>
+                <a href="#" class="flex items-center gap-2 text-slate-600 font-semibold"><i data-lucide="external-link" ></i> Charge Portal EMS</a>
                 <div class="flex gap-4 text-sm font-semibold text-slate-500">
                     <span class="text-brand-blue">EN</span>
                     <span>NL</span>
@@ -1854,7 +1854,7 @@
                 <div class="lg:col-span-2">
                     <a href="#" class="flex items-center gap-2.5 mb-6">
                         <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg">
-                            <i class="fas fa-bolt"></i>
+                            <i data-lucide="zap" ></i>
                         </div>
                         <span class="font-bold text-2xl tracking-tight text-slate-900">The Charge Grid</span>
                     </a>
@@ -1921,10 +1921,10 @@
                 <!-- Compliance Badges -->
                 <div class="mt-8 pt-8 border-t border-slate-200/60 flex flex-wrap gap-4 justify-center md:justify-start">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-shield-alt text-brand-blue"></i> Fully GDPR compliant
+                        <i data-lucide="shield" class="text-brand-blue"></i> Fully GDPR compliant
                     </div>
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold">
-                        <i class="fas fa-globe-europe text-brand-teal"></i> Hosted in the EU
+                        <i data-lucide="globe" class="text-brand-teal"></i> Hosted in the EU
                     </div>
                 </div>
 
@@ -1949,14 +1949,14 @@
     <div id="toast-container" class="fixed bottom-4 right-4 z-110 flex flex-col gap-3 pointer-events-none">
         <div id="demo-toast" class="bg-white border border-slate-200 shadow-xl rounded-xl p-4 w-80 transform transition-all translate-x-full opacity-0 flex items-start gap-3 pointer-events-auto hidden">
             <div class="text-green-500 mt-0.5">
-                <i class="fas fa-check-circle"></i>
+                <i data-lucide="check-circle" ></i>
             </div>
             <div class="flex-1">
                 <h4 class="text-sm font-bold text-slate-900">Action Successful</h4>
                 <p class="text-xs text-slate-500 mt-1">Your changes have been saved successfully.</p>
             </div>
             <button class="close-toast text-slate-400 hover:text-slate-700 transition-colors">
-                <i class="fas fa-times"></i>
+                <i data-lucide="x" ></i>
             </button>
         </div>
     </div>
@@ -1975,7 +1975,7 @@
                     <div class="flex items-center justify-between p-5 border-b border-slate-100">
                         <h3 class="text-lg font-bold text-slate-900">Interactive Modal</h3>
                         <button class="close-modal text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg p-1.5 transition-colors">
-                            <i class="fas fa-times"></i>
+                            <i data-lucide="x" ></i>
                         </button>
                     </div>
                     <!-- Body -->
@@ -1995,5 +1995,11 @@
 
     <!-- SCRIPTS -->
     <script src="./js/main.js"></script>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
 </body>
 </html>
