@@ -763,69 +763,222 @@
                 </nav>
 
                 <h3 class="text-xl font-bold text-slate-800 mb-4 mt-8">Pagination</h3>
-                <nav aria-label="Page navigation example">
-                  <ul class="inline-flex items-center -space-x-px">
-                    <li>
-                      <a href="#" class="block px-3 py-2 ml-0 leading-tight text-slate-500 bg-white border border-slate-300 rounded-l-lg hover:bg-slate-100 hover:text-slate-700">
-                        <span class="sr-only">Previous</span>
-                        <i class="fas fa-chevron-left text-xs"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">1</a>
-                    </li>
-                    <li>
-                      <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">2</a>
-                    </li>
-                    <li>
-                      <a href="#" aria-current="page" class="z-10 px-3 py-2 leading-tight text-brand-blue border border-brand-blue bg-brand-blue/10 hover:bg-brand-blue/20">3</a>
-                    </li>
-                    <li>
-                      <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">4</a>
-                    </li>
-                    <li>
-                      <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">5</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 rounded-r-lg hover:bg-slate-100 hover:text-slate-700">
-                        <span class="sr-only">Next</span>
-                        <i class="fas fa-chevron-right text-xs"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+                <div class="space-y-8">
+                    <!-- Default Pagination -->
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-500 mb-3">Default</h4>
+                        <nav aria-label="Page navigation example">
+                          <ul class="inline-flex items-center -space-x-px">
+                            <li>
+                              <a href="#" class="block px-3 py-2 ml-0 leading-tight text-slate-500 bg-white border border-slate-300 rounded-l-lg hover:bg-slate-100 hover:text-slate-700">
+                                <span class="sr-only">Previous</span>
+                                <i class="fas fa-chevron-left text-xs"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">1</a>
+                            </li>
+                            <li>
+                              <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">2</a>
+                            </li>
+                            <li>
+                              <a href="#" aria-current="page" class="z-10 px-3 py-2 leading-tight text-brand-blue border border-brand-blue bg-brand-blue/10 hover:bg-brand-blue/20">3</a>
+                            </li>
+                            <li>
+                              <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">4</a>
+                            </li>
+                            <li>
+                              <a href="#" class="px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 hover:bg-slate-100 hover:text-slate-700">5</a>
+                            </li>
+                            <li>
+                              <a href="#" class="block px-3 py-2 leading-tight text-slate-500 bg-white border border-slate-300 rounded-r-lg hover:bg-slate-100 hover:text-slate-700">
+                                <span class="sr-only">Next</span>
+                                <i class="fas fa-chevron-right text-xs"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Rounded Pills Pagination -->
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-500 mb-3">Rounded Pills</h4>
+                        <nav aria-label="Page navigation rounded">
+                          <ul class="inline-flex items-center gap-1">
+                            <li>
+                              <a href="#" class="flex items-center justify-center w-8 h-8 leading-tight text-slate-500 bg-white rounded-full hover:bg-slate-100 hover:text-slate-700 transition-colors">
+                                <span class="sr-only">Previous</span>
+                                <i class="fas fa-chevron-left text-xs"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="flex items-center justify-center w-8 h-8 leading-tight text-slate-500 bg-white rounded-full hover:bg-slate-100 hover:text-slate-700 transition-colors">1</a>
+                            </li>
+                            <li>
+                              <a href="#" class="flex items-center justify-center w-8 h-8 leading-tight text-slate-500 bg-white rounded-full hover:bg-slate-100 hover:text-slate-700 transition-colors">2</a>
+                            </li>
+                            <li>
+                              <a href="#" aria-current="page" class="flex items-center justify-center w-8 h-8 leading-tight text-white bg-brand-blue rounded-full shadow-md shadow-brand-blue/30">3</a>
+                            </li>
+                            <li>
+                              <a href="#" class="flex items-center justify-center w-8 h-8 leading-tight text-slate-500 bg-white rounded-full hover:bg-slate-100 hover:text-slate-700 transition-colors">4</a>
+                            </li>
+                            <li>
+                              <a href="#" class="flex items-center justify-center w-8 h-8 leading-tight text-slate-500 bg-white rounded-full hover:bg-slate-100 hover:text-slate-700 transition-colors">5</a>
+                            </li>
+                            <li>
+                              <a href="#" class="flex items-center justify-center w-8 h-8 leading-tight text-slate-500 bg-white rounded-full hover:bg-slate-100 hover:text-slate-700 transition-colors">
+                                <span class="sr-only">Next</span>
+                                <i class="fas fa-chevron-right text-xs"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Detached Blocks Pagination -->
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-500 mb-3">Detached Blocks</h4>
+                        <nav aria-label="Page navigation detached">
+                          <ul class="inline-flex items-center gap-2">
+                            <li>
+                              <a href="#" class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-500 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 hover:text-slate-700 transition-colors shadow-sm">
+                                <i class="fas fa-arrow-left text-xs"></i> Prev
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="flex items-center justify-center w-9 h-9 text-sm font-medium text-slate-500 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 hover:text-slate-700 transition-colors shadow-sm">1</a>
+                            </li>
+                            <li>
+                              <a href="#" class="flex items-center justify-center w-9 h-9 text-sm font-medium text-slate-500 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 hover:text-slate-700 transition-colors shadow-sm">2</a>
+                            </li>
+                            <li>
+                              <a href="#" aria-current="page" class="flex items-center justify-center w-9 h-9 text-sm font-bold text-brand-blue bg-brand-blue/10 border border-brand-blue rounded-lg shadow-sm">3</a>
+                            </li>
+                            <li>
+                              <span class="flex items-center justify-center w-9 h-9 text-sm font-medium text-slate-400">...</span>
+                            </li>
+                            <li>
+                              <a href="#" class="flex items-center justify-center w-9 h-9 text-sm font-medium text-slate-500 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 hover:text-slate-700 transition-colors shadow-sm">8</a>
+                            </li>
+                            <li>
+                              <a href="#" class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-500 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 hover:text-slate-700 transition-colors shadow-sm">
+                                Next <i class="fas fa-arrow-right text-xs"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
             </section>
 
             <!-- Modals & Dialogs -->
             <section>
-                <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Dialogs & Modals (Concept)</h2>
-                <div class="bg-slate-800 p-8 rounded-2xl relative overflow-hidden flex items-center justify-center min-h-[400px]">
-                    <!-- Backdrop -->
-                    <div class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm z-0"></div>
+                <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Dialogs & Modals</h2>
 
-                    <!-- Modal Dialog -->
-                    <div class="relative z-10 bg-white rounded-2xl shadow-2xl max-w-lg w-full transform scale-100 transition-all">
-                        <!-- Header -->
-                        <div class="flex items-center justify-between p-5 border-b border-slate-100">
-                            <h3 class="text-lg font-bold text-slate-900">Modal Title</h3>
-                            <button class="text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg p-1.5 transition-colors">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <!-- Body -->
-                        <div class="p-6">
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Modal body text goes here. You can put any HTML content inside the modal body, including forms, images, or even another grid layout.</p>
-                            <p class="text-slate-600 text-sm leading-relaxed">It's highly customizable and ready for your content.</p>
-                        </div>
-                        <!-- Footer -->
-                        <div class="flex items-center justify-end gap-3 p-5 border-t border-slate-100 bg-slate-50 rounded-b-2xl">
-                            <button class="px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors">Close</button>
-                            <button class="px-4 py-2 text-sm font-medium text-white bg-brand-blue rounded-lg hover:bg-brand-teal transition-colors shadow-sm">Save changes</button>
+                <div class="mb-8">
+                    <button id="open-demo-modal" class="bg-brand-blue hover:bg-brand-teal text-white font-medium py-2.5 px-6 rounded-xl transition-colors shadow-lg shadow-brand-blue/20">
+                        Launch Demo Modal
+                    </button>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-slate-900 mb-2">How to use:</h3>
+                    <p class="text-sm text-slate-600 mb-4">The modal system uses a full-screen overlay with a centered dialog box. Add the following structure to the end of your HTML `<body>` to ensure it overlays everything.</p>
+                    <pre class="bg-slate-800 text-slate-300 p-4 rounded-lg text-sm overflow-x-auto"><code>&lt;!-- Interactive Modal (Hidden by default) --&gt;
+&lt;div id="demo-modal" class="fixed inset-0 z-[100] hidden"&gt;
+    &lt;!-- Backdrop --&gt;
+    &lt;div class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm transition-opacity"&gt;&lt;/div&gt;
+
+    &lt;!-- Modal Content Wrapper --&gt;
+    &lt;div class="fixed inset-0 z-10 overflow-y-auto"&gt;
+        &lt;div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0"&gt;
+            &lt;!-- Modal Dialog --&gt;
+            &lt;div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg scale-95 opacity-0" id="demo-modal-dialog"&gt;
+                &lt;!-- Header --&gt;
+                &lt;div class="flex items-center justify-between p-5 border-b border-slate-100"&gt;
+                    &lt;h3 class="text-lg font-bold text-slate-900"&gt;Interactive Modal&lt;/h3&gt;
+                    &lt;button class="close-modal text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg p-1.5 transition-colors"&gt;
+                        &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;!-- Body --&gt;
+                &lt;div class="p-6"&gt;
+                    &lt;p class="text-slate-600 text-sm leading-relaxed"&gt;This modal is fully interactive and controlled via JavaScript. You can use it to display important information, forms, or confirmations.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;!-- Footer --&gt;
+                &lt;div class="flex items-center justify-end gap-3 p-5 border-t border-slate-100 bg-slate-50"&gt;
+                    &lt;button class="close-modal px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors"&gt;Cancel&lt;/button&gt;
+                    &lt;button class="close-modal px-4 py-2 text-sm font-medium text-white bg-brand-blue rounded-lg hover:bg-brand-teal transition-colors shadow-sm"&gt;Confirm Action&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+
+                <div class="mt-8">
+                    <h3 class="text-lg font-bold text-slate-800 mb-4">Static Design Concept</h3>
+                    <div class="bg-slate-800 p-8 rounded-2xl relative overflow-hidden flex items-center justify-center min-h-[400px]">
+                        <!-- Backdrop -->
+                        <div class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm z-0"></div>
+
+                        <!-- Modal Dialog -->
+                        <div class="relative z-10 bg-white rounded-2xl shadow-2xl max-w-lg w-full transform scale-100 transition-all">
+                            <!-- Header -->
+                            <div class="flex items-center justify-between p-5 border-b border-slate-100">
+                                <h3 class="text-lg font-bold text-slate-900">Modal Title</h3>
+                                <button class="text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg p-1.5 transition-colors">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <!-- Body -->
+                            <div class="p-6">
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">Modal body text goes here. You can put any HTML content inside the modal body, including forms, images, or even another grid layout.</p>
+                                <p class="text-slate-600 text-sm leading-relaxed">It's highly customizable and ready for your content.</p>
+                            </div>
+                            <!-- Footer -->
+                            <div class="flex items-center justify-end gap-3 p-5 border-t border-slate-100 bg-slate-50 rounded-b-2xl">
+                                <button class="px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors">Close</button>
+                                <button class="px-4 py-2 text-sm font-medium text-white bg-brand-blue rounded-lg hover:bg-brand-teal transition-colors shadow-sm">Save changes</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+
+            <!-- Toasts -->
+            <section>
+                <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-6">Toasts</h2>
+
+                <div class="mb-8">
+                    <button id="show-demo-toast" class="bg-slate-900 hover:bg-slate-800 text-white font-medium py-2.5 px-6 rounded-xl transition-colors shadow-lg">
+                        Show Demo Toast
+                    </button>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-slate-900 mb-2">How to use:</h3>
+                    <p class="text-sm text-slate-600 mb-4">Toasts are used to show temporary, non-disruptive notifications. Add a container fixed to a corner (like `fixed bottom-4 right-4`) and then add toast elements inside it.</p>
+                    <pre class="bg-slate-800 text-slate-300 p-4 rounded-lg text-sm overflow-x-auto"><code>&lt;!-- Toast Container (bottom right) --&gt;
+&lt;div id="toast-container" class="fixed bottom-4 right-4 z-[110] flex flex-col gap-3"&gt;
+    &lt;!-- A Toast element (hidden initially or generated via JS) --&gt;
+    &lt;div id="demo-toast" class="bg-white border border-slate-200 shadow-xl rounded-xl p-4 w-80 transform transition-all translate-x-full opacity-0 flex items-start gap-3"&gt;
+        &lt;div class="text-green-500 mt-0.5"&gt;
+            &lt;i class="fas fa-check-circle"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class="flex-1"&gt;
+            &lt;h4 class="text-sm font-bold text-slate-900"&gt;Action Successful&lt;/h4&gt;
+            &lt;p class="text-xs text-slate-500 mt-1"&gt;Your changes have been saved successfully.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;button class="close-toast text-slate-400 hover:text-slate-700 transition-colors"&gt;
+            &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </section>
 
             <!-- Tooltips -->
             <section>
@@ -1571,7 +1724,7 @@
                                 <span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">EMS</span>
                                 <span class="text-xs text-slate-500">Optimize energy usage and reduce costs.</span>
                             </a>
-                            <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
+                            <a href="renewable.html" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
                                 <span class="text-sm font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Solar & Battery</span>
                                 <span class="text-xs text-slate-500">Renewable energy solutions.</span>
                             </a>
@@ -1701,7 +1854,7 @@
                         <li><a href="#" class="hover:text-brand-blue transition-colors">MSP - Chargecard & App</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Whitelabel</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">EMS - Energy System</a></li>
-                        <li><a href="#" class="hover:text-brand-blue transition-colors">Solar & Battery</a></li>
+                        <li><a href="renewable.html" class="hover:text-brand-blue transition-colors">Solar & Battery</a></li>
                     </ul>
                 </div>
 
@@ -1756,6 +1909,54 @@
         <div class="flex gap-3">
             <button id="accept-cookies" class="flex-1 bg-slate-900 hover:bg-slate-800 text-white py-2.5 rounded-xl text-sm font-bold transition-colors">Accept All</button>
             <button id="reject-cookies" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 py-2.5 rounded-xl text-sm font-bold transition-colors">Reject</button>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="fixed bottom-4 right-4 z-[110] flex flex-col gap-3 pointer-events-none">
+        <div id="demo-toast" class="bg-white border border-slate-200 shadow-xl rounded-xl p-4 w-80 transform transition-all translate-x-full opacity-0 flex items-start gap-3 pointer-events-auto hidden">
+            <div class="text-green-500 mt-0.5">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="flex-1">
+                <h4 class="text-sm font-bold text-slate-900">Action Successful</h4>
+                <p class="text-xs text-slate-500 mt-1">Your changes have been saved successfully.</p>
+            </div>
+            <button class="close-toast text-slate-400 hover:text-slate-700 transition-colors">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Interactive Modal (Hidden by default) -->
+    <div id="demo-modal" class="fixed inset-0 z-[100] hidden">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm transition-opacity"></div>
+
+        <!-- Modal Content Wrapper -->
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+                <!-- Modal Dialog -->
+                <div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg scale-95 opacity-0" id="demo-modal-dialog">
+                    <!-- Header -->
+                    <div class="flex items-center justify-between p-5 border-b border-slate-100">
+                        <h3 class="text-lg font-bold text-slate-900">Interactive Modal</h3>
+                        <button class="close-modal text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg p-1.5 transition-colors">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <!-- Body -->
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">This modal is fully interactive and controlled via JavaScript. You can use it to display important information, forms, or confirmations.</p>
+                        <p class="text-slate-600 text-sm leading-relaxed">It's highly customizable and ready for your content.</p>
+                    </div>
+                    <!-- Footer -->
+                    <div class="flex items-center justify-end gap-3 p-5 border-t border-slate-100 bg-slate-50">
+                        <button class="close-modal px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors">Cancel</button>
+                        <button class="close-modal px-4 py-2 text-sm font-medium text-white bg-brand-blue rounded-lg hover:bg-brand-teal transition-colors shadow-sm">Confirm Action</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

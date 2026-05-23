@@ -1,9 +1,31 @@
  INFO  Accepting connections at http://localhost:3000
- HTTP  5/22/2026 6:03:10 PM ::1 GET /
- HTTP  5/22/2026 6:03:10 PM ::1 Returned 200 in 40 ms
- HTTP  5/22/2026 6:03:11 PM ::1 GET /dist/style.css
- HTTP  5/22/2026 6:03:11 PM ::1 Returned 200 in 2 ms
- HTTP  5/22/2026 6:03:11 PM ::1 GET /js/main.js
- HTTP  5/22/2026 6:03:11 PM ::1 Returned 200 in 4 ms
-
- INFO  Gracefully shutting down. Please wait...
+ HTTP  5/23/2026 4:28:28 PM ::1 GET /components.html
+ HTTP  5/23/2026 4:28:28 PM ::1 Returned 301 in 41 ms
+ HTTP  5/23/2026 4:28:28 PM ::1 GET /components
+ HTTP  5/23/2026 4:28:28 PM ::1 Returned 200 in 20 ms
+ HTTP  5/23/2026 4:28:29 PM ::1 GET /dist/style.css
+ HTTP  5/23/2026 4:28:29 PM ::1 Returned 200 in 7 ms
+ HTTP  5/23/2026 4:28:29 PM ::1 GET /assets/images/logo/logo-light-mp@2x.png
+ HTTP  5/23/2026 4:28:29 PM ::1 GET /js/main.js
+ HTTP  5/23/2026 4:28:29 PM ::1 Returned 200 in 10 ms
+ HTTP  5/23/2026 4:28:29 PM ::1 Returned 200 in 7 ms
+ HTTP  5/23/2026 4:28:37 PM ::1 GET /premium-components.html
+ HTTP  5/23/2026 4:28:37 PM ::1 Returned 301 in 1 ms
+ HTTP  5/23/2026 4:28:37 PM ::1 GET /premium-components
+ HTTP  5/23/2026 4:28:37 PM ::1 Returned 200 in 3 ms
+ HTTP  5/23/2026 4:28:37 PM ::1 GET /dist/style.css
+ HTTP  5/23/2026 4:28:37 PM ::1 Returned 304 in 2 ms
+ HTTP  5/23/2026 4:28:37 PM ::1 GET /js/main.js
+ HTTP  5/23/2026 4:28:37 PM ::1 GET /assets/images/logo/logo-light-mp@2x.png
+ HTTP  5/23/2026 4:28:37 PM ::1 Returned 304 in 2 ms
+ HTTP  5/23/2026 4:28:37 PM ::1 Returned 304 in 2 ms
+ HTTP  5/23/2026 4:28:39 PM ::1 GET /renewable.html
+ HTTP  5/23/2026 4:28:39 PM ::1 Returned 301 in 0 ms
+ HTTP  5/23/2026 4:28:39 PM ::1 GET /renewable
+ HTTP  5/23/2026 4:28:39 PM ::1 Returned 200 in 4 ms
+ HTTP  5/23/2026 4:28:39 PM ::1 GET /dist/style.css
+ HTTP  5/23/2026 4:28:39 PM ::1 GET /assets/images/logo/logo-light-mp@2x.png
+ HTTP  5/23/2026 4:28:39 PM ::1 Returned 304 in 1 ms
+ HTTP  5/23/2026 4:28:39 PM ::1 Returned 304 in 1 ms
+ HTTP  5/23/2026 4:28:39 PM ::1 GET /js/main.js
+ HTTP  5/23/2026 4:28:39 PM ::1 Returned 304 in 1 ms
