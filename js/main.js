@@ -185,4 +185,90 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // 7. Fullscreen Menu Toggle
+    const fsMenuBtn = document.getElementById('fullscreen-menu-btn');
+    const fsMenu = document.getElementById('fullscreen-menu');
+    const minimalHeader = document.getElementById('minimal-header');
+
+    if (fsMenuBtn && fsMenu && minimalHeader) {
+        const logoText = document.getElementById('logo-text');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+
+        let isOpen = false;
+
+        fsMenuBtn.addEventListener('click', () => {
+            isOpen = !isOpen;
+
+            if (isOpen) {
+                // Open menu
+                fsMenu.classList.remove('opacity-0', 'pointer-events-none');
+                fsMenu.classList.add('opacity-100', 'pointer-events-auto');
+                document.body.style.overflow = 'hidden';
+
+                // Button styling
+                fsMenuBtn.classList.add('bg-transparent', 'border-white/20', 'text-white');
+                fsMenuBtn.classList.remove('bg-white', 'border-slate-100', 'text-slate-900', 'hover:bg-slate-50', 'hover:text-brand-blue');
+
+                // Logo text styling
+                if (logoText) {
+                    logoText.classList.remove('text-slate-900');
+                    logoText.classList.add('text-white');
+                }
+
+                // Icon toggle
+                iconOpen.classList.add('opacity-0');
+                iconClose.classList.remove('opacity-0');
+            } else {
+                // Close menu
+                fsMenu.classList.add('opacity-0', 'pointer-events-none');
+                fsMenu.classList.remove('opacity-100', 'pointer-events-auto');
+                document.body.style.overflow = '';
+
+                // Button styling
+                fsMenuBtn.classList.remove('bg-transparent', 'border-white/20', 'text-white');
+                fsMenuBtn.classList.add('bg-white', 'border-slate-100', 'text-slate-900', 'hover:bg-slate-50', 'hover:text-brand-blue');
+
+                // Logo text styling
+                if (logoText) {
+                    logoText.classList.add('text-slate-900');
+                    logoText.classList.remove('text-white');
+                }
+
+                // Icon toggle
+                iconOpen.classList.remove('opacity-0');
+                iconClose.classList.add('opacity-0');
+            }
+        });
+    }
+
+    // 8. Fancy Scroll to Top Button
+    const scrollTopBtn = document.createElement('button');
+    scrollTopBtn.innerHTML = '<i data-lucide="arrow-up" class="text-white"></i>';
+    scrollTopBtn.className = 'fixed bottom-6 right-6 w-12 h-12 bg-brand-blue hover:bg-brand-teal text-white rounded-full shadow-xl flex items-center justify-center transition-all duration-300 transform translate-y-20 opacity-0 z-50 hover:-translate-y-1 hover:shadow-brand-blue/30';
+    scrollTopBtn.setAttribute('aria-label', 'Scroll to top');
+    document.body.appendChild(scrollTopBtn);
+
+    // Initialize the icon in the new button
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons({
+            root: scrollTopBtn
+        });
+    }
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.remove('translate-y-20', 'opacity-0');
+        } else {
+            scrollTopBtn.classList.add('translate-y-20', 'opacity-0');
+        }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });
