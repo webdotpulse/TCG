@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Charge Grid | Smart EV Charging Stations & Services</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased relative overflow-x-hidden">
+
+    <!-- Background Decoration -->
+    <div class="bg-glow"></div>
+
+    <!-- BOXED NAVIGATION LAYOUT -->
+    <header class="fixed top-4 left-0 right-0 z-50 px-4 md:px-6 flex justify-center w-full transition-all duration-300" id="header-container">
+        <!-- The 'Box' -->
+        <nav id="navbar" class="glass-nav bg-white/80 w-full max-w-7xl rounded-2xl shadow-sm border border-slate-200/60 px-5 py-3.5 flex justify-between items-center transition-all duration-300">
+
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2.5 group">
+                <img src="./assets/images/logo/logo-light-mp@2x.png" alt="The Charge Grid Logo" class="h-8 auto">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-1">
+
+                <!-- Products Dropdown -->
+                <div class="relative group px-3 py-2">
+                    <button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
+                        Products & Services <i data-lucide="chevron-down" class="text-sm opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <!-- Dropdown Content -->
+                    <div class="dropdown-menu absolute left-0 top-full pt-4 w-[480px] opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
+                        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden p-3 grid grid-cols-2 gap-2">
+                            <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Charging points</span>
+                                <span class="text-sm text-slate-500">Explore our full range of charging solutions.</span>
+                            </a>
+                            <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">CPO</span>
+                                <span class="text-sm text-slate-500">Manage, monitor, and monetize chargers.</span>
+                            </a>
+                            <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">MSP App</span>
+                                <span class="text-sm text-slate-500">Access to charging with App & charge card.</span>
+                            </a>
+                            <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Whitelabel</span>
+                                <span class="text-sm text-slate-500">Launch your own EV charging services.</span>
+                            </a>
+                            <a href="#" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">EMS</span>
+                                <span class="text-sm text-slate-500">Optimize energy usage and reduce costs.</span>
+                            </a>
+                            <a href="renewable.html" class="flex flex-col p-3 hover:bg-brand-blue/5 rounded-xl transition-colors group/item">
+                                <span class="text-base font-bold text-slate-900 group-hover/item:text-brand-blue mb-1">Solar & Battery</span>
+                                <span class="text-sm text-slate-500">Renewable energy solutions.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Dropdown -->
+                <div class="relative group px-3 py-2">
+                    <button class="font-medium flex items-center gap-1.5 text-slate-700 hover:text-brand-blue transition-colors">
+                        Support <i data-lucide="chevron-down" class="text-sm opacity-50 mt-0.5 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <!-- Dropdown Content -->
+                    <div class="dropdown-menu absolute left-0 top-full pt-4 w-56 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
+                        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden p-2">
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors">Cars</a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors">Certified Chargers</a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors">Downloads</a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors">FAQ</a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors">Knowledge Base</a>
+                            <a href="#" class="block px-4 py-2.5 hover:bg-slate-50 rounded-xl text-base font-medium text-slate-700 hover:text-brand-blue transition-colors flex justify-between items-center">Tools <i data-lucide="calculator" class="text-sm opacity-50"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="font-medium text-slate-700 hover:text-brand-blue transition-colors px-3 py-2">Blog</a>
+                <a href="#" class="font-medium text-slate-700 hover:text-brand-blue transition-colors px-3 py-2">About us</a>
+                <a href="#" class="font-medium text-slate-700 hover:text-brand-blue transition-colors px-3 py-2">Jobs</a>
+            </div>
+
+            <!-- CTA & Actions -->
+            <div class="hidden lg:flex items-center space-x-5">
+
+                <!-- Language Selector -->
+                <div class="relative group">
+                    <button class="text-base font-semibold text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                        <i data-lucide="globe" ></i> EN
+                    </button>
+                    <div class="dropdown-menu absolute right-0 top-full pt-4 w-36 opacity-0 invisible transform origin-top -translate-y-2 transition-all duration-300 z-50">
+                        <div class="bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden p-2">
+                            <a href="#" class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-base font-medium text-brand-blue">EN - English</a>
+                            <a href="#" class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-base font-medium text-slate-700">NL - Nederlands</a>
+                            <a href="#" class="block px-3 py-2 hover:bg-slate-50 rounded-lg text-base font-medium text-slate-700">FR - Français</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-px h-5 bg-slate-200"></div>
+
+                <a href="#" class="text-base font-semibold text-slate-600 hover:text-brand-blue transition-colors flex items-center gap-1.5">
+                    Portals <i data-lucide="external-link" class="text-sm"></i>
+                </a>
+
+                <a href="contact.html" class="bg-slate-900 hover:bg-brand-blue text-white px-5 py-2.5 rounded-xl text-base font-bold transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-brand-blue/30">
+                    Contact
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden text-slate-800 text-2xl p-2 focus:outline-none" id="mobile-menu-btn">
+                <i data-lucide="menu" ></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-60 transform translate-x-full transition-transform duration-300 flex flex-col hidden">
+        <div class="p-5 flex justify-between items-center border-b border-slate-100">
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center text-white font-bold shadow-md">
+                    <i data-lucide="zap" ></i>
+                </div>
+                <span class="font-bold text-xl tracking-tight text-slate-900">The Charge Grid</span>
+            </a>
+            <button id="close-menu-btn" class="text-slate-500 text-2xl p-2">
+                <i data-lucide="x" ></i>
+            </button>
+        </div>
+        <div class="p-6 flex-1 overflow-y-auto flex flex-col gap-6">
+            <div class="flex flex-col gap-4 text-lg font-bold text-slate-900">
+                <a href="#">Products & Services</a>
+                <a href="#">Support</a>
+                <a href="#">Blog</a>
+                <a href="#">About us</a>
+                <a href="#">Jobs</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="mt-auto border-t border-slate-100 pt-6 flex flex-col gap-4">
+                <a href="#" class="flex items-center gap-2 text-slate-600 font-semibold"><i data-lucide="external-link" ></i> Charge Portal EMS</a>
+                <div class="flex gap-4 text-base font-semibold text-slate-500">
+                    <span class="text-brand-blue">EN</span>
+                    <span>NL</span>
+                    <span>FR</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="py-32 lg:py-48 bg-slate-900 text-white relative overflow-hidden mt-20">
+        <div class="absolute right-0 top-0 w-1/2 h-full bg-brand-teal/20 blur-[100px] rounded-full"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-teal/20 text-brand-teal font-bold text-sm mb-6 uppercase tracking-wider border border-brand-teal/30">Charge Point Operator</span>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">Master Your Charging Network</h1>
+                <p class="text-slate-300 text-lg md:text-xl mb-10 leading-relaxed max-w-lg">Manage, control, and monetize your entire network of electric car chargers in real-time from a single powerful platform.</p>
+                <div class="flex gap-4">
+                    <button class="bg-brand-teal hover:bg-teal-500 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg hover:-translate-y-1">Start Free Trial</button>
+                    <button class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold transition-all">Request Demo</button>
+                </div>
+            </div>
+            <div class="bg-slate-800 rounded-3xl p-8 border border-slate-700 shadow-2xl relative">
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-brand-blue rounded-full blur-xl opacity-50"></div>
+                <div class="aspect-video bg-slate-900 rounded-xl border border-slate-700 flex items-center justify-center relative z-10 overflow-hidden">
+                    <i data-lucide="bar-chart" class="w-32 h-32 text-brand-teal opacity-20"></i>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-blue/10 to-transparent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES GRID -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Everything you need to operate</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Our CPO platform provides all the tools required to manage a modern EV infrastructure.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-brand-blue/10 text-brand-blue rounded-2xl flex items-center justify-center mx-auto mb-6"><i data-lucide="server" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Remote Management</h3>
+                    <p class="text-slate-500">Configure chargers, start/stop sessions remotely, and perform firmware updates over-the-air.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-brand-teal/10 text-brand-teal rounded-2xl flex items-center justify-center mx-auto mb-6"><i data-lucide="credit-card" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Automated Billing</h3>
+                    <p class="text-slate-500">Set custom tariffs, generate invoices automatically, and handle payments seamlessly.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-indigo-500/10 text-indigo-500 rounded-2xl flex items-center justify-center mx-auto mb-6"><i data-lucide="shield" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Multi-level Access</h3>
+                    <p class="text-slate-500">Create roles for fleet managers, technicians, and finance teams with granular permissions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED ANALYTICS -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1 bg-slate-50 rounded-[3rem] aspect-square flex items-center justify-center p-12 border border-slate-100 relative overflow-hidden group">
+                <div class="absolute inset-0 bg-brand-blue/5 rounded-[3rem] transform -rotate-3 scale-105 transition-transform duration-500 group-hover:rotate-0"></div>
+                <i data-lucide="pie-chart" class="w-full h-full text-brand-blue/20 relative z-10 group-hover:text-brand-blue/40 transition-colors duration-500"></i>
+            </div>
+            <div class="order-1 lg:order-2">
+                <span class="text-brand-blue font-bold tracking-widest uppercase mb-4 block">Deep Insights</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-8">Detailed Analytics & Reporting</h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <div class="w-12 h-12 bg-blue-50 border border-blue-100 rounded-xl flex items-center justify-center text-brand-blue shrink-0"><i data-lucide="activity" class="w-6 h-6"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg text-slate-900">Real-time Dashboard</h4>
+                            <p class="text-slate-500 mt-1">Monitor active sessions, energy output, and revenue instantly across your entire network.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="w-12 h-12 bg-teal-50 border border-teal-100 rounded-xl flex items-center justify-center text-brand-teal shrink-0"><i data-lucide="file-text" class="w-6 h-6"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg text-slate-900">Custom Reports</h4>
+                            <p class="text-slate-500 mt-1">Generate detailed CSV or PDF reports for accounting and compliance purposes.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="w-12 h-12 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-center text-indigo-500 shrink-0"><i data-lucide="alert-circle" class="w-6 h-6"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg text-slate-900">Uptime Tracking & Alerts</h4>
+                            <p class="text-slate-500 mt-1">Get alerted immediately via SMS or email if a station goes offline or experiences an error.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING TABLE -->
+    <section class="py-24 bg-slate-50 border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-teal font-bold tracking-widest uppercase mb-4 block">Pricing</span>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-slate-600">Scale your network without hidden fees.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Starter</h3>
+                    <p class="text-slate-500 text-sm mb-6">For small businesses</p>
+                    <div class="text-4xl font-black text-slate-900 mb-6">€49<span class="text-lg text-slate-500 font-medium">/mo</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-brand-blue"></i> Up to 5 Chargers</li>
+                        <li class="flex items-center gap-3 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-brand-blue"></i> Basic Reporting</li>
+                        <li class="flex items-center gap-3 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-brand-blue"></i> Email Support</li>
+                    </ul>
+                    <button class="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl font-bold transition-colors">Choose Starter</button>
+                </div>
+                <!-- Pro -->
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-xl relative transform md:-translate-y-4">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-teal text-white px-4 py-1 rounded-full text-xs font-bold uppercase">Most Popular</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Professional</h3>
+                    <p class="text-slate-400 text-sm mb-6">For growing networks</p>
+                    <div class="text-4xl font-black text-white mb-6">€149<span class="text-lg text-slate-400 font-medium">/mo</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-slate-200"><i data-lucide="check" class="w-5 h-5 text-brand-teal"></i> Up to 50 Chargers</li>
+                        <li class="flex items-center gap-3 text-slate-200"><i data-lucide="check" class="w-5 h-5 text-brand-teal"></i> Advanced Analytics</li>
+                        <li class="flex items-center gap-3 text-slate-200"><i data-lucide="check" class="w-5 h-5 text-brand-teal"></i> Priority Support</li>
+                        <li class="flex items-center gap-3 text-slate-200"><i data-lucide="check" class="w-5 h-5 text-brand-teal"></i> Load Balancing</li>
+                    </ul>
+                    <button class="w-full py-3 bg-brand-teal hover:bg-teal-600 text-white rounded-xl font-bold transition-colors shadow-lg">Choose Pro</button>
+                </div>
+                <!-- Enterprise -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Enterprise</h3>
+                    <p class="text-slate-500 text-sm mb-6">For large operations</p>
+                    <div class="text-4xl font-black text-slate-900 mb-6">Custom</div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-brand-blue"></i> Unlimited Chargers</li>
+                        <li class="flex items-center gap-3 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-brand-blue"></i> Whitelabel Options</li>
+                        <li class="flex items-center gap-3 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-brand-blue"></i> API Access</li>
+                        <li class="flex items-center gap-3 text-slate-700"><i data-lucide="check" class="w-5 h-5 text-brand-blue"></i> Dedicated Manager</li>
+                    </ul>
+                    <button class="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl font-bold transition-colors">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-24 bg-brand-teal text-white text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to electrify your business?</h2>
+            <p class="text-teal-100 text-lg md:text-xl mb-10">Join hundreds of companies already using our platform to manage their charging infrastructure efficiently.</p>
+            <button class="bg-white text-slate-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition-colors shadow-xl hover:-translate-y-1">Get Started Today</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-200/60 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+
+                <!-- Brand & Address -->
+                <div class="lg:col-span-2">
+                    <a href="#" class="flex items-center gap-2.5 mb-6">
+                        <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg">
+                            <i data-lucide="zap" ></i>
+                        </div>
+                        <span class="font-bold text-2xl tracking-tight text-slate-900">The Charge Grid</span>
+                    </a>
+                    <p class="text-slate-500 mb-6 max-w-sm">Leading the transition to sustainable energy with smart, reliable EV charging infrastructure.</p>
+                    <address class="not-italic text-slate-600 space-y-1 text-base font-medium">
+                        <strong>C&H EUROPE BV</strong><br>
+                        BE 0729.731.988<br>
+                        <a href="mailto:info@thechargegrid.com" class="hover:text-brand-blue transition-colors block mt-2">info@thechargegrid.com</a>
+                        <a href="tel:+32468196788" class="hover:text-brand-blue transition-colors block">+32 468 19.67.88</a>
+                    </address>
+                </div>
+
+                <!-- Links 1 -->
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-6 text-lg">Products & Services</h4>
+                    <ul class="space-y-3.5 text-base font-medium text-slate-500">
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">Charging points</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">CPO - Charge management</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">MSP - Chargecard & App</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">Whitelabel</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">EMS - Energy System</a></li>
+                        <li><a href="renewable.html" class="hover:text-brand-blue transition-colors">Solar & Battery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-6 text-lg">Support</h4>
+                    <ul class="space-y-3.5 text-base font-medium text-slate-500">
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">Browse EV cars</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">Certified Chargers</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">Downloads</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">Knowledge Base</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">Tools & Calculators</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 3 -->
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-6 text-lg">Company</h4>
+                    <ul class="space-y-3.5 text-base font-medium text-slate-500">
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">About us</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">Jobs</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-blue transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition-colors">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex gap-6 text-base font-medium text-slate-500">
+                    <a href="#" class="hover:text-slate-900 transition-colors">Terms of Use</a>
+                    <a href="#" class="hover:text-slate-900 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-900 transition-colors">Cookie Policy</a>
+                </div>
+                <div class="text-base font-medium text-slate-400">
+                    &copy; 2026 The Charge Grid. All rights reserved. Made by WebDotPulse
+                </div>
+            </div>
+        </div>
+
+                <!-- Compliance Badges -->
+                <div class="mt-8 pt-8 border-t border-slate-200/60 flex flex-wrap gap-4 justify-center md:justify-start">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-sm font-bold">
+                        <i data-lucide="shield" class="text-brand-blue"></i> Fully GDPR compliant
+                    </div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-sm font-bold">
+                        <i data-lucide="globe" class="text-brand-teal"></i> Hosted in the EU
+                    </div>
+                </div>
+
+    </footer>
+
+    <!-- COOKIE BANNER -->
+    <div id="cookie-banner" class="fixed bottom-6 left-4 right-4 md:left-6 md:right-auto md:w-96 bg-white border border-slate-200 p-6 rounded-2xl shadow-2xl z-100 transform transition-transform duration-500 translate-y-[150%]">
+        <div class="flex items-start gap-4 mb-5">
+            <div class="text-3xl bg-slate-50 p-2 rounded-xl">🍪</div>
+            <div>
+                <h4 class="font-bold text-slate-900 mb-1">Cookie Preferences</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">We use cookies to help personalize content, tailor and measure ads, and provide a better experience.</p>
+            </div>
+        </div>
+        <div class="flex gap-3">
+            <button id="accept-cookies" class="flex-1 bg-slate-900 hover:bg-slate-800 text-white py-2.5 rounded-xl text-base font-bold transition-colors">Accept All</button>
+            <button id="reject-cookies" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 py-2.5 rounded-xl text-base font-bold transition-colors">Reject</button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./js/main.js"></script>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
