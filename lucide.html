@@ -35,6 +35,7 @@
                 <a href="index.html" class="font-medium text-slate-700 hover:text-brand-blue transition-colors">Home</a>
                 <a href="sections.html" class="font-medium text-slate-700 hover:text-brand-blue transition-colors">Sections</a>
                 <a href="lucide.html" class="font-bold text-brand-blue transition-colors">Lucide</a>
+                <a href="downloads.html" class="font-medium text-slate-700 hover:text-brand-blue transition-colors">Downloads</a>
             </div>
         </nav>
     </header>
@@ -164,6 +165,128 @@
                         <p class="text-white/80 max-w-xs ml-auto">Control your charging sessions directly from your phone.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- ANIMATED ICONS -->
+        <section>
+            <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-4 mb-8">Animated Icons (Tailwind CSS)</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Pulse Animation -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center gap-4 text-center">
+                    <div class="relative">
+                        <i data-lucide="radio" class="w-8 h-8 text-brand-blue animate-pulse"></i>
+                        <div class="absolute inset-0 bg-brand-blue rounded-full animate-ping opacity-20"></div>
+                    </div>
+                    <span class="text-sm font-bold text-slate-900">Pulse</span>
+                    <span class="text-xs text-slate-500">Live Status</span>
+                </div>
+
+                <!-- Spin Animation -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center gap-4 text-center">
+                    <i data-lucide="loader" class="w-8 h-8 text-brand-teal animate-spin"></i>
+                    <span class="text-sm font-bold text-slate-900">Spin</span>
+                    <span class="text-xs text-slate-500">Loading State</span>
+                </div>
+
+                <!-- Bounce Animation -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center gap-4 text-center">
+                    <i data-lucide="arrow-down" class="w-8 h-8 text-indigo-500 animate-bounce"></i>
+                    <span class="text-sm font-bold text-slate-900">Bounce</span>
+                    <span class="text-xs text-slate-500">Attention Grabber</span>
+                </div>
+
+                <!-- Interactive Hover (Wiggle) -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center gap-4 text-center group cursor-pointer">
+                    <i data-lucide="bell" class="w-8 h-8 text-amber-500 group-hover:animate-ping group-hover:opacity-100 transition-all"></i>
+                    <span class="text-sm font-bold text-slate-900">Hover</span>
+                    <span class="text-xs text-slate-500">Interactive</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPLEX BADGES & INDICATORS -->
+        <section>
+            <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-4 mb-8">Complex Badges & Indicators</h2>
+            <div class="flex flex-wrap gap-6">
+
+                <!-- Status Badge (Online) -->
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-sm font-bold">
+                    <div class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                    </div>
+                    System Online
+                </div>
+
+                <!-- Alert Banner -->
+                <div class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-amber-50 border border-amber-200 text-amber-800 text-sm font-bold shadow-sm">
+                    <i data-lucide="triangle-alert" class="w-5 h-5 text-amber-500"></i>
+                    Maintenance Scheduled
+                </div>
+
+                <!-- Notification Tag -->
+                <div class="relative inline-flex items-center justify-center p-3 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">
+                    <i data-lucide="message-square" class="w-6 h-6"></i>
+                    <div class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white rounded-full flex items-center justify-center text-[10px] font-bold border-2 border-white">3</div>
+                </div>
+
+                <!-- Feature Tag -->
+                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-brand-blue to-indigo-500 text-white text-sm font-bold shadow-md">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    Premium Feature
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BENTO GRID WITH ICONS -->
+        <section>
+            <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-4 mb-8">Bento Grid Featuring Icons</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[200px]">
+
+                <!-- Main Focus -->
+                <div class="md:col-span-2 bg-slate-900 rounded-3xl p-8 relative overflow-hidden group">
+                    <i data-lucide="globe-2" class="absolute -right-8 -bottom-8 w-48 h-48 text-brand-blue/20 group-hover:text-brand-blue/40 transition-colors duration-500"></i>
+                    <div class="relative z-10 flex flex-col h-full justify-between">
+                        <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center text-brand-blue backdrop-blur-sm"><i data-lucide="map" class="w-6 h-6"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-1">Global Coverage</h3>
+                            <p class="text-slate-400 text-sm">Access chargers across 28 countries.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Metric -->
+                <div class="bg-brand-teal rounded-3xl p-8 relative overflow-hidden text-white flex flex-col justify-between group">
+                    <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm"><i data-lucide="zap-fast" class="w-6 h-6"></i></div>
+                    <div>
+                        <div class="text-3xl font-black mb-1 group-hover:scale-105 origin-left transition-transform">350kW</div>
+                        <p class="text-teal-50 text-sm">Max Charging Speed</p>
+                    </div>
+                </div>
+
+                 <!-- Tool Box -->
+                 <div class="bg-white border border-slate-200 shadow-sm rounded-3xl p-8 flex flex-col justify-between">
+                     <div class="flex gap-2">
+                         <i data-lucide="plug" class="w-6 h-6 text-slate-400"></i>
+                         <i data-lucide="battery" class="w-6 h-6 text-slate-400"></i>
+                     </div>
+                     <div>
+                        <h3 class="text-lg font-bold text-slate-900">Hardware Support</h3>
+                        <p class="text-slate-500 text-sm">Compatible with 99% of EVs.</p>
+                    </div>
+                 </div>
+
+                 <!-- Security Box -->
+                 <div class="md:col-span-2 bg-slate-50 border border-slate-200 rounded-3xl p-8 flex items-center gap-6">
+                     <div class="w-16 h-16 shrink-0 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-500"><i data-lucide="shield" class="w-8 h-8"></i></div>
+                     <div>
+                         <h3 class="text-xl font-bold text-slate-900 mb-2">End-to-End Encryption</h3>
+                         <p class="text-slate-600 text-sm">Your payment data and charging history are securely encrypted using industry-standard protocols.</p>
+                     </div>
+                 </div>
+
             </div>
         </section>
 
