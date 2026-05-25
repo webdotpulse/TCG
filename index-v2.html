@@ -161,103 +161,92 @@
         </div>
     </div>
 
-    <!-- ALTERNATE HERO SECTION -->
-    <section class="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-slate-900">
-        <!-- Dynamic Background Elements -->
-        <div class="absolute inset-0 z-0 opacity-40">
-            <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=2000" alt="Abstract Tech Background" class="w-full h-full object-cover mix-blend-overlay">
-        </div>
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-32 lg:pt-48 lg:pb-16" style="background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('https://www.mobilitypulse.com/assets/images/cards.svg'), linear-gradient(111.42deg, #299FF5 0%, #009C9E 100%); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-        <!-- Animated Blobs -->
-        <div class="absolute top-0 right-0 -mr-40 -mt-40 w-[600px] h-[600px] rounded-full bg-brand-blue/30 blur-[120px] animate-[pulse_8s_ease-in-out_infinite]"></div>
-        <div class="absolute bottom-0 left-0 -ml-40 -mb-40 w-[600px] h-[600px] rounded-full bg-brand-teal/30 blur-[120px] animate-[pulse_10s_ease-in-out_infinite_alternate]"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-purple-500/20 blur-[150px] animate-[pulse_12s_ease-in-out_infinite]"></div>
+                <!-- Text Content -->
+                <div class="flex flex-col gap-8 text-center md:text-left animate-slide-in-left">
+                    <div class="flex flex-col gap-4 mb-4 lg:mb-8">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-md">
+                            See it. Love it. Charge it.
+                        </h1>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 drop-shadow-sm h-16 md:h-10">
+                            <span id="hero-typer"></span><span class="animate-pulse">_</span>
+                        </h2>
+                        <p class="text-lg md:text-xl text-white/95 leading-relaxed font-medium max-w-lg mx-auto md:mx-0 drop-shadow-sm">
+                            Whether you are a home user, a small business owner or a large company, we help you take the step towards sustainable mobility.
+                        </p>
+                    </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center">
-
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-bold tracking-widest uppercase mb-8 animate-slide-in-left">
-                <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Next Gen Infrastructure
-            </div>
-
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-linear-to-r from-white via-slate-200 to-slate-400 leading-tight mb-6 drop-shadow-lg tracking-tight animate-slide-in-right">
-                Powering the Future.<br>Intelligently.
-            </h1>
-
-            <p class="text-xl md:text-2xl text-slate-300 font-medium max-w-3xl mx-auto leading-relaxed mb-12 animate-slide-in-left" style="animation-delay: 200ms;">
-                An end-to-end ecosystem combining robust charging hardware, intelligent software management, and seamless end-user experiences.
-            </p>
-
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 animate-slide-in-right" style="animation-delay: 400ms;">
-                <a href="#services" class="px-8 py-4 bg-brand-blue hover:bg-brand-teal text-white rounded-2xl font-bold text-lg shadow-lg shadow-brand-blue/30 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto">
-                    Explore Ecosystem
-                </a>
-                <a href="#" class="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white rounded-2xl font-bold text-lg transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-2">
-                    <i data-lucide="play-circle"></i> Watch Demo
-                </a>
-            </div>
-
-            <!-- Marquee Stats -->
-            <div class="mt-20 border-t border-white/10 pt-8 overflow-hidden w-full relative">
-                <div class="flex space-x-12 whitespace-nowrap opacity-70 animate-[slideInRight_15s_linear_infinite]">
-                    <span class="text-white font-bold text-lg flex items-center gap-2"><i data-lucide="zap" class="text-brand-blue"></i> 50,000+ Active Chargers</span>
-                    <span class="text-white font-bold text-lg flex items-center gap-2"><i data-lucide="globe" class="text-brand-teal"></i> 28 Countries</span>
-                    <span class="text-white font-bold text-lg flex items-center gap-2"><i data-lucide="battery-charging" class="text-brand-blue"></i> 2.5M Charging Sessions/Mo</span>
-                    <span class="text-white font-bold text-lg flex items-center gap-2"><i data-lucide="leaf" class="text-brand-teal"></i> 100% Carbon Neutral</span>
-                    <span class="text-white font-bold text-lg flex items-center gap-2"><i data-lucide="zap" class="text-brand-blue"></i> 50,000+ Active Chargers</span>
+                    <div class="pt-2">
+                        <a href="#services" class="inline-flex justify-center items-center px-8 py-4 bg-white text-brand-teal font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto">
+                            Products & Services
+                        </a>
+                    </div>
                 </div>
-            </div>
 
+                <!-- Image -->
+                <div class="flex justify-center md:justify-end mt-8 md:mt-0 md:-mb-24 lg:-mb-32 relative z-20 animate-slide-in-right">
+                    <picture>
+                        <source type="image/avif" srcset="https://www.mobilitypulse.com/assets/images/home/evchargers-and-chargecards.avif">
+                        <source type="image/webp" srcset="https://www.mobilitypulse.com/assets/images/home/evchargers-and-chargecards.webp">
+                        <source type="image/png" srcset="https://www.mobilitypulse.com/assets/images/home/evchargers-and-chargecards.png">
+                        <img src="https://www.mobilitypulse.com/assets/images/home/evchargers-and-chargecards.png" class="w-full max-w-md lg:max-w-xl object-contain drop-shadow-2xl hover:scale-[1.02] transition-transform duration-500" alt="The Charge Grid EV Chargers">
+                    </picture>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <!-- ALTERNATE WHAT WE DO SECTION (Dark Mode Grid) -->
-    <section id="services" class="bg-slate-950 py-20 lg:py-32 relative z-10 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 md:mb-24 mt-8 md:mt-12">
-                <h2 class="text-base font-bold text-brand-blue tracking-widest uppercase mb-3">What We Do?</h2>
-                <h3 class="text-3xl md:text-5xl font-bold text-white max-w-2xl mx-auto leading-tight">Products & Services designed to meet your needs.</h3>
+    <!-- WHAT WE DO SECTION -->
+    <section id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 relative z-10">
+        <div class="text-center mb-16 md:mb-24 mt-8 md:mt-12">
+            <h2 class="text-base font-bold text-brand-blue tracking-widest uppercase mb-3">What We Do?</h2>
+            <h3 class="text-3xl md:text-5xl font-bold text-slate-900 max-w-2xl mx-auto leading-tight">Products & Services designed to meet your needs.</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:shadow-[0_8px_30px_rgba(41,159,245,0.1)] transition-all duration-300 hover:-translate-y-2 group">
+                <div class="w-14 h-14 bg-slate-50 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300 shadow-sm">
+                    <i data-lucide="battery-charging" ></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">Charging points</h4>
+                <p class="text-slate-500 mb-8 leading-relaxed text-base">We offer a complete line of Smart electric vehicle charging stations and custom solutions for home, corporate and public use. Remarkably reliable. Distinctly durable.</p>
+                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-blue flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-                <!-- Card 1 -->
-                <div class="bg-slate-900/50 backdrop-blur-md p-8 rounded-4xl border border-slate-800 hover:border-brand-blue transition-all duration-300 hover:-translate-y-2 group">
-                    <div class="w-14 h-14 bg-slate-800 text-brand-blue rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300 shadow-sm">
-                        <i data-lucide="battery-charging" ></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white mb-3">Charging points</h4>
-                    <p class="text-slate-400 mb-8 leading-relaxed text-base">We offer a complete line of Smart electric vehicle charging stations and custom solutions for home, corporate and public use. Remarkably reliable. Distinctly durable.</p>
-                    <a href="#" class="text-white font-bold group-hover:text-brand-blue flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:shadow-[0_8px_30px_rgba(41,159,245,0.1)] transition-all duration-300 hover:-translate-y-2 group">
+                <div class="w-14 h-14 bg-slate-50 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-teal group-hover:text-white transition-colors duration-300 shadow-sm">
+                    <i data-lucide="server" ></i>
                 </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">CPO: Charge mgmt</h4>
+                <p class="text-slate-500 mb-8 leading-relaxed text-base">Manage & Control your Network of Electric Car Chargers in real time. Billing & Metering Data. Multi-user Authentication, Reporting & Diagnostics.</p>
+                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-teal flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
+            </div>
 
-                <!-- Card 2 -->
-                <div class="bg-slate-900/50 backdrop-blur-md p-8 rounded-4xl border border-slate-800 hover:border-brand-teal transition-all duration-300 hover:-translate-y-2 group">
-                    <div class="w-14 h-14 bg-slate-800 text-brand-teal rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-teal group-hover:text-white transition-colors duration-300 shadow-sm">
-                        <i data-lucide="server" ></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white mb-3">CPO: Charge mgmt</h4>
-                    <p class="text-slate-400 mb-8 leading-relaxed text-base">Manage & Control your Network of Electric Car Chargers in real time. Billing & Metering Data. Multi-user Authentication, Reporting & Diagnostics.</p>
-                    <a href="#" class="text-white font-bold group-hover:text-brand-teal flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:shadow-[0_8px_30px_rgba(41,159,245,0.1)] transition-all duration-300 hover:-translate-y-2 group">
+                <div class="w-14 h-14 bg-slate-50 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300 shadow-sm">
+                    <i data-lucide="smartphone" ></i>
                 </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">MSP: Chargecard</h4>
+                <p class="text-slate-500 mb-8 leading-relaxed text-base">A free Chargecard, dedicated Mobile App and a web portal for managing charging activities. We facilitate roaming services and customer support.</p>
+                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-blue flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
+            </div>
 
-                <!-- Card 3 -->
-                <div class="bg-slate-900/50 backdrop-blur-md p-8 rounded-4xl border border-slate-800 hover:border-brand-blue transition-all duration-300 hover:-translate-y-2 group">
-                    <div class="w-14 h-14 bg-slate-800 text-brand-blue rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300 shadow-sm">
-                        <i data-lucide="smartphone" ></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white mb-3">MSP: Chargecard</h4>
-                    <p class="text-slate-400 mb-8 leading-relaxed text-base">A free Chargecard, dedicated Mobile App and a web portal for managing charging activities. We facilitate roaming services and customer support.</p>
-                    <a href="#" class="text-white font-bold group-hover:text-brand-blue flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
+            <!-- Card 4 -->
+            <div class="bg-white p-8 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:shadow-[0_8px_30px_rgba(41,159,245,0.1)] transition-all duration-300 hover:-translate-y-2 group">
+                <div class="w-14 h-14 bg-slate-50 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-teal group-hover:text-white transition-colors duration-300 shadow-sm">
+                    <i data-lucide="zap" ></i>
                 </div>
-
-                <!-- Card 4 -->
-                <div class="bg-slate-900/50 backdrop-blur-md p-8 rounded-4xl border border-slate-800 hover:border-brand-teal transition-all duration-300 hover:-translate-y-2 group">
-                    <div class="w-14 h-14 bg-slate-800 text-brand-teal rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-brand-teal group-hover:text-white transition-colors duration-300 shadow-sm">
-                        <i data-lucide="zap" ></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white mb-3">EMS: Energy Mgmt</h4>
-                    <p class="text-slate-400 mb-8 leading-relaxed text-base">Optimize your energy consumption and reduce costs with smart power distribution. Prevent costly grid upgrades and ensure maximum efficiency.</p>
-                    <a href="#" class="text-white font-bold group-hover:text-brand-teal flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
-                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">EMS: Energy Mgmt</h4>
+                <p class="text-slate-500 mb-8 leading-relaxed text-base">Optimize your energy consumption and reduce costs with smart power distribution. Prevent costly grid upgrades and ensure maximum efficiency.</p>
+                <a href="#" class="text-slate-900 font-bold group-hover:text-brand-teal flex items-center gap-2 transition-colors">Read more <i data-lucide="arrow-right" ></i></a>
             </div>
         </div>
     </section>
@@ -720,21 +709,21 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-white border-t border-slate-200/60 pt-20 pb-10">
+    <footer class="bg-slate-900 border-t border-slate-800 pt-20 pb-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
 
                 <!-- Brand & Address -->
                 <div class="lg:col-span-2">
                     <a href="#" class="flex items-center gap-2.5 mb-6">
-                        <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-lg">
+                        <div class="w-9 h-9 bg-white/10 rounded-xl flex items-center justify-center text-white font-bold text-lg">
                             <i data-lucide="zap" ></i>
                         </div>
-                        <span class="font-bold text-2xl tracking-tight text-slate-900">The Charge Grid</span>
+                        <span class="font-bold text-2xl tracking-tight text-white">The Charge Grid</span>
                     </a>
-                    <p class="text-slate-500 mb-6 max-w-sm">Leading the transition to sustainable energy with smart, reliable EV charging infrastructure.</p>
-                    <address class="not-italic text-slate-600 space-y-1 text-base font-medium">
-                        <strong>C&H EUROPE BV</strong><br>
+                    <p class="text-slate-400 mb-6 max-w-sm">Leading the transition to sustainable energy with smart, reliable EV charging infrastructure.</p>
+                    <address class="not-italic text-slate-400 space-y-1 text-base font-medium">
+                        <strong class="text-white">C&H EUROPE BV</strong><br>
                         BE 0729.731.988<br>
                         <a href="mailto:info@thechargegrid.com" class="hover:text-brand-blue transition-colors block mt-2">info@thechargegrid.com</a>
                         <a href="tel:+32468196788" class="hover:text-brand-blue transition-colors block">+32 468 19.67.88</a>
@@ -743,8 +732,8 @@
 
                 <!-- Links 1 -->
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-6 text-lg">Products & Services</h4>
-                    <ul class="space-y-3.5 text-base font-medium text-slate-500">
+                    <h4 class="font-bold text-white mb-6 text-lg">Products & Services</h4>
+                    <ul class="space-y-3.5 text-base font-medium text-slate-400">
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Charging points</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">CPO - Charge management</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">MSP - Chargecard & App</a></li>
@@ -756,8 +745,8 @@
 
                 <!-- Links 2 -->
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-6 text-lg">Support</h4>
-                    <ul class="space-y-3.5 text-base font-medium text-slate-500">
+                    <h4 class="font-bold text-white mb-6 text-lg">Support</h4>
+                    <ul class="space-y-3.5 text-base font-medium text-slate-400">
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Browse EV cars</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Certified Chargers</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Downloads</a></li>
@@ -769,8 +758,8 @@
 
                 <!-- Links 3 -->
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-6 text-lg">Company</h4>
-                    <ul class="space-y-3.5 text-base font-medium text-slate-500">
+                    <h4 class="font-bold text-white mb-6 text-lg">Company</h4>
+                    <ul class="space-y-3.5 text-base font-medium text-slate-400">
                         <li><a href="#" class="hover:text-brand-blue transition-colors">About us</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Jobs</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Blog</a></li>
@@ -780,13 +769,13 @@
                 </div>
             </div>
 
-            <div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="flex gap-6 text-base font-medium text-slate-500">
-                    <a href="#" class="hover:text-slate-900 transition-colors">Terms of Use</a>
-                    <a href="#" class="hover:text-slate-900 transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-slate-900 transition-colors">Cookie Policy</a>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex gap-6 text-base font-medium text-slate-400">
+                    <a href="#" class="hover:text-white transition-colors">Terms of Use</a>
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
                 </div>
-                <div class="text-base font-medium text-slate-400">
+                <div class="text-base font-medium text-slate-500">
                     &copy; 2026 The Charge Grid. All rights reserved. Made by WebDotPulse
                 </div>
             </div>
